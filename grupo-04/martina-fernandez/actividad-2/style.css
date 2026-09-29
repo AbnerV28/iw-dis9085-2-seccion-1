@@ -1,0 +1,87 @@
+/*basico*/
+/*se agrega a toda la página*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(240, 239, 238);
+    background: rgb(35, 32, 35);
+}
+
+
+header{
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    border-bottom: 4px solid rgb (249, 217, 123) ;
+}
+
+h1{
+    margin: 0;
+    font-size: 4rem;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.autor{
+    font-size: 2rem;
+    color:rgb(54, 15, 113);
+    padding: 1rem;
+    background: rgb(222, 150, 7);
+    border: 3px solid rgb(54, 15, 113);
+}
+
+.imagen{
+    width: 100%;
+}
+
+/*main (contenido principal*/
+
+main{
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+div{ 
+    margin: 0 0  2rem;
+    padding: 1rem;
+    background: rgb (194, 166, 206);
+    border: 10px solid rgb(222, 150, 7);
+}
+
+section{ 
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    background: rgb(54, 15, 113);
+    border: 3px solid rgb(222, 150, 7);
+}
+
+h2{
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.destacado{ 
+    background: rgb(222, 150, 7);
+    padding: 1rem;
+    color: rgb(54, 15, 113)
+/*el padding toma el color del fondo*/
+
+}
+
+.button{
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background: rgb(222, 150, 7);
+    color: rgb (194, 166, 206);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer{
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
