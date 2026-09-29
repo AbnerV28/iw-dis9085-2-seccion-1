@@ -32,17 +32,19 @@ Le saqué la modificación de tamaño y la imagen quedaba bien.
 
 **otras opciones y por qué no las utilicé**
 
-```css
 En html:
 
+```css
 <img src="imagen.jpg" width="300" height="200">
 
 Para mantener la proporción solo especificar el ancho:
 
 <img src="imagen.jpg" width="300">
+```
 
 En css:
 
+```css
 <img src="imagen.jpg" class="mi-imagen">
 
 .mi-imagen {
