@@ -2,6 +2,7 @@
 ## Consulta a la IA: Cambiar el tamaño de una imagen
 
 **Prompt: como puedo cambiar el tamaño de una imagen en html** 
+
 IA
 
 ```css
