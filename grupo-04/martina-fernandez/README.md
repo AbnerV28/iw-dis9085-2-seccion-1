@@ -23,6 +23,7 @@ Luego en la página de style.css
 .imagen{
     width: 100%;
 }
+```
 
 Al final no lo usé porque la imagen no quedaba centrada, y al principio no entendía por qué la imagen se veía tan grande,
 pero al final era porque la imagen era en archivo png y lo que yo creía era el fondo de la imagen, en realidad era el fondo de la página jeje
