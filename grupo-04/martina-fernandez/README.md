@@ -12,6 +12,8 @@ IA
 ```
 Crear una clase donde está la imagen .imagen
 
+VS CODE
+
 ```css
 <div>
  <img src="jack-skellington.png" alt="Fotografía de Jack Skellington" class="imagen">
