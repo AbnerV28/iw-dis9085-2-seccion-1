@@ -1,0 +1,83 @@
+/* base */
+*{
+    box-sizing: border-box; /*el ancho incluye padding y borde*/
+}
+body {
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(194, 3, 19);
+    background-color: rgb(0, 0, 0);
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    max-width: 50rem; 
+    margin: 0 auto;
+    padding: 3rem 2rem 3rem 0;
+    border-bottom: 4px solid rgb(255, 103, 103);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.autor {
+    font-size: 1.2rem;
+    color:rgb(255, 255, 255);
+}
+
+/* main */
+
+main {
+   max-width: 50rem; 
+    margin: 0 auto;
+    padding: 3rem 2rem 3rem 0;  
+}
+
+.foto-principal {
+    max-width: 100%;
+    margin: 0 0 2rem;
+    padding: 1rem 1rem 2rem 1rem;
+    background-color: rgb(144, 10, 21);
+    
+}
+
+section {
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.boton-fotos {
+    display: block;
+    width: fit-content;
+    margin-top: 20px;
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    background-color: #000000;
+    color:aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+.destacado {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 103, 103);
+    padding: 1rem;
+}
+
+
+footer {
+    max-width: 50rem; 
+    margin: 0 auto;
+    padding: 3rem 2rem 3rem 0;
+}
