@@ -1,0 +1,92 @@
+/* Basico */
+* {
+    box-sizing: border-box; /*el ancho incluye padding y borde*/
+}
+
+body {
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000000;
+    background: rgb(239, 209, 191);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+/* Header */
+
+header {
+    max-width: 75rem;
+    line-height: 1.6;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    border-bottom: 4px solid rgb(99, 80, 57);
+}
+
+h1 {
+    margin: 0;
+    font-size: 3.5rem;
+}
+
+.auto {
+    font-size: 4rem;
+    color: brown;
+}
+
+/* main (contenido principal) */
+
+main {
+    max-width: 75rem;
+    line-height: 1.6;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+div {
+    margin: 0 0 2rem;
+    padding: 1rem;
+    background: white;
+    border: 2px solid rgb(162, 68, 68);
+    border-radius: 20px;
+}
+
+section {
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    background: white;
+    border: 1px solid rgb(162, 68, 68);
+    border-radius: 20px;
+
+}
+
+h2 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.destacado {
+    background: rgb(225, 208, 181);
+    padding: 1rem;
+    border-radius: 20px;
+
+}
+
+.button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background: rgb(162, 68, 68);
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    border-radius: 20px;
+
+}
+
+footer {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
