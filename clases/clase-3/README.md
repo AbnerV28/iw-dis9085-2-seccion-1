@@ -2,7 +2,7 @@
 
 **Lunes 05-10**
 
-Hoy continuamos con CSS, display, flexbox y pseudoclases. Para luego continuar con CSS, su sintáxis básica y modelo de cajas. Para esto hay que copiar el html index-base.html y descargar la imagen wishbone.png ya que trabajaremos en clase el estilo CSS.
+Hoy continuamos con CSS, display, flexbox y pseudoclases.
 
 **Presentación:** https://drive.google.com/drive/folders/1mUIifhxHZzfT4QmuFoPo4L4V3EXAgFqn?ths=true
 
