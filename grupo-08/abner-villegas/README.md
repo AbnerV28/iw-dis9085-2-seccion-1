@@ -1,2 +1,2 @@
-#Bitácora 
-##Clase 5 de octubre 
+# Bitácora 
+## Clase 5 de octubre 
