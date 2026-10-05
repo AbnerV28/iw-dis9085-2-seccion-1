@@ -64,8 +64,43 @@ Ejemplo de cómo registrar una consulta a la IA siguiendo estas normas:
   justify-content: center;
   align-items: center;
 }
-```
-
-**Sugerencias aceptadas:** usar `flex` para centrar en ambos ejes.
-**Sugerencias rechazadas:** usar `position: absolute`, porque complicaba el resto del layout.
 ````
+
+### CSS asistido con IA
+
+Para la solemne puedes crear los estilos CSS en IA y luego ajustarlos. Importante pedirle que use flexbox y que no use grid, position ni frameworks, ya que no lo vimos en clases. 
+
+Sugerencia de prompt para crear guía de estilos en CSS:
+
+````
+**Prompt usado:**
+> Adjunto png de mi diseño en Figma (escritorio de 1440 px) y mi HTML. Escribe el CSS para que
+la página se vea como el png. Usa solo flexbox, unidades rem y %. No uses grid, position ni frameworks.
+Comenta cada regla en español explicando qué hace, en lenguaje simple.
+ 
+[pegar aquí el HTML] 
+````
+
+También puedes sumar una ficha de estilo tomando los valores del diseño en Figma Dev Mode. Es importante convertir las unidades en rem o % ya que Figma sueles dar los valores en pixeles.
+
+````
+**Prompt usado:**
+> Usa exactamente los colores, tamaños y espaciados de la ficha.
+Los enlaces del menú y los botones deben tener los estados hover de la ficha.
+
+> FICHA DE ESTILO:
+ Colores
+   - Texto:       #......
+   - Fondo:       #......
+   - Superficie:  #......
+   - Borde:       #......
+   - Acento (hover): #......
+   Tipografía: ......
+   - h1: ...px = ...rem    - h2: ...px = ...rem
+   - h3: ...px = ...rem    - cuerpo: ...px = ...rem
+   Espaciados
+   - Lateral escritorio: ...px = ...rem
+   - Entre tarjetas (gap): ...px = ...rem
+   - Interior de tarjeta (padding): ...px = ...rem
+````
+
