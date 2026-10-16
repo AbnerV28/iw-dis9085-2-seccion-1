@@ -263,7 +263,7 @@ footer {
 
 ---
 
-## Flex box
+### Flex box
 ```
 display: flex;
 ```
@@ -372,7 +372,7 @@ align-items: center;
 
 
 ---
-## Botones 
+### Botones 
 
 ### <a> 
 - Padding vertical se monta sobre las líneas vecinas.
@@ -390,7 +390,7 @@ padding: 0.75rem 1.5rem;
 }
 ```
 
-## Imágenes
+### Imágenes
 - Por defecto queda alineada.
   
 ### block + margin auto
@@ -411,7 +411,7 @@ height: auto;
 ### cover 
 - Llena la caja, sin perder proporción.
 
-## Pasos
+### Pasos
 Contenedor display: flex;. 
 
 Dirección flex-direction: row | column;.
@@ -421,21 +421,24 @@ Alinear justify-content x align-itemns.
 Separar gap: 1.5rem;.
 
 Repartir flex: 1; (en los hijos).
-
+---
 ## Proceso
 1. Lo primero que realizamos fue decidir en qué nos queríamos enfocar en la single page. Nos enfocamos en la feria de arte e ilustración chilena llamada "Click feria".
 2. Lo segundo a realizar fue hacer el boceto de la single page, para luego pasarla a Figma, en wireframe mobile y desktop, de baja y alta fidelidad.
 3. Luego de las correcciones de la profe fuimos modificando el Figma para luego pasar a realizar el HTML Y CSS de la single page.
   
 
-● ¿Qué hice en el sitio?
+1. ¿Qué hice en el sitio?
 
-● ¿Qué dificultades tuve y cómo las resolví? (Indica qué recursos usaste: IA, MDN, material
-complementario entregado en clase, compañeros, ayudante, etc. Si usaste IA, pega al menos un
-prompt y cuenta qué tuviste que corregir.)
+- Lo que realicé en el trabajo fue la parte de footer y el ítem de postulaciones, tratando de pasar de figma a HTML y CSS
+  
+2. ¿Qué dificultades tuve y cómo las resolví? (Indica qué recursos usaste: IA, MDN, material complementario entregado en clase, compañeros, ayudante, etc. Si usaste IA, pega al menos un prompt y cuenta qué tuviste que corregir.)
 
-● ¿Qué aprendí?
-
+- Todo lo que vi fue más relacionado a CSS, durante las clases me costó más el contenido relacionado a este, de igual forma recurrí más que nada a las tareas previas realizadas, los cuales ciertas partes del código las rescaté para la solemne 2, además de el material complementario dejado por la profe sobre los códigos.
+  
+3. ¿Qué aprendí?
+- Aprendí de manera más profunda los códigos de HTML y CSS y como estos son muy útiles para la carrera y poder proyectar nuestras ideas en una página web, incluso nuestro portafolio.
+---
 ## Uso Inteligencia Artificial tareas
 
 ### Actividad 1
