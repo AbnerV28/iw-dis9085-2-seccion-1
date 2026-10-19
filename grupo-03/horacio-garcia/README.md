@@ -7,14 +7,9 @@ Como parte del equipo, me encargué de la integración y correcta aplicación de
 Una de las principales dificultades fue vincular correctamente toda la familia de archivos locales .otf en la hoja de estilos y hacer que el navegador interpretará de forma precisa los pesos tipográficos específicos indicados en el diseño (como regular, medium y light). Para resolverlo, consulté los materiales de apoyo de la asignatura y realicé una consulta asistida con IA para estructurar el código de las fuentes.
 
 ## Consulta IA: declarar y aplicar los pesos tipográficos de Infra
-
-**Código antes:**
-```css
-body {
-    font-family: sans-serif;
-}
-
 Prompt usado:
+¿Cómo declaro correctamente en CSS mediante @font-face los archivos .otf de una tipografía local y cómo configuro los font-weight para usar distintos pesos como regular, medium y light?
+
 Tengo un código HTML que contiene el texto de una composición tipográfica basada en una imagen de referencia. Necesito que, a partir de mi código, me ayudes a desarrollar el CSS para reproducir el diseño de la imagen lo más fielmente posible.
 La composición utiliza diferentes familias tipográficas, tamaños, pesos, inclinaciones y colores. Para las fuentes, considera Manrope como alternativa a Infra, además de Holtwood One SC y Calistoga, disponibles en Google Fonts. Respeta la jerarquía visual, las proporciones y la distribución de los elementos de la referencia.
 No tengo claro cómo estructurar el CSS para conseguir esta composición y adaptar los textos al espacio disponible. Por ello, necesito que me expliques cómo aplicar las propiedades necesarias para controlar la posición, el tamaño, el espaciado y la alineación de cada elemento, utilizando recursos como Flexbox, CSS Grid, clamp() y media queries cuando sean convenientes.
@@ -22,8 +17,14 @@ Mantén el HTML original siempre que sea posible y desarrolla el CSS en un archi
 El objetivo es comprender cómo trasladar una propuesta tipográfica a una estructura funcional mediante HTML y CSS, obteniendo un resultado responsive que pueda visualizar y ajustar en Visual Studio Code con Live Server.
 Imagen de referencia: <img width="996" height="720" alt="image" src="https://github.com/user-attachments/assets/98bbc13a-5ce2-455b-b992-7f5c13b16fab" />
 
+**Códigos antes:**
+```css
+body {
+    font-family: sans-serif;
+}
 
-¿Cómo declaro correctamente en CSS mediante @font-face los archivos .otf de una tipografía local y cómo configuro los font-weight para usar distintos pesos como regular, medium y light?
+
+
 Código después:
 CSS
 @font-face {
@@ -39,7 +40,7 @@ CSS
     font-weight: 500;
     font-style: normal;
 }
-
+Segundo codigo (tipografías variadas):
 * {
     box-sizing: border-box;
     margin: 0;
