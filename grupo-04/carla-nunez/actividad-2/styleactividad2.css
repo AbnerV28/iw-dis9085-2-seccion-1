@@ -1,0 +1,85 @@
+/* Basico */
+* {
+    box-sizing: border-box; /*el ancho incluye padding y borde*/
+}
+
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #1c1c1c;
+    background: #e9e9ea;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header */
+
+header {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    border-bottom: 3px solid #8c8f94;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 0.02em;
+}
+
+.autor {
+    font-size: 1.1rem;
+    color: #6b6e73;
+}
+
+/* main (contenido principal) */
+
+main {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+}
+
+div {
+    margin: 0 0 1.5rem;
+    padding: 0.5rem;
+    background: #ffffff;
+    border: 1px solid #b5b8bd;
+}
+
+section {
+    padding: 1.25rem 1.75rem;
+    margin-bottom: 1.25rem;
+    background: #ffffff;
+    border: 1px solid #b5b8bd;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.destacado {
+    background: #e9e9ea;
+    padding: 0.75rem;
+}
+
+.button {
+    margin-top: 1;
+    padding: 0.6rem 1.25rem;
+    background: #3a3d42;
+    color: white;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-decoration: none;
+}
+
+footer {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    color: #6b6e73;
+}

@@ -1,0 +1,90 @@
+
+* {
+    box-sizing: border-box; /*el ancho incluye padding y borde*/
+}
+body{
+    background-color: black;
+margin: 0;
+
+}
+nav{
+  background-color: burlywood;
+    text-align: center;
+}
+header {
+    max-width: 60rem;
+    margin:  auto;
+    padding: 3rem 2rem;
+    border-bottom: 3px solid goldenrod;
+    
+}
+h1{
+    font-family: fantasy; color: white;
+    text-align: center;
+    margin: 0;
+}
+h2{
+    margin: 0;
+    font-family: cursive; color: goldenrod;
+}
+section{
+    background-color: antiquewhite;
+}
+.autor{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    
+}
+main {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.button {
+    margin-top: 3;
+    padding: 0.75rem 1.5rem;
+    background: goldenrod;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-decoration: none;
+}
+
+.comprar{
+    
+    text-align: center;
+    margin-top: 30px;
+    padding: 12px 30px;
+    font-size: 20px;
+}
+li{
+    color: black;
+    font-family: cursive;
+    font-size: 2,5srem;
+    
+}
+ul{
+ list-style-position: inside;
+ text-align: left;
+ color: white;
+}
+.pasos{
+    color: goldenrod;
+}
+div{
+    margin: 0 0 2rem;
+    padding: 1rem;
+    border: 1px solid goldenrod;
+    width: 33.5rem;
+    justify-content: center;
+  
+}
+.destacado{
+    font-size: 1.5rem;
+    font-family: fantasy;
+}
+a{
+    color: white;
+    text-decoration: none;
+}

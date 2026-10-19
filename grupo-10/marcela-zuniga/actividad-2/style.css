@@ -1,0 +1,84 @@
+/* Basico */
+* {
+    box-sizing: border-box; /*el ancho incluye padding y borde*/
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111111;
+    background: #f2f0e8;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header */
+
+header {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    border-bottom: 4px solid rgb(227, 6, 19);
+    background: white;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.auto {
+    font-size: 1.2rem;
+    color: rgb(0, 61, 165);
+}
+
+/* main (contenido principal) */
+
+main {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+div {
+    margin: 0 0 2rem;
+    padding: 1rem;
+    background: white;
+    border: 8px solid rgb(0, 61, 165);
+}
+
+section {
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    background: white;
+    border: 3px solid #111111;
+}
+
+h2 {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+}
+
+.destacado {
+    background: rgb(245, 208, 0);
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.button {
+    margin-top: 1;
+    padding: 0.75rem 1.5rem;
+    background: rgb(0, 61, 165);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}

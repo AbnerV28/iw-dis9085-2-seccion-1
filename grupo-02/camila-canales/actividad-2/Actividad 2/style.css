@@ -1,0 +1,82 @@
+/* Basico */
+* {
+    box-sizing: border-box; /*el ancho incluye padding y borde*/
+}
+
+body {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#ffffff;
+   background: rgb(181, 175, 175); 
+
+img {
+    max-width: 100%;
+}
+
+/* Header */
+
+header {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    border-bottom: 4px solid rgb(238, 233, 227);
+}
+
+h1 {
+    margin: 0;
+    font-size: 4rem;
+}
+
+.auto {
+    font-size: 1.2rem;
+    color: rgb(223, 208, 208);
+}
+
+/* main (contenido principal) */
+
+main {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 3rem 3rem;
+}
+
+div {
+    margin: 2rem 2rem 2rem;
+    padding: 1rem;
+    background: rgb(222, 217, 217);
+    border: 2px solid rgb(142, 122, 122);
+}
+
+section {
+    padding: 2rem 2rem;
+    margin-bottom: 1.5rem;
+    color: black;
+    background: white;
+    border: 2px solid rgb(142, 122, 122);
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.destacado {
+        background: rgb(166, 156, 160);
+    color: #ffffff;
+    padding: 1rem;
+}
+
+.button {
+    margin-top: 12;
+    padding: 0.75rem 1.5rem;
+    background: rgb(77, 59, 59);
+    color: rgb(247, 245, 245);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+footer {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
