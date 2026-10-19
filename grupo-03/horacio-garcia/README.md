@@ -18,6 +18,8 @@ El objetivo es comprender cómo trasladar una propuesta tipográfica a una estru
 Imagen de referencia: <img width="996" height="720" alt="image" src="https://github.com/user-attachments/assets/98bbc13a-5ce2-455b-b992-7f5c13b16fab" />
 
 **Códigos antes:**
+
+**Código antes:**
 ```css
 body {
     font-family: sans-serif;
@@ -25,6 +27,8 @@ body {
 
 
 
+Prompt usado:
+¿Cómo declaro correctamente en CSS mediante @font-face los archivos .otf de una tipografía local y cómo configuro los font-weight para usar distintos pesos como regular, medium y light?
 Código después:
 CSS
 @font-face {
@@ -264,6 +268,9 @@ Sugerencias aceptadas: Declarar cada variante de la fuente en el CSS especifican
 Recursos utilizados:
 Chat GPT
 Gemini
+
+Sugerencias aceptadas: Declarar cada variante de la fuente en el CSS especificando con precisión su font-family, src, font-weight y font-style para aplicarlas mediante clases y selectores en todo el sitio.
+Recursos utilizados:
 Apuntes de clases sobre estilos CSS y tipografías.
 Material de apoyo oficial: Propiedades de texto y fuentes.
 Documentación de MDN Web Docs (@font-face).
@@ -271,3 +278,4 @@ Lenguaje CSS (Manz.dev).
 ¿Qué aprendí?
 Aprendí a gestionar tipografías personalizadas en un sitio web mediante código CSS puro, comprendiendo la importancia de alinear los pesos tipográficos con el sistema de diseño establecido en Figma.
 Aprendí a realizar diferentes estilos en tipografías a partir de IA, lo cual parecia ademas de imposible en un principio, demasiado trabajo. 
+
