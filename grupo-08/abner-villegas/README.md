@@ -47,3 +47,6 @@ Este proyecto me dejó varios aprendizajes para seguir armando sitios web:
 3. **Manejar vectores SVG:** Aprendí a integrar líneas y figuras en código SVG para que no pierdan calidad ni se vean pixeladas en pantallas de alta resolución.
 4. **Usar la IA como apoyo y no como solución definitiva:** Confirmé que la IA ayuda mucho para darte ideas o destrabar problemas, pero siempre hay que probar el código, hacer ajustes a mano y comprobar que realmente se vea como lo planeamos en Figma.
 
+
+
+
