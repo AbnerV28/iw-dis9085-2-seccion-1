@@ -25,7 +25,7 @@
   setInterval(actualizar, 1000);
 })();
 
-/* ---------- 2. Carrusel ---------- */
+/* Carrusel */
 (function carrusel() {
   const pista = document.getElementById("pista");
   if (!pista) return;
