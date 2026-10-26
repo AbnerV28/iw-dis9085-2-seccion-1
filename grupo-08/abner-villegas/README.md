@@ -8,6 +8,7 @@ Con esa base lista, mi rol principal dentro del grupo fue **tomar ese código ba
 
 De manera concreta, mis tareas en el proyecto fueron:
 
+* **Armar el formato en diseño y la versión mobile:** Mi trabajo principal consistió en definir la diagramación visual y estructurar el diseño adaptado a celulares, ajustando la escala, el tamaño y la proporción de las fotos de los productos para que no se vieran desproporcionadas ni diminutas en pantallas pequeñas.
 * **Analizar la base Desktop:** Revisé el código que armó mi compañero para entender cómo estaban estructuradas las secciones, clases e imágenes originales.
 * **Reestructurar el HTML para Mobile:** Noté que para pasar el sitio a celular el código original quedaba un poco desorganizado, así que lo reordené usando etiquetas semánticas (`<header>`, `<main>`, `<section>`, `<footer>`) y contenedores más claros.
 * **Maquetación con Flexbox:** Cambié el flujo horizontal de la pantalla grande a una distribución vertical usando Flexbox (`display: flex`, `flex-direction: column`, `gap`).
