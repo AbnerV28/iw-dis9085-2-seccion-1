@@ -10,11 +10,15 @@
 
   <!-- encabezado: video con controles -->
   <header class="portada-entradas">
-    <video class="portada-entradas__video" id="video-hero" autoplay muted loop playsinline poster="assets/img/entradas-hero.jpg">
-      <source src="assets/video/entradas-hero.mp4" type="video/mp4">
-    </video>
+    <figure class="portada-entradas__figura">
+      <video class="portada-entradas__video" id="video-hero" autoplay muted loop playsinline poster="assets/img/entradas-hero.jpg">
+        <source src="assets/video/entradas-hero.mp4" type="video/mp4">
+      </video>
+    </figure>
     <div class="contenedor portada-entradas__controles">
-      <a class="volver" href="index.html" aria-label="Volver al inicio"></a>
+      <nav class="portada-entradas__nav" aria-label="Principal">
+        <a class="volver" href="index.html" aria-label="Volver al inicio"></a>
+      </nav>
       <div class="portada-entradas__botones">
         <button class="control control--play" id="boton-play" aria-label="Pausar video">
           <img class="control__icono control__icono--play" src="assets/img/icono-pausa.png" alt="">
@@ -30,181 +34,240 @@
   <main class="contenedor contenido">
     <h1 class="solo-lectores">Entradas Creamfields 2027</h1>
 
-    <section class="pases" aria-label="Entradas disponibles">
-      <div class="fila fila--1">
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Estándar</span>
-          <span class="pase__titulo">Dos Días</span>
-          <span class="pase__detalle">Sábado + Domingo<br>Camping</span>
-          <span class="pase__precio">$356.596 CLP</span>
-        </a>
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Estándar</span>
-          <span class="pase__titulo">Tres Días</span>
-          <span class="pase__detalle">Viernes + Sábado + Domingo<br>Camping</span>
-          <span class="pase__precio">$356.596 CLP</span>
-        </a>
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Estándar</span>
-          <span class="pase__titulo">Cuatro Días</span>
-          <span class="pase__detalle">Camping</span>
-          <span class="pase__precio">$421.431 CLP</span>
-        </a>
-      </div>
-      <div class="fila fila--2">
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Bronce</span>
-          <span class="pase__titulo">Dos Días</span>
-          <span class="pase__detalle">Sábado + Domingo<br>Camping</span>
-          <span class="pase__precio">$404.668 CLP</span>
-        </a>
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Bronce</span>
-          <span class="pase__titulo">Tres Días</span>
-          <span class="pase__detalle">Viernes + Sábado + Domingo<br>Camping</span>
-          <span class="pase__precio">$447.365 CLP</span>
-        </a>
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Bronce</span>
-          <span class="pase__titulo">Cuatro Días</span>
-          <span class="pase__detalle">Camping</span>
-          <span class="pase__precio">$473.299 CLP</span>
-        </a>
-      </div>
-      <div class="fila fila--3">
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Plata</span>
-          <span class="pase__titulo">Dos Días</span>
-          <span class="pase__detalle">Sábado + Domingo<br>Camping</span>
-          <span class="pase__precio">$434.398 CLP</span>
-        </a>
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Plata</span>
-          <span class="pase__titulo">Tres Días</span>
-          <span class="pase__detalle">Viernes + Sábado + Domingo<br>Camping</span>
-          <span class="pase__precio">$472.956 CLP</span>
-        </a>
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Plata</span>
-          <span class="pase__titulo">Cuatro Días</span>
-          <span class="pase__detalle">Camping</span>
-          <span class="pase__precio">$512.202 CLP</span>
-        </a>
-      </div>
-      <div class="fila fila--4">
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Oro</span>
-          <span class="pase__titulo">Dos Días</span>
-          <span class="pase__detalle">Sábado + Domingo<br>Camping</span>
-          <span class="pase__precio">$486.268 CLP</span>
-        </a>
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Oro</span>
-          <span class="pase__titulo">Tres Días</span>
-          <span class="pase__detalle">Viernes + Sábado + Domingo<br>Camping</span>
-          <span class="pase__precio">$550.346 CLP</span>
-        </a>
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Oro</span>
-          <span class="pase__titulo">Cuatro Días</span>
-          <span class="pase__detalle">Camping</span>
-          <span class="pase__precio">$610.233 CLP</span>
-        </a>
-      </div>
-      <div class="fila fila--5">
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Estándar</span>
-          <span class="pase__titulo">Dos Días</span>
-          <span class="pase__detalle">Viernes + Sábado<br>No acampar</span>
-          <span class="pase__precio">$256.534 CLP</span>
-        </a>
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Estándar</span>
-          <span class="pase__titulo">Dos Días</span>
-          <span class="pase__detalle">Sábado + Domingo<br>No acampar</span>
-          <span class="pase__precio">$290.463 CLP</span>
-        </a>
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Estándar</span>
-          <span class="pase__titulo">Tres Días</span>
-          <span class="pase__detalle">Viernes + Sábado + Domingo<br>No acampar</span>
-          <span class="pase__precio">$388.064 CLP</span>
-        </a>
-      </div>
-      <div class="fila fila--6">
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Oro</span>
-          <span class="pase__titulo">Dos Días</span>
-          <span class="pase__detalle">Viernes + Sábado<br>No acampar</span>
-          <span class="pase__precio">$369.562 CLP</span>
-        </a>
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Oro</span>
-          <span class="pase__titulo">Dos Días</span>
-          <span class="pase__detalle">Sábado + Domingo<br>No acampar</span>
-          <span class="pase__precio">$404.668 CLP</span>
-        </a>
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Oro</span>
-          <span class="pase__titulo">Tres Días</span>
-          <span class="pase__detalle">Viernes + Sábado + Domingo<br>No acampar</span>
-          <span class="pase__precio">$549.790 CLP</span>
-        </a>
-      </div>
-      <div class="fila fila--7">
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Estándar</span>
-          <span class="pase__titulo">Viernes</span>
-          <span class="pase__detalle">Día</span>
-          <span class="pase__precio">$171.485 CLP</span>
-        </a>
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Estándar</span>
-          <span class="pase__titulo">Sábado</span>
-          <span class="pase__detalle">Día</span>
-          <span class="pase__precio">$180.954 CLP</span>
-        </a>
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Estándar</span>
-          <span class="pase__titulo">Domingo</span>
-          <span class="pase__detalle">Día</span>
-          <span class="pase__precio">$180.954 CLP</span>
-        </a>
-      </div>
-      <div class="fila fila--8">
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Oro</span>
-          <span class="pase__titulo">Viernes</span>
-          <span class="pase__detalle">Día</span>
-          <span class="pase__precio">$171.485 CLP</span>
-        </a>
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Oro</span>
-          <span class="pase__titulo">Sábado</span>
-          <span class="pase__detalle">Día</span>
-          <span class="pase__precio">$263.744 CLP</span>
-        </a>
-        <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__nivel">Oro</span>
-          <span class="pase__titulo">Domingo</span>
-          <span class="pase__detalle">Día</span>
-          <span class="pase__precio">$217.269 CLP</span>
-        </a>
-      </div>
-      <div class="fila fila--extras">
-        <a class="pase pase--extra" href="https://www.biggreencoach.co.uk/events/creamfields-festival-ticket-and-coach-travel/" target="_blank" rel="noopener">
-          <span class="pase__titulo pase__titulo--extra">Gran<br>entrenador<br>verde</span>
-          <span class="pase__detalle pase__detalle--extra">Paquetes de viaje neutros en carbono</span>
-        </a>
-        <a class="pase pase--extra" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__titulo pase__titulo--extra">Autobús de<br>enlace</span>
-          <span class="pase__detalle pase__detalle--extra">Reserva tus entradas con antelación</span>
-        </a>
-        <a class="pase pase--extra" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
-          <span class="pase__titulo pase__titulo--extra">Aparcamiento<br>para coches</span>
-          <span class="pase__detalle pase__detalle--extra">Reserva ahora</span>
-        </a>
-      </div>
+    <section class="pases" aria-labelledby="titulo-pases">
+      <h2 class="solo-lectores" id="titulo-pases">Entradas disponibles</h2>
+      <ul class="fila fila--1" aria-label="Pases Estándar con camping">
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Estándar</p>
+            <h3 class="pase__titulo">Dos Días</h3>
+            <p class="pase__detalle">Sábado + Domingo<br>Camping</p>
+            <p class="pase__precio">$356.596 CLP</p>
+          </a>
+        </li>
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Estándar</p>
+            <h3 class="pase__titulo">Tres Días</h3>
+            <p class="pase__detalle">Viernes + Sábado + Domingo<br>Camping</p>
+            <p class="pase__precio">$356.596 CLP</p>
+          </a>
+        </li>
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Estándar</p>
+            <h3 class="pase__titulo">Cuatro Días</h3>
+            <p class="pase__detalle">Camping</p>
+            <p class="pase__precio">$421.431 CLP</p>
+          </a>
+        </li>
+      </ul>
+      <ul class="fila fila--2" aria-label="Pases Bronce con camping">
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Bronce</p>
+            <h3 class="pase__titulo">Dos Días</h3>
+            <p class="pase__detalle">Sábado + Domingo<br>Camping</p>
+            <p class="pase__precio">$404.668 CLP</p>
+          </a>
+        </li>
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Bronce</p>
+            <h3 class="pase__titulo">Tres Días</h3>
+            <p class="pase__detalle">Viernes + Sábado + Domingo<br>Camping</p>
+            <p class="pase__precio">$447.365 CLP</p>
+          </a>
+        </li>
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Bronce</p>
+            <h3 class="pase__titulo">Cuatro Días</h3>
+            <p class="pase__detalle">Camping</p>
+            <p class="pase__precio">$473.299 CLP</p>
+          </a>
+        </li>
+      </ul>
+      <ul class="fila fila--3" aria-label="Pases Plata con camping">
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Plata</p>
+            <h3 class="pase__titulo">Dos Días</h3>
+            <p class="pase__detalle">Sábado + Domingo<br>Camping</p>
+            <p class="pase__precio">$434.398 CLP</p>
+          </a>
+        </li>
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Plata</p>
+            <h3 class="pase__titulo">Tres Días</h3>
+            <p class="pase__detalle">Viernes + Sábado + Domingo<br>Camping</p>
+            <p class="pase__precio">$472.956 CLP</p>
+          </a>
+        </li>
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Plata</p>
+            <h3 class="pase__titulo">Cuatro Días</h3>
+            <p class="pase__detalle">Camping</p>
+            <p class="pase__precio">$512.202 CLP</p>
+          </a>
+        </li>
+      </ul>
+      <ul class="fila fila--4" aria-label="Pases Oro con camping">
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Oro</p>
+            <h3 class="pase__titulo">Dos Días</h3>
+            <p class="pase__detalle">Sábado + Domingo<br>Camping</p>
+            <p class="pase__precio">$486.268 CLP</p>
+          </a>
+        </li>
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Oro</p>
+            <h3 class="pase__titulo">Tres Días</h3>
+            <p class="pase__detalle">Viernes + Sábado + Domingo<br>Camping</p>
+            <p class="pase__precio">$550.346 CLP</p>
+          </a>
+        </li>
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Oro</p>
+            <h3 class="pase__titulo">Cuatro Días</h3>
+            <p class="pase__detalle">Camping</p>
+            <p class="pase__precio">$610.233 CLP</p>
+          </a>
+        </li>
+      </ul>
+      <ul class="fila fila--5" aria-label="Pases Estándar sin camping">
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Estándar</p>
+            <h3 class="pase__titulo">Dos Días</h3>
+            <p class="pase__detalle">Viernes + Sábado<br>No acampar</p>
+            <p class="pase__precio">$256.534 CLP</p>
+          </a>
+        </li>
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Estándar</p>
+            <h3 class="pase__titulo">Dos Días</h3>
+            <p class="pase__detalle">Sábado + Domingo<br>No acampar</p>
+            <p class="pase__precio">$290.463 CLP</p>
+          </a>
+        </li>
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Estándar</p>
+            <h3 class="pase__titulo">Tres Días</h3>
+            <p class="pase__detalle">Viernes + Sábado + Domingo<br>No acampar</p>
+            <p class="pase__precio">$388.064 CLP</p>
+          </a>
+        </li>
+      </ul>
+      <ul class="fila fila--6" aria-label="Pases Oro sin camping">
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Oro</p>
+            <h3 class="pase__titulo">Dos Días</h3>
+            <p class="pase__detalle">Viernes + Sábado<br>No acampar</p>
+            <p class="pase__precio">$369.562 CLP</p>
+          </a>
+        </li>
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Oro</p>
+            <h3 class="pase__titulo">Dos Días</h3>
+            <p class="pase__detalle">Sábado + Domingo<br>No acampar</p>
+            <p class="pase__precio">$404.668 CLP</p>
+          </a>
+        </li>
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Oro</p>
+            <h3 class="pase__titulo">Tres Días</h3>
+            <p class="pase__detalle">Viernes + Sábado + Domingo<br>No acampar</p>
+            <p class="pase__precio">$549.790 CLP</p>
+          </a>
+        </li>
+      </ul>
+      <ul class="fila fila--7" aria-label="Pases Estándar por día">
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Estándar</p>
+            <h3 class="pase__titulo">Viernes</h3>
+            <p class="pase__detalle">Día</p>
+            <p class="pase__precio">$171.485 CLP</p>
+          </a>
+        </li>
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Estándar</p>
+            <h3 class="pase__titulo">Sábado</h3>
+            <p class="pase__detalle">Día</p>
+            <p class="pase__precio">$180.954 CLP</p>
+          </a>
+        </li>
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Estándar</p>
+            <h3 class="pase__titulo">Domingo</h3>
+            <p class="pase__detalle">Día</p>
+            <p class="pase__precio">$180.954 CLP</p>
+          </a>
+        </li>
+      </ul>
+      <ul class="fila fila--8" aria-label="Pases Oro por día">
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Oro</p>
+            <h3 class="pase__titulo">Viernes</h3>
+            <p class="pase__detalle">Día</p>
+            <p class="pase__precio">$171.485 CLP</p>
+          </a>
+        </li>
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Oro</p>
+            <h3 class="pase__titulo">Sábado</h3>
+            <p class="pase__detalle">Día</p>
+            <p class="pase__precio">$263.744 CLP</p>
+          </a>
+        </li>
+        <li>
+          <a class="pase" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <p class="pase__nivel">Oro</p>
+            <h3 class="pase__titulo">Domingo</h3>
+            <p class="pase__detalle">Día</p>
+            <p class="pase__precio">$217.269 CLP</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="servicios" aria-labelledby="titulo-servicios">
+      <h2 class="solo-lectores" id="titulo-servicios">Servicios adicionales</h2>
+      <ul class="fila fila--extras">
+        <li>
+          <a class="pase pase--extra" href="https://www.biggreencoach.co.uk/events/creamfields-festival-ticket-and-coach-travel/" target="_blank" rel="noopener">
+            <h3 class="pase__titulo pase__titulo--extra">Gran<br>entrenador<br>verde</h3>
+            <p class="pase__detalle pase__detalle--extra">Paquetes de viaje neutros en carbono</p>
+          </a>
+        </li>
+        <li>
+          <a class="pase pase--extra" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <h3 class="pase__titulo pase__titulo--extra">Autobús de<br>enlace</h3>
+            <p class="pase__detalle pase__detalle--extra">Reserva tus entradas con antelación</p>
+          </a>
+        </li>
+        <li>
+          <a class="pase pase--extra" href="https://www.ticketmaster.co.uk/creamfields-2027-tickets/artist/29232" target="_blank" rel="noopener">
+            <h3 class="pase__titulo pase__titulo--extra">Aparcamiento<br>para coches</h3>
+            <p class="pase__detalle pase__detalle--extra">Reserva ahora</p>
+          </a>
+        </li>
+      </ul>
     </section>
 
     <section class="agentes">
@@ -225,16 +288,26 @@
         <a href="index.html"><img class="pie__logo" src="assets/img/logo-creamfields.png" alt="Creamfields, volver al inicio"></a>
         <p class="pie__creditos">Diseño y Desarrollo: Camila Canales · Catalina Ibarra<br>Renata Moraga · Juan Ignacio Muñoz · 2026</p>
       </div>
-      <div class="redes">
-        <a class="red" href="https://www.facebook.com/OfficialCreamfields" target="_blank" rel="noopener" aria-label="Facebook">
-          <img class="red__icono red__icono--facebook" src="assets/img/icono-facebook.png" alt=""></a>
-        <a class="red red--instagram" href="https://www.instagram.com/creamfieldsofficial" target="_blank" rel="noopener" aria-label="Instagram">
-          <img class="red__icono red__icono--instagram" src="assets/img/icono-instagram.png" alt=""></a>
-        <a class="red red--youtube" href="https://www.youtube.com/channel/UC7RZ3YtxzlR61_3kfjdolAA" target="_blank" rel="noopener" aria-label="YouTube">
-          <img class="red__icono red__icono--youtube" src="assets/img/icono-youtube.png" alt=""></a>
-        <a class="red red--tiktok" href="https://www.tiktok.com/@creamfieldsofficial?lang=en" target="_blank" rel="noopener" aria-label="TikTok">
-          <img class="red__icono red__icono--tiktok" src="assets/img/icono-tiktok.png" alt=""></a>
-      </div>
+      <nav class="redes" aria-label="Redes sociales">
+        <ul class="redes__lista">
+          <li class="red">
+            <a class="red__enlace" href="https://www.facebook.com/OfficialCreamfields" target="_blank" rel="noopener" aria-label="Facebook">
+              <img class="red__icono red__icono--facebook" src="assets/img/icono-facebook.png" alt=""></a>
+          </li>
+          <li class="red red--instagram">
+            <a class="red__enlace" href="https://www.instagram.com/creamfieldsofficial" target="_blank" rel="noopener" aria-label="Instagram">
+              <img class="red__icono red__icono--instagram" src="assets/img/icono-instagram.png" alt=""></a>
+          </li>
+          <li class="red red--youtube">
+            <a class="red__enlace" href="https://www.youtube.com/channel/UC7RZ3YtxzlR61_3kfjdolAA" target="_blank" rel="noopener" aria-label="YouTube">
+              <img class="red__icono red__icono--youtube" src="assets/img/icono-youtube.png" alt=""></a>
+          </li>
+          <li class="red red--tiktok">
+            <a class="red__enlace" href="https://www.tiktok.com/@creamfieldsofficial?lang=en" target="_blank" rel="noopener" aria-label="TikTok">
+              <img class="red__icono red__icono--tiktok" src="assets/img/icono-tiktok.png" alt=""></a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </footer>
 

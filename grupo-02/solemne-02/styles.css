@@ -26,7 +26,6 @@
 html { scroll-behavior: smooth; }
 
 body {
-  min-width: var(--ancho-diseno);
   font-family: var(--fuente);
   color: var(--blanco);
   -webkit-font-smoothing: antialiased;
@@ -47,7 +46,8 @@ a { color: inherit; text-decoration: none; }
 
 /* ancho del diseño */
 .contenedor {
-  width: var(--ancho-diseno);
+  width: 100%;
+  max-width: var(--ancho-diseno);
   margin-left: auto;
   margin-right: auto;
 }
@@ -62,17 +62,17 @@ a { color: inherit; text-decoration: none; }
 .solo-lectores {
   width: 0.0625rem;
   height: 0.0625rem;
-  margin: -0.0625rem;
+  margin: 0 0 -0.0625rem;
   overflow: hidden;
   clip-path: inset(50%);
   white-space: nowrap;
 }
 
-/* encabezado (menú y portada) */
+/* encabezado (logo y menú) y portada */
 
 /* fondo animado gif */
 .portada {
-  height: 58.8125rem;
+  height: 53.6875rem;
   background-image:
     url("assets/img/fondo-hero.gif"),
     url("assets/img/fondo-degradado.jpg");
@@ -131,7 +131,7 @@ a { color: inherit; text-decoration: none; }
 .menu__enlace--entradas { width: 8.3125rem; }
 .menu__enlace--noticias { width: 7.75rem; }
 
-/* ---------- Hero ---------- */
+/* Hero */
 .hero {
   display: flex;
   flex-direction: column;
@@ -229,7 +229,7 @@ a { color: inherit; text-decoration: none; }
   color: var(--amarillo);
 }
 
-/* CARRUSEL */
+/* carrusel */
 .carrusel {
   margin-top: 11rem;
   margin-left: 3.375rem;
@@ -243,10 +243,15 @@ a { color: inherit; text-decoration: none; }
   gap: 3.3125rem;
 }
 
-.carrusel__foto {
+.carrusel__item {
   flex: none;
   width: 35rem;
   height: 35rem;
+}
+
+.carrusel__foto {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -288,28 +293,26 @@ a { color: inherit; text-decoration: none; }
   margin-top: 6.3125rem;
   margin-left: 7.4375rem;
   width: 65.4375rem;
+  list-style: none;
 }
 
-.artista {
-  display: flex;
-  justify-content: center;
+.artista__enlace { display: block; }
+
+.artista__figura {
   width: 31rem;
   height: 37.0625rem;
-  padding-top: 1.4375rem;
-  background-position: center;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  
+}
+
+.artista__foto {
+  width: 100%;
+  height: 100%;
 }
 
 
-.artista--prodigio { background-image: url("assets/img/lineup-el-prodigio.jpg"); }
-.artista--rizardo  { background-image: url("assets/img/lineup-franky-rizardo.jpg"); }
-.artista--carola   { background-image: url("assets/img/lineup-marco-carola.jpg"); }
-.artista--laing    { background-image: url("assets/img/lineup-hannah-laing.jpg"); }
-.artista--jones    { background-image: url("assets/img/lineup-jamie-jones.jpg"); }
-
 .artista__nombre {
+  margin-top: -119.5565%;
+  padding-top: 1.4375rem;
+  text-align: center;
   font-weight: 700;
   font-size: 2rem;
   line-height: 2.0625rem;
@@ -334,17 +337,38 @@ a { color: inherit; text-decoration: none; }
   height: 39.75rem;
   margin-top: 4rem;
   margin-left: 4.6875rem;
-  padding-bottom: 1.875rem;
-  background-position: center;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  transition: background-size .5s cubic-bezier(.22, 1, .36, 1);
+  overflow: hidden;
 }
-.noticia:hover { background-size: 104.8% 104.8%; }
 
-.noticia--1 { margin-top: 3rem; background-image: url("assets/img/noticia-1.jpg"); }
-.noticia--2 { background-image: url("assets/img/noticia-2.jpg"); }
-.noticia--3 { background-image: url("assets/img/noticia-3.jpg"); }
+.noticia--1 { margin-top: 3rem; }
+
+/* foto de la noticia */
+.noticia__figura {
+  flex: none;
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* fecha y título */
+.noticia__encabezado {
+  flex: none;
+  display: flex;
+  align-items: flex-end;
+  margin-left: -100%;
+  padding-bottom: 1.875rem;
+}
+
+/* efecto foto que crece */
+.noticia__foto {
+  flex: none;
+  width: 100%;
+  height: 100%;
+  transition: width .5s cubic-bezier(.22, 1, .36, 1), height .5s cubic-bezier(.22, 1, .36, 1);
+}
+.noticia:hover .noticia__foto { width: 104.8%; height: 104.8%; }
 
 .noticia__fecha {
   width: 8.5rem;
@@ -482,12 +506,18 @@ a { color: inherit; text-decoration: none; }
 }
 
 .redes {
-  display: flex;
-  align-items: center;
   margin-left: auto;
   margin-right: 2.375rem;
   padding-top: 0.125rem;
 }
+
+.redes__lista {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.red__enlace { display: block; }
 
 
 .red--instagram { margin-left: 0.75rem; }
@@ -521,11 +551,11 @@ a { color: inherit; text-decoration: none; }
   justify-content: space-between;
   height: 52.625rem;
   margin-top: -52.625rem;
-  z-index: 1;
 }
 
-/* Ícono volver al inicio */
+/* ícono volver al inicio */
 .volver {
+  display: block;
   width: 3.75rem;
   height: 3.1875rem;
   margin-left: 1.8125rem;
@@ -559,17 +589,18 @@ a { color: inherit; text-decoration: none; }
 .control__icono--play   { width: 3.6875rem; height: 3.6875rem; }
 .control__icono--sonido { width: 4.3125rem; height: 4.3125rem; }
 
-/* Tarjetas */
+/* tarjetas */
 .pases {
   display: flex;
   flex-direction: column;
 }
 
-/* filas: 3 tarjetas */
+/* filas: de 3 tarjetas */
 .fila {
   display: flex;
   gap: 4.625rem;
   margin-left: 7.8125rem;
+  list-style: none;
 }
 
 /* foto de fondo tarjetas */
@@ -624,7 +655,7 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.25rem;
 }
 
-/* Tarjetas de servicios (azules) */
+/* tarjetas de servicios (azules) */
 .pase--extra { padding-top: 4.4375rem; }
 .pase__titulo--extra { height: 8.0625rem; margin-top: 0; }
 .pase__detalle--extra { margin-top: 0; padding: 0 1.125rem; white-space: normal; }
@@ -708,7 +739,7 @@ a { color: inherit; text-decoration: none; }
   --foto: url("assets/img/entradas-r9-extras.jpg");
 }
 
-/* Agentes de venta autorizados */
+/* agentes de venta autorizados */
 .agentes {
   display: flex;
   flex-direction: column;
@@ -742,7 +773,12 @@ a { color: inherit; text-decoration: none; }
 }
 .agentes__enlace:hover { color: var(--amarillo); }
 
-/* Accesibilidad: sin animaciones si es que el usuario lo tiene activado */
+
+
+
+
+
+/* accesibilidad: sin animaciones si es que el usuario lo tiene activado */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
   html { scroll-behavior: auto; }
@@ -750,10 +786,7 @@ a { color: inherit; text-decoration: none; }
 
 /* diseño adaptable */
 
-body { min-width: 0; }
-.contenedor { width: 100%; max-width: var(--ancho-diseno); }
-
-/* Pantallas medianas: la página se achica por escalones */
+/* Pantallas medianas */
 @media (max-width: 81rem) { html { font-size: 87.5%; } }   /* menos de 1296 px */
 @media (max-width: 71rem) { html { font-size: 75%; } }     /* menos de 1136 px */
 @media (max-width: 61rem) {                                 /* menos de 976 px */
@@ -769,7 +802,7 @@ body { min-width: 0; }
   .contenedor { padding-left: 1.6rem; padding-right: 1.6rem; }
   .contenido { align-items: stretch; }
 
-  /* Menú: logo arriba y enlaces debajo, centrados */
+  /* Menú */
   .barra-superior { height: auto; padding-bottom: 1.2rem; }
   .barra-superior__contenido { flex-direction: column; align-items: center; }
   .logo { margin: 1.2rem 0 0; }
@@ -778,7 +811,7 @@ body { min-width: 0; }
   .menu__enlace--entradas,
   .menu__enlace--noticias { width: auto; }
 
-  /* Hero en una columna */
+  /* Hero */
   .portada { height: auto; }
   .portada__vidrio { padding-bottom: 4rem; }
   .hero { align-items: center; text-align: center; }
@@ -790,7 +823,7 @@ body { min-width: 0; }
   .hero__columna--izquierda { width: auto; }
   .boton-entradas { margin: 3.2rem 0 0; }
 
-  /* Carrusel: una foto a la vez */
+  /* Carruselz */
   .carrusel { width: 100%; height: auto; margin: 4rem 0 0; overflow: visible; }
   .carrusel__pista {
     transform: none !important;   /* anula el movimiento automático de script.js */
@@ -798,7 +831,7 @@ body { min-width: 0; }
     scroll-snap-type: x mandatory;
     gap: 1.6rem;
   }
-  .carrusel__foto { width: 100%; height: auto; aspect-ratio: 1; scroll-snap-align: start; }
+  .carrusel__item { width: 100%; height: auto; aspect-ratio: 1; scroll-snap-align: start; }
 
   /* Títulos de sección */
   .titulo-seccion { max-width: 100%; white-space: normal; }
@@ -806,30 +839,29 @@ body { min-width: 0; }
   .titulo-seccion--noticias,
   .titulo-seccion--app { margin-left: 0; }
 
-  /* Line up: un artista por fila */
+  /* Line up */
   .lineup, .noticias, .app { margin-top: 6rem; }
   .lineup__intro { margin: 3.2rem 0 0; width: 100%; }
   .lineup__artistas { flex-direction: column; gap: 2.4rem; margin: 3.2rem 0 0; width: 100%; }
-  .artista { width: 100%; height: auto; aspect-ratio: 496 / 593; }
+  .artista { width: 100%; }
+  .artista__figura { width: 100%; height: auto; aspect-ratio: 496 / 593; }
+  .artista__foto { height: auto; aspect-ratio: 496 / 593; }
 
-  /* Noticias: fecha y título uno debajo del otro */
+  /* Noticias */
   .noticia {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
     width: 100%;
     height: auto;
     aspect-ratio: 1130 / 636;
     margin: 2.4rem 0 0;
-    padding: 1.6rem;
   }
+  .noticia__encabezado { flex-direction: column; align-items: flex-start; width: 100%; padding: 1.6rem; }
   .noticia__fecha { width: auto; margin: 0 0 0.8rem; }
   .noticia__titulo { margin: 0; font-size: 2.2rem; line-height: 2.4rem; white-space: normal; }
   .noticia__titulo--1,
   .noticia__titulo--2,
   .noticia__titulo--3 { margin-left: 0; }
 
-  /* Botones de la app a todo el ancho */
+  /* Botones */
   .boton-app { width: 100%; height: auto; margin-left: 0; padding: 1.6rem; font-size: 2rem; line-height: 2.4rem; }
   .boton-app--apple { margin-top: 3.2rem; }
   .boton-app--android { margin-top: 1.6rem; }
@@ -837,11 +869,11 @@ body { min-width: 0; }
   .boton-app__texto--android { width: 100%; height: auto; white-space: normal; padding-bottom: 0.8rem; }
   .app__lista { margin: 3.2rem 0 0; width: 100%; }
 
-  /* Partners: los logos se achican para caber */
+  /* Partners */
   .partners { margin-top: 6rem; }
   .partners__fila { max-width: 100%; height: auto; }
 
-  /* Pie de página centrado */
+  /* Pie de página */
   .pie { height: auto; margin-top: 6rem; padding: 1.6rem 0; }
   .pagina-entradas .pie { margin-top: 6rem; }
   .pie__contenido { flex-direction: column; gap: 1.2rem; height: auto; }
