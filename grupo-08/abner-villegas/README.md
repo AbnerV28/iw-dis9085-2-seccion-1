@@ -1,6 +1,6 @@
 # Bitácora de Proceso Individual — Solemne 2
 
-## 1. ¿Qué hice en el sitio?
+## ¿Qué hice en el sitio?
 
 Para esta entrega trabajamos en equipo dividiéndonos las tareas según las fortalezas de cada uno. Todo partió desde la propuesta gráfica que diseñamos en Figma para la marca **MAREA**. A partir de ese prototipo, un integrante de nuestro grupo se encargó de armar la versión inicial del sitio web pensado para pantallas de escritorio (*desktop*). 
 
@@ -17,7 +17,7 @@ De manera concreta, mis tareas en el proyecto fueron:
 
 ---
 
-## 2. ¿Qué dificultades tuve y cómo las resolví?
+## ¿Qué dificultades tuve y cómo las resolví?
 
 Adaptar la página desde la versión de escritorio a celular fue bastante más complejo de lo que me imaginaba en un principio. Pasar de un espacio ancho donde todo cabe cómodamente a una pantalla vertical estrecha requirió reestructurar varias partes del código.
 
@@ -105,6 +105,7 @@ Hacer este traspaso de escritorio a celular y trabajar codo a codo con mi grupo 
 
 https://github.com/user-attachments/assets/3d914126-2330-4ee9-b71d-c254d28a13a9
 
+###### se organizó este trabajo a modo git hub, para más orden :)
 Uso de herramientas :
 # FIGMA
 # VSC
