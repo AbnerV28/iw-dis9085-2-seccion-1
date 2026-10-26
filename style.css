@@ -253,9 +253,3 @@ footer {
         padding: 15px;
     }
 }
-
-.group-card.is-empty {
-    border-style: dashed;
-    color: var(--muted);
-    background: transparent;
-}
