@@ -116,6 +116,7 @@ Uso de herramientas :
 # Exámen 
 # Bitácora de Proceso Individual — Portafolio Personal 
 
+https://www.figma.com/design/ZJYsKjWZMWz0gF1hA8Y8Vw/Ex%C3%A1men-Portafolio?node-id=1-3&t=aaQq2KJx1HjkrCsv-1
 ---
 
 ## 1. ¿Qué hice en el sitio?
