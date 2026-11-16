@@ -23,3 +23,6 @@ https://mindsparklemag.com/
 https://flaviahodel.xyz/
 
 Figma:https://www.figma.com/design/C8ll3cx4dvcGYbk6X9QJTv/Sin-t%C3%ADtulo?timeline=keyframe&node-id=0-1&p=f&t=XwzOj6TJQlQlXMJN-0 
+
+Clase 16 de noviembre: hice las correcciones a la bitácora, dibujé la primera piedra de amatista, avancé con las animaciones 
+
