@@ -28,7 +28,7 @@ Portafolio web interactivo que refleja mi identidad como diseñadora industrial,
 * **Portada:** a la derecha del titular está la ventana `pieza-interactiva`, que muestra la foto de un proyecto. El botón "ver otra ↻" la cambia por otra y, al hacer clic en la foto, se abre ese proyecto. Es el "objeto para jugar" de entrada.
   > Dock flotante: abajo de la pantalla hay un dock fijo con tres accesos (trabajos, sobre mí y contacto). Se marca en azul según la sección en que estás y muestra el nombre al pasar el mouse. En mobile reemplaza al menú.
   > Elementos arrastrables: en la portada y en "sobre mí" las ventanas (`notas.txt`, `sobre-mi.txt`, `contacto`, `explorando.txt`, `fuera-del-taller.txt`) se pueden arrastrar con el mouse o el dedo, como las fotos y stickers de su sitio.
-  > Lo que no tomé: el llavero colgante de su portada. Lo descarté porque se parecía demasiado a su trabajo (ver "Uso de IA").
+  > Lo que no tomé: el llavero colgante de su portada. Lo descarté porque se parecía demasiado a su trabajo.
 
 ### Feather Computer ([feather.computer](https://feather.computer/)): organización táctil de espacio y archivos
 
