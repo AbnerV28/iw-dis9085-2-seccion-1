@@ -1,3 +1,5 @@
+LINK FIGMA: https://www.figma.com/design/C8ll3cx4dvcGYbk6X9QJTv/Sin-t%C3%ADtulo?node-id=0-1&t=XwzOj6TJQlQlXMJN-1
+
 Este proyecto es sobre mis trabajos en la universidad y sobre quien soy, también quiero hacer otro apartado para mis dibujos.
 Para la estética las imágenes quiero que las imágenes de fondo sean borrosas, y que den un guiño a un bosque mágico, 
 para los íconos quiero utilizar piedras distintas, por ejemplo poner un cuarzo y que al pasar el cursor aparezca trabajos 
@@ -21,8 +23,6 @@ https://mindsparklemag.com/
 
 3. De este portafolio me gusta la animación, la manera en que se mueven los elementos y pienso que puedo hacerlo con las piedras. 
 https://flaviahodel.xyz/
-
-Figma:https://www.figma.com/design/C8ll3cx4dvcGYbk6X9QJTv/Sin-t%C3%ADtulo?timeline=keyframe&node-id=0-1&p=f&t=XwzOj6TJQlQlXMJN-0 
 
 Clase 16 de noviembre: hice las correcciones a la bitácora, dibujé la primera piedra de amatista, avancé con las animaciones 
 
