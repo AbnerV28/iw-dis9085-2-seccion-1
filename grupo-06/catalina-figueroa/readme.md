@@ -1,5 +1,8 @@
 Bitácora exámen Catalina Figueroa
 
+**Link de figma:
+https://www.figma.com/design/SXMRTukRwmBfbdIrLTdNKg/catalina-figueroa-ex%C3%A1men-web?node-id=18-232&t=U2rwDPQBQUhJhBDC-1  
+
 **Descripción
 Este proyecto consiste en diseñar y desarrollar una página web que funcione como portafolio personal, donde se presenten mis trabajos y proyectos realizados durante mi formación como estudiante de Diseño. A través de una propuesta visual y digital, se busca mostrar mi estilo, habilidades, intereses y proceso creativo, organizando los proyectos de manera atractiva y fácil de explorar.
 **Referentes 
@@ -20,6 +23,16 @@ De este rescato la textura del lápiz en el título y también el recurso de un 
 Imagen (referente2.png)
 De este referente rescato el uso de semitono en la imagen que le otorga más textura y dimensión, también las letras irregulares combinadas con una tipografía recta y pesada.
 Imagen (referente3.jpeg)
-En este referente rescato el color rojo vibrante y la superposición del trazo del lápiz que  interactúa con la imagen.
-**Link de figma:
-https://www.figma.com/design/SXMRTukRwmBfbdIrLTdNKg/ex%C3%A1men-web-portafolio?node-id=0-1&p=f&t=U7yTBAcm8EwlPOJd-0 
+En este referente rescato el color rojo vibrante y la superposición del trazo del lápiz que  interactúa con la imagen. 
+
+Avance para el 16/11
+Mejora de la bitácora según correcciones de la clase pasada, por ejemplo ser más especifica con las referencias y que rescataba de ellas, aunque ya en el proceso ma alejé un poco de las referencias originales y del wireframe de baja calidad ya que al ir diseñado fui incorporando cosas nuevas aunque la estructura base sigue siendo parecida, decidí incorporar diseños de puntos ornamentales para darle una sensibilidad que juegue con los elementos más digitales. 
+Usé IA para crear la base del html 
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Catalina Figueroa</title>
+</head>
