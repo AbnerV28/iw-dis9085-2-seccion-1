@@ -48,6 +48,7 @@ En la plataforma Pinterest encontré varias referencias de lo visual para mi pro
 Hoy tuvimos retroalimentación de nuestros avances.
 
 Hasta el momento voy bien, cumplí con lo solicitado el día de hoy. La profe me hizo sugerencias a cerca de realizar en vectores el tema de las carpetas estilo computador. Fuera de eso la gama de colores bien y el uso de la tipografía esta bien, ya que se usa bastante en páginas webs y es legible.
+
 ---
 
 ## Avance 2 (16 noviembre)
