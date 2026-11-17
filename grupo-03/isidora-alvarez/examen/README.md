@@ -59,10 +59,6 @@ Estos referentes los sumé para la versión 2, más cercana a la estética Y2K y
 
 > Nota: el portafolio está hecho en HTML, CSS y JavaScript sin frameworks. De estas librerías tomé ideas visuales y de movimiento, no código: no usé React ni Tailwind.
 
-# **Link del Proyecto**
-
-Figma: https://www.figma.com/design/ADbrbFWVOeJkBakvKcFPj6/Portafolio?node-id=13-2&t=e0T13zWepxYbe2lY-1
-
 # **Uso de IA**
 
 * **Para qué la usé:** me ayudó a ver qué ideas podía usar a partir de mis referentes y mis gustos, a elegir una paleta con mis imágenes de Pinterest.
