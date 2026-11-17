@@ -1,33 +1,14 @@
-/* =========================================================
-   style.css — Portafolio Isidora Álvarez 2026
-   Único archivo de estilos del sitio.
-
-   ÍNDICE
-   01. Tokens (colores, tipografías, sombras)
-   02. Base
-   03. Utilidades tipográficas
-   04. Barra superior macOS (.barra + .tb--menu)
-   05. Botones · pill · fichas
-   06. Ventana macOS (.win + .tb)
-   07. Portada (titular dinámico + escritorio)
-   08. Trabajos (filtros + .srow + estampillas .sx)
-   09. About Me y contacto
-   10. Pie + dock
-   11. Detalle de proyecto (ventana .win--detalle)
-   12. Animaciones
-   13. Responsive
-   ========================================================= */
-
+/* Portafolio Isidora Álvarez 2026 */
 
 /* ---------- 01. Tokens ---------- */
 :root {
   /* Paleta */
-  --plata:   #E7E8E4;   /* fondo base: gris sofisticado */
-  --elusion: #D0CFCD;   /* gris de soporte */
-  --rio:     #44779A;   /* acento: azul industrial */
-  --noche:   #232422;   /* texto: negro suave */
-  --seared:  #495155;   /* texto secundario */
-  --bata:    #717476;   /* bordes finos */
+  --plata:   #E7E8E4;
+  --elusion: #D0CFCD;
+  --rio:     #44779A;
+  --noche:   #232422;
+  --seared:  #495155;
+  --bata:    #717476;
 
   /* Tipografías */
   --f-serif: "Instrument Serif", Georgia, serif;
@@ -80,7 +61,7 @@ ul { list-style: none; }
 
 
 /* ---------- 03. Utilidades tipográficas ---------- */
-.etiqueta {                 /* metadato grande: "Nº00 — PORTAFOLIO 2026" */
+.etiqueta {
   font-family: var(--f-mono);
   font-size: 12px;
   line-height: 1.2;
@@ -89,7 +70,7 @@ ul { list-style: none; }
   color: var(--rio);
 }
 
-.mono {                     /* metadato chico */
+.mono {
   font-family: var(--f-mono);
   font-size: 11px;
   line-height: 1.2;
@@ -101,7 +82,7 @@ ul { list-style: none; }
 .cuerpo   { font-size: 18px; line-height: 1.4; }
 .cuerpo-s { font-size: 16px; line-height: 1.4; }
 
-.titulo-xl {                /* "trabajos" */
+.titulo-xl {
   font-family: var(--f-serif);
   font-weight: 400;
   font-size: clamp(72px, 8.9vw, 128px);
@@ -110,7 +91,7 @@ ul { list-style: none; }
   color: var(--rio);
 }
 
-.titulo-l {                 /* "sobre mí y contacto" */
+.titulo-l {
   font-family: var(--f-sans);
   font-weight: 400;
   font-size: clamp(44px, 5.3vw, 76px);
@@ -139,7 +120,7 @@ ul { list-style: none; }
   overflow: hidden;
 }
 
-/* Barra de menú (.tb--menu) */
+/* Barra de menú */
 .tb--menu {
   height: 30px;
   display: flex;
@@ -237,7 +218,7 @@ ul { list-style: none; }
 
 /* ---------- 06. Ventana macOS (.win) ---------- */
 .win {
-  position: relative;               /* para el z-index al arrastrar */
+  position: relative;
   display: flex;
   flex-direction: column;
   background: var(--plata);
@@ -292,7 +273,7 @@ ul { list-style: none; }
 }
 .tb__cerrar:hover { background: var(--noche); color: var(--plata); }
 
-/* Arrastre (lo activa script.js) */
+/* Arrastre */
 [data-arrastrable] .tb { cursor: grab; touch-action: none; }
 .win.arrastrando { box-shadow: var(--sombra-win-h); border-color: var(--rio); transition: none; }
 .win.arrastrando .tb { cursor: grabbing; }
@@ -358,7 +339,7 @@ ul { list-style: none; }
 
 .palabra-caja {
   display: inline-block;
-  padding-right: .06em;             /* aire para la cursiva */
+  padding-right: .06em;
   cursor: pointer;
   transition: width .55s var(--ease);
 }
@@ -402,6 +383,7 @@ ul { list-style: none; }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 50% 50%;
   opacity: 0;
   transition: opacity .5s ease, transform .8s var(--ease);
 }
@@ -446,7 +428,7 @@ ul { list-style: none; }
 .filtro:hover { border-color: var(--rio); color: var(--rio); }
 .filtro[aria-pressed="true"] { background: var(--rio); border-color: var(--rio); color: var(--plata); }
 
-/* Fila única con scroll horizontal */
+/* Fila de estampillas */
 .srow {
   display: flex;
   margin: 18px calc(var(--margen) * -1) 0;
@@ -491,7 +473,7 @@ ul { list-style: none; }
   transition: transform .4s var(--ease);
 }
 
-/* Papel troquelado (SVG del Figma: normal + hover con borde río) */
+/* Papel troquelado */
 .sx__papel::before,
 .sx__papel::after {
   content: "";
@@ -525,10 +507,11 @@ ul { list-style: none; }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 50% 50%;
+  transform-origin: center;
   transition: transform .6s var(--ease);
   -webkit-user-drag: none;
 }
-.sx__img--contain img { object-fit: contain; }
 .sx__img--vacia { display: grid; place-items: center; }
 
 .sx__pie { display: flex; align-items: flex-end; gap: 8px; margin-top: auto; }
@@ -543,6 +526,7 @@ ul { list-style: none; }
   color: var(--noche);
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -569,7 +553,7 @@ ul { list-style: none; }
   transition: transform var(--rapido) var(--ease), background var(--rapido);
 }
 
-/* Hover: se endereza, sube, escala 1,05, borde río. La foto no pierde nitidez. */
+/* Hover */
 .sx:hover .sx__papel,
 .sx:focus-visible .sx__papel { transform: rotate(0deg) translateY(-10px) scale(1.05); }
 .sx:hover .sx__papel::after,
@@ -579,7 +563,7 @@ ul { list-style: none; }
 .sx:focus-visible .sx__flecha { background: var(--rio); transform: translateX(4px); }
 .sx:active .sx__papel { transform: rotate(0deg) translateY(-6px) scale(1.02); }
 
-/* Barra de progreso del scroll */
+/* Barra de progreso */
 .progreso {
   height: 3px;
   margin-top: 18px;
@@ -668,7 +652,7 @@ ul { list-style: none; }
   background: var(--elusion);
   overflow: hidden;
 }
-.perfil img { width: 100%; height: 100%; object-fit: cover; }
+.perfil img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
 
 .notas { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 
@@ -763,7 +747,7 @@ html.con-modal .dock { opacity: 0; pointer-events: none; transform: translate(-5
 .dock__item:focus-visible .dock__tip { opacity: 1; transform: translate(-50%, 0); }
 
 
-/* ---------- 11. Detalle de proyecto (ventana flotante) ---------- */
+/* ---------- 11. Detalle de proyecto ---------- */
 .detalle {
   position: fixed;
   inset: 0;
@@ -807,7 +791,7 @@ html.con-modal .dock { opacity: 0; pointer-events: none; transform: translate(-5
   gap: 0;
   align-items: stretch;
 }
-.detalle__cuerpo > * { flex-shrink: 0; }   /* que nada se aplaste dentro del scroll */
+.detalle__cuerpo > * { flex-shrink: 0; }
 .detalle__cuerpo > .etiqueta { align-self: flex-start; }
 
 .detalle__titulo {
@@ -847,7 +831,8 @@ html.con-modal .dock { opacity: 0; pointer-events: none; transform: translate(-5
 .detalle__hero img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: 50% 50%;
   transition: opacity .3s ease;
 }
 .detalle__hero img.cambiando { opacity: 0; }
@@ -860,6 +845,29 @@ html.con-modal .dock { opacity: 0; pointer-events: none; transform: translate(-5
   margin-top: 32px;
 }
 .bloque { display: flex; flex-direction: column; gap: 10px; }
+
+/* Créditos de colaboradores */
+.creditos { display: flex; flex-direction: column; gap: 10px; margin-top: 32px; }
+.creditos__lista { display: flex; flex-direction: column; }
+.creditos__fila {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+  padding: 11px 6px;
+  border-bottom: 1px dashed var(--bata);
+}
+.creditos__fila .mono { width: 84px; flex: none; }
+.creditos__nombre { font-size: 16px; }
+.creditos__sep { color: var(--bata); }
+.creditos__link {
+  font-family: var(--f-mono);
+  font-size: 12px;
+  letter-spacing: .04em;
+  color: var(--rio);
+  overflow-wrap: anywhere;
+}
+a.creditos__link:hover { text-decoration: underline; }
 
 /* Proceso — bocetos y croquis */
 .proceso { display: flex; flex-direction: column; gap: 14px; margin-top: 40px; padding-top: 8px; }
@@ -883,7 +891,7 @@ html.con-modal .dock { opacity: 0; pointer-events: none; transform: translate(-5
   background: var(--elusion);
   overflow: hidden;
 }
-.proceso__visual img { width: 100%; height: 100%; object-fit: cover; cursor: zoom-in; }
+.proceso__visual img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; cursor: zoom-in; }
 .proceso__boceto.activo { border-color: var(--rio); }
 .proceso__etiqueta {
   padding: 4px 8px;
@@ -925,7 +933,7 @@ main { animation: entrar .6s var(--ease) backwards; }
 
 /* ---------- 13. Responsive ---------- */
 
-/* Laptop chica: la portada se apila */
+/* Laptop chica */
 @media (max-width: 1180px) {
   .portada { flex-direction: column; gap: 48px; min-height: 0; padding-bottom: 96px; }
   .escritorio { width: 100%; max-width: 640px; align-self: flex-end; }
@@ -947,7 +955,7 @@ main { animation: entrar .6s var(--ease) backwards; }
   body { font-size: 16px; }
   .jbar { height: 26px; font-size: 15px; }
   .tb--menu { gap: 10px; }
-  .tb__link { display: none; }          /* en mobile navega el dock */
+  .tb__link { display: none; }
 
   .portada { padding-top: 32px; gap: 40px; }
   .titular { white-space: normal; }
