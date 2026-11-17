@@ -6,7 +6,6 @@
   <title>Isidora Álvarez — portafolio 2026</title>
   <meta name="description" content="Portafolio de Isidora Álvarez, diseñadora industrial: objetos, mobiliario, electrónica y web.">
 
-  <!-- Tipografías: Instrument Serif (títulos), DM Sans (texto), DM Mono (metadatos) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -37,7 +36,7 @@
 
   <main>
 
-    <!-- ===== 2. Landing con titular dinámico ===== -->
+    <!-- ===== 2. Landing ===== -->
     <section class="portada" id="inicio">
       <div class="portada__texto">
         <p class="etiqueta">Nº00 — portafolio 2026</p>
@@ -63,7 +62,7 @@
         </div>
       </div>
 
-      <!-- Escritorio con ventanas flotantes (se arrastran desde la barra .tb) -->
+      <!-- Escritorio -->
       <div class="escritorio">
         <article class="win win--notas" data-arrastrable>
           <div class="tb"><span class="tb__puntos"><i></i><i></i><i></i></span><span class="tb__titulo">notas.txt</span></div>
@@ -91,7 +90,7 @@
       </div>
     </section>
 
-    <!-- ===== 3. Trabajos: fila única de estampillas perforadas ===== -->
+    <!-- ===== 3. Trabajos ===== -->
     <section class="seccion trabajos" id="trabajos">
       <p class="etiqueta revelar">Nº01 — trabajos</p>
       <h2 class="titulo-xl revelar">trabajos</h2>
@@ -104,14 +103,13 @@
         <button class="filtro" type="button" data-filtro="web" aria-pressed="false">web</button>
       </div>
 
-      <!-- Las estampillas se crean desde PROYECTOS en script.js -->
       <div class="srow" id="srow" tabindex="0" aria-label="Trabajos (desliza horizontalmente)"></div>
       <noscript><p class="mono">Activa JavaScript para ver los trabajos.</p></noscript>
 
       <div class="progreso" aria-hidden="true"><span class="progreso__avance" data-progreso></span></div>
     </section>
 
-    <!-- ===== 4. About Me (al final del recorrido) ===== -->
+    <!-- ===== 4. About Me ===== -->
     <section class="seccion sobre" id="sobre-mi">
       <p class="etiqueta revelar">Nº02 — sobre mí y contacto</p>
       <h2 class="titulo-l revelar">sobre mí y contacto</h2>
@@ -150,7 +148,6 @@
         </div>
 
         <div class="about__col">
-          <!-- Para poner tu foto: reemplaza el <span> por <img src="imagenes/tu-foto.jpeg" alt="Isidora Álvarez"> -->
           <figure class="perfil revelar">
             <span class="mono">[foto de perfil]</span>
           </figure>
@@ -188,7 +185,7 @@
     </a>
   </nav>
 
-  <!-- ===== Detalle de proyecto: ventana flotante (se llena desde script.js) ===== -->
+  <!-- ===== Detalle de proyecto ===== -->
   <div class="detalle" id="detalle" hidden>
     <div class="detalle__fondo" data-cerrar></div>
     <article class="win win--detalle" role="dialog" aria-modal="true" aria-labelledby="detalle-titulo">
