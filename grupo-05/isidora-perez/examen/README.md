@@ -1,6 +1,8 @@
 # Examen Interfaces Web
 
 ## Avance 1 (9 noviembre)
+> Primer avance, hoy presenté todo lo solicitado, el UIKIT no tan avanzado aún, debido a que mientras he ido avanzando en el proyecto, he ido modificando u agregando gamas de colores. Todo lo demás presentado.
+
 ### Link Figma
 
 [Isidora-Pérez](https://www.figma.com/design/KJDPJpzLs1xe5z5ICsl9tP/Examen?node-id=0-1&m=dev&t=AzfJgzHKuymWBI34-1)
@@ -41,9 +43,22 @@ En la plataforma Pinterest encontré varias referencias de lo visual para mi pro
 
 <https://uimaven.art/portfolio/> ⇨ siento que esta es un muy buen referente de lo que quiero realizar, solo que aquí implementa mucha interacción, cosa que por el momento no quiero realizar de forma muy profunda, pero muy buena página, el uso del color y la estética de computador y ambiente.
 
+### Correcciones y retroalimentación
+
+Hoy tuvimos retroalimentación de nuestros avances.
+
+Hasta el momento voy bien, cumplí con lo solicitado el día de hoy. La profe me hizo sugerencias a cerca de realizar en vectores el tema de las carpetas estilo computador. Fuera de eso la gama de colores bien y el uso de la tipografía esta bien, ya que se usa bastante en páginas webs y es legible.
+
 ---
 
 ## Avance 2 (16 noviembre)
+> Segundo avance, hoy presenté todo lo solicitado, UIKIT más completo, HTML del home avanzado, wireframes de alta de desktop y mobile avanzados, además de componentes y botones con sus estados.
+
+### Link documentación uso IA
+
+En este link se puede ver de forma detallada el uso de IA, prompts y en qué cosas me ayudó.
+
+[Documentación](https://docs.google.com/document/d/1dHos74jfiwAaoTr0A3vV2uqTAg7ngyvhUz2C7KN9kcc/edit?usp=sharing)
 
 ### Wireframe baja
 
@@ -57,17 +72,7 @@ Luego de realizar este, me fui de lleno a realizar el ```wireframe alta desktop`
 
 Actualmente no recordaba mucho el uso de estos términos y cómo aplicarlo, lo cual recurrí a la IA, la cual me explicó la importancia de estos y como realizar los botones, cambios en sus estados/instancias, importancia auto layout, cómo crear componentes y variantes.
 
-![Consulta IA](imagenes/ia-1.png)
-
-![Consulta IA](imagenes/ia-2.png)
-
 Desde acá en adelante me dió una guía paso a paso sobre cómo realizar el auto layout, componente y variantes, lo cual me resultó mucho más fácil seguir esta guía, la cual luego me fui acostumbrando y pude resolver los demás botones de forma independiente.
-
-![Consulta IA](imagenes/ia-3.png)
-
-![Consulta IA](imagenes/ia-4.png)
-
-![Consulta IA](imagenes/ia-5.png)
 
 ### Wireframe alta mobile
 
@@ -77,26 +82,31 @@ Acá ya fui realizando el ```wireframe alta mobile```, lo cual se me hizo mucho 
 
 En ambos ```wireframes alta``` quería realizar una interacción, la cual más que nada fuese solo interactiva, sin ningún fin de llevar a alguna página, lo cual le fui pidiendo a la IA que me fuera realizando esta, para por mientras introducirla al Figma, la cual a su vez me daba los códigos y la vista previa de cómo se iba a visualizar en la página web. Luego de que me diera la imagen para introducirla a Figma, la inserté y de igual forma podía modificar colores de esta, aunque la mantuve así por el momento, ya que me gustaba la visualidad que le daba al home.
 
-![Consulta IA](imagenes/ia-6.png)
-
-Primero me dió esta interacción, la cual no me gustaba visualmente, porque quería que fuera algo más desordenado y no que todo girara en torno al centro. Luego le fui pidiendo cambios hasta llegar a la final.
-
-![Consulta IA](imagenes/ia-7.png)
-
-![Consulta IA](imagenes/ia-8.png)
-
-Finalmente llegamos a esta interacción, la cual visualmente era lo que quería, además me dió el archivo ```SVG``` el cual me permite poder modificar esta imagen en Figma.
-
-![Consulta IA](imagenes/ia-9.png)
+Primero me dió una interacción, la cual no me gustaba visualmente, porque quería que fuera algo más desordenado y no que todo girara en torno al centro. Luego le fui pidiendo cambios hasta llegar a la final. Finalmente llegamos a la interacción final, la cual visualmente era lo que quería, además me dió el archivo ```SVG``` el cual me permite poder modificar esta imagen en Figma.
 
 ### Códigos
 
-Al principio comencé con el HTML base del home, donde luego de eso, para poder hacer el código en CSS le solicité ayuda a la IA, debido a que este me cuesta más, de igual forma fui complementando con cosas que ya tenía, además de incluirle la interacción del JS. Además le comenté a la IA que tenía todo visualizado en Figma, lo cual se hizo muchos más fácil.
+Al principio comencé con el HTML base del home, donde luego de eso, para poder hacer el código en CSS le solicité ayuda a la IA, debido a que este me cuesta más, de igual forma fui complementando con cosas que ya tenía, además de incluirle la interacción del JS. Además le comenté a la IA que tenía todo visualizado en Figma, lo cual se hizo muchos más fácil. Además le pedí que me implementara la animación/interacción que ya había realizado antes, la cual le había mandado una antes por error y luego le mandé la original para que me la incluyera y así hacer el JS.
 
-![Consulta IA](imagenes/ia-10.png)
+### Correcciones y retroalimentación
 
-![Consulta IA](imagenes/ia-11.png)
+Hoy tuvimos que entregar más avances sobre nuestras entregas. 
 
-Acá le pedí que me implementara la animación/interacción que ya había realizado antes, la cual le había mandado una antes por error y luego le mandé la original para que me la incluyera y así hacer el JS.
+Buenas interacciones y hover. Me sugirieron achicar más los botones, ya que al parecer eran muy grandes y acaparaban mucho espacio de forma visual, además de no delimitar tanto la interacción principal, si no que esta fuera más allá.
 
-![Consulta IA](imagenes/ia-12.png) 
+Además presenté otra diagramación para los proyectos, por lo cual entre los profes me hicieron decidirme por una, la cual era mejor en términos visuales.
+
+De igual forma me sugirieron solo dejar 3 botones en home, debido a que el botón ```CV``` era bastante visual, que lo dejara en la sección de sobre mi, donde no fuese tan accesible.
+
+### ¿Qué cambié?
+- Tamaño botones
+- No delimitar interacción principal del home
+- Sacar botón CV y dejarlo en el apartado de sobre mí
+- Tilde en sobre mí
+- Modificar tamaño tipografía en UIkit
+  
+### Problemas y soluciones
+
+Uno de mis primeros problemas durante el proceso fue el tamaño de los botones, ya que visualmente eran muy grandes. Luego de las correcciones, decidí ir modificando su tamaño, de igual forma se me hizo fácil, ya que como eran solo los botones, estos se modificarían de forma automática en el figma.
+
+### Aprendizajes
