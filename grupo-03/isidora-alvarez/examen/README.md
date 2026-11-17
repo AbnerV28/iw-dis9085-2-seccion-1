@@ -6,6 +6,10 @@ Isidora Álvarez
 
 https://www.figma.com/design/ADbrbFWVOeJkBakvKcFPj6/Portafolio?node-id=99-21&p=f&t=QLJJ9BPGfWb4dOC8-0
 
+# **Link GitHub pages**
+
+https://isidoraalvarez.github.io/portafolio/
+
 # **Descripción del Proyecto**
 
 Portafolio web interactivo que refleja mi identidad como diseñadora industrial, integrando la materialidad de la madera y el mobiliario (como el banquito zapatero y la silla de madera), la fabricación textil  de contenedores, electrónica de taller, prototipado 3D y la programación de experiencias interactivas en la web.
