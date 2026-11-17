@@ -1,40 +1,9 @@
-/* =========================================================
-   script.js — Portafolio Isidora Álvarez 2026
-   Único archivo de JavaScript del sitio.
-   Script clásico (sin módulos): funciona en GitHub Pages
-   y también abriendo index.html con doble clic.
-
-   ÍNDICE
-   0.  PROYECTOS ........ datos de las estampillas y del detalle
-   1.  Utilidades
-   2.  Reloj ............ hora en la barra superior
-   3.  Titular .......... palabra que rota (toca/usa/habita/sostiene)
-   4.  Ventanas ......... arrastrar ventanas .win (pointer events)
-   5.  Estampillas ...... render + filtros + scroll horizontal + progreso
-   6.  Detalle .......... ventana flotante con el proyecto (#proyecto/<id>)
-   7.  Pieza ............ ventana "pieza-interactiva" con "ver otra"
-   8.  Contacto ......... copiar al portapapeles
-   9.  Sección activa ... dock y menú según la sección visible
-   10. Revelar .......... aparición suave al hacer scroll
-   11. Inicio
-   ========================================================= */
+/* Portafolio Isidora Álvarez 2026 */
 
 (function () {
   "use strict";
 
-  /* =======================================================
-     0. PROYECTOS
-     Para editar un proyecto cambia solo este bloque.
-
-     id       → dirección del detalle: index.html#proyecto/<id>
-     cod/anio → cabecera de la estampilla
-     tipo     → línea en mayúsculas bajo el título
-     cats     → filtros: mobiliario · prototipos · electronica · web
-     portada  → foto de la estampilla ("" = recuadro gris)
-     ajuste   → "cover" (llena el cuadro) o "contain" (se ve entera)
-     proceso  → fotos de la fila "proceso — bocetos y croquis"
-     bloques  → textos 01 problema · 02 proceso · 03 resultado
-     ======================================================= */
+  /* ===== 0. PROYECTOS ===== */
   var RUTA = "imagenes/";
 
   var PROYECTOS = [
@@ -46,9 +15,10 @@
       tipo: "web / interacción",
       cats: ["web"],
       portada: "",
-      ajuste: "contain",
+      foco: "50% 50%",
       materiales: "HTML, CSS, JS",
       proceso: [],
+      creditos: [{ nombre: "[Nombre compañero/a]", github: "[Link GitHub]" }],
       bloques: ["[qué problema aborda · por escribir]", "[cómo lo desarrollé · por escribir]", "[qué resultó · por escribir]"]
     },
     {
@@ -59,9 +29,10 @@
       tipo: "multirealidades.sys / web",
       cats: ["web"],
       portada: "multirealidades.png",
-      ajuste: "contain",
+      foco: "50% 50%",
       materiales: "HTML, CSS, JS",
       proceso: [],
+      creditos: [{ nombre: "[Nombre compañero/a]", github: "[Link GitHub]" }],
       bloques: ["[qué problema aborda · por escribir]", "[cómo lo desarrollé · por escribir]", "[qué resultó · por escribir]"]
     },
     {
@@ -72,9 +43,10 @@
       tipo: "oír la luz / web",
       cats: ["web"],
       portada: "wii.png",
-      ajuste: "contain",
+      foco: "50% 50%",
       materiales: "HTML, CSS, JS",
       proceso: [],
+      creditos: [{ nombre: "[Nombre compañero/a]", github: "[Link GitHub]" }],
       bloques: ["[qué problema aborda · por escribir]", "[cómo lo desarrollé · por escribir]", "[qué resultó · por escribir]"]
     },
     {
@@ -85,9 +57,10 @@
       tipo: "web / tacto",
       cats: ["web"],
       portada: "contrapresion.png",
-      ajuste: "contain",
+      foco: "50% 50%",
       materiales: "HTML, CSS, JS, MQTT",
       proceso: [],
+      creditos: [{ nombre: "[Nombre compañero/a]", github: "[Link GitHub]" }],
       bloques: ["[qué problema aborda · por escribir]", "[cómo lo desarrollé · por escribir]", "[qué resultó · por escribir]"]
     },
     {
@@ -98,9 +71,10 @@
       tipo: "mobiliario / prototipo",
       cats: ["mobiliario", "prototipos"],
       portada: "banco_zapatero.jpeg",
-      ajuste: "cover",
+      foco: "50% 50%",
       materiales: "madera",
       proceso: ["banco_zapatero2.jpeg", "banco_zapatero3.jpeg"],
+      creditos: [{ nombre: "[Nombre compañero/a]", github: "[Link GitHub]" }],
       bloques: ["[qué problema aborda · por escribir]", "[cómo lo desarrollé · por escribir]", "[qué resultó · por escribir]"]
     },
     {
@@ -111,9 +85,10 @@
       tipo: "sintetizador modular / electrónica",
       cats: ["electronica", "prototipos"],
       portada: "sin_tes.jpeg",
-      ajuste: "cover",
+      foco: "50% 50%",
       materiales: "acrílico, impresión 3D, PCB, madera",
       proceso: ["sin_te.jpeg", "sintes.jpeg", "sintess.jpeg", "sinte.jpeg", "sinte2.jpeg"],
+      creditos: [{ nombre: "[Nombre compañero/a]", github: "[Link GitHub]" }],
       bloques: ["[qué problema aborda · por escribir]", "[cómo lo desarrollé · por escribir]", "[qué resultó · por escribir]"]
     },
     {
@@ -124,9 +99,10 @@
       tipo: "sintetizador / electrónica",
       cats: ["electronica", "prototipos"],
       portada: "tostadora.jpeg",
-      ajuste: "cover",
+      foco: "50% 50%",
       materiales: "cartón, electrónica",
       proceso: [],
+      creditos: [{ nombre: "[Nombre compañero/a]", github: "[Link GitHub]" }],
       bloques: ["[qué problema aborda · por escribir]", "[cómo lo desarrollé · por escribir]", "[qué resultó · por escribir]"]
     },
     {
@@ -137,9 +113,10 @@
       tipo: "mobiliario",
       cats: ["mobiliario"],
       portada: "silla.jpeg",
-      ajuste: "cover",
+      foco: "50% 50%",
       materiales: "madera",
       proceso: [],
+      creditos: [{ nombre: "[Nombre compañero/a]", github: "[Link GitHub]" }],
       bloques: ["[qué problema aborda · por escribir]", "[cómo lo desarrollé · por escribir]", "[qué resultó · por escribir]"]
     },
     {
@@ -150,9 +127,10 @@
       tipo: "mobiliario",
       cats: ["mobiliario"],
       portada: "banca.jpeg",
-      ajuste: "cover",
+      foco: "50% 50%",
       materiales: "madera",
       proceso: ["banca2.jpeg", "plano_banca.jpeg"],
+      creditos: [{ nombre: "[Nombre compañero/a]", github: "[Link GitHub]" }],
       bloques: ["[qué problema aborda · por escribir]", "[cómo lo desarrollé · por escribir]", "[qué resultó · por escribir]"]
     },
     {
@@ -163,9 +141,10 @@
       tipo: "madera / objeto",
       cats: ["prototipos"],
       portada: "ave.jpeg",
-      ajuste: "cover",
+      foco: "50% 50%",
       materiales: "madera",
       proceso: ["ave2.jpeg", "ave3.jpeg", "ave4.jpeg"],
+      creditos: [{ nombre: "[Nombre compañero/a]", github: "[Link GitHub]" }],
       bloques: ["[qué problema aborda · por escribir]", "[cómo lo desarrollé · por escribir]", "[qué resultó · por escribir]"]
     },
     {
@@ -176,9 +155,10 @@
       tipo: "objeto / madera",
       cats: ["prototipos"],
       portada: "comedero.jpeg",
-      ajuste: "cover",
+      foco: "50% 50%",
       materiales: "madera",
       proceso: ["comedero2.jpeg", "comedero3.jpeg", "comedero4.jpeg"],
+      creditos: [{ nombre: "[Nombre compañero/a]", github: "[Link GitHub]" }],
       bloques: ["[qué problema aborda · por escribir]", "[cómo lo desarrollé · por escribir]", "[qué resultó · por escribir]"]
     },
     {
@@ -189,17 +169,16 @@
       tipo: "iluminación / objeto",
       cats: ["prototipos"],
       portada: "lampara.jpeg",
-      ajuste: "cover",
+      foco: "50% 50%",
       materiales: "[materiales]",
       proceso: ["lampara2.jpeg", "lampara3.jpeg", "lampara4.jpeg"],
+      creditos: [{ nombre: "[Nombre compañero/a]", github: "[Link GitHub]" }],
       bloques: ["[qué problema aborda · por escribir]", "[cómo lo desarrollé · por escribir]", "[qué resultó · por escribir]"]
     }
   ];
 
 
-  /* =======================================================
-     1. Utilidades
-     ======================================================= */
+  /* ===== 1. Utilidades ===== */
   var reducirMovimiento = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   function $(sel, ctx) { return (ctx || document).querySelector(sel); }
@@ -210,15 +189,14 @@
     });
   }
   function dosDigitos(n) { return String(n).padStart(2, "0"); }
+  function foco(p) { return ' style="object-position:' + esc(p.foco || "50% 50%") + '"'; }
   function barraWin(titulo, extra) {
     return '<div class="tb"><span class="tb__puntos"><i></i><i></i><i></i></span>' +
            '<span class="tb__titulo">' + esc(titulo) + "</span>" + (extra || "") + "</div>";
   }
 
 
-  /* =======================================================
-     2. Reloj
-     ======================================================= */
+  /* ===== 2. Reloj ===== */
   function reloj() {
     var el = $("[data-reloj]");
     if (!el) return;
@@ -235,11 +213,7 @@
   }
 
 
-  /* =======================================================
-     3. Titular dinámico
-     Cambia cada 1,8 s con blur + fade (sin cajas de fondo).
-     Clic en la palabra = siguiente. Se pausa con la pestaña oculta.
-     ======================================================= */
+  /* ===== 3. Titular dinámico ===== */
   function titular() {
     var caja = $(".palabra-caja");
     if (!caja) return;
@@ -265,7 +239,7 @@
         caja.style.width = "auto";
         var anchoNuevo = caja.getBoundingClientRect().width;
         caja.style.width = anchoActual + "px";
-        void caja.offsetWidth;                  // fuerza reflow
+        void caja.offsetWidth;
         caja.style.width = anchoNuevo + "px";
 
         palabra.classList.remove("sale");
@@ -289,10 +263,7 @@
   }
 
 
-  /* =======================================================
-     4. Ventanas arrastrables (.win[data-arrastrable])
-     Se arrastran desde la barra .tb. Doble clic = vuelve a su sitio.
-     ======================================================= */
+  /* ===== 4. Ventanas arrastrables ===== */
   var zTop = 10;
 
   function hacerArrastrable(win) {
@@ -312,7 +283,6 @@
       inicioX = e.clientX - x;
       inicioY = e.clientY - y;
 
-      // deja al menos 80 px de la ventana dentro de la pantalla
       var r = win.getBoundingClientRect();
       var alto = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--alto-header")) || 58;
       limites = {
@@ -354,9 +324,7 @@
   function ventanas() { $$("[data-arrastrable]").forEach(hacerArrastrable); }
 
 
-  /* =======================================================
-     5. Estampillas: render, filtros, scroll horizontal, progreso
-     ======================================================= */
+  /* ===== 5. Estampillas ===== */
   function crearEstampilla(p) {
     var a = document.createElement("a");
     a.className = "sx";
@@ -365,8 +333,8 @@
     a.setAttribute("aria-label", p.titulo + " — " + p.tipo + ", " + p.anio);
 
     var imagen = p.portada
-      ? '<div class="sx__img' + (p.ajuste === "contain" ? " sx__img--contain" : "") + '">' +
-          '<img src="' + RUTA + esc(p.portada) + '" alt="" loading="lazy" decoding="async" draggable="false">' +
+      ? '<div class="sx__img">' +
+          '<img src="' + RUTA + esc(p.portada) + '" alt="" loading="lazy" decoding="async" draggable="false"' + foco(p) + ">" +
         "</div>"
       : '<div class="sx__img sx__img--vacia"><span class="mono">[imagen por definir]</span></div>';
 
@@ -413,17 +381,17 @@
     window.addEventListener("load", pedirProgreso);
     actualizarProgreso();
 
-    /* --- rueda del mouse: vertical → horizontal mientras queda fila --- */
+    /* --- rueda del mouse --- */
     srow.addEventListener("wheel", function (e) {
-      if (Math.abs(e.deltaY) <= Math.abs(e.deltaX)) return;        // trackpad horizontal: nativo
+      if (Math.abs(e.deltaY) <= Math.abs(e.deltaX)) return;
       var max = srow.scrollWidth - srow.clientWidth;
       var puede = (e.deltaY > 0 && srow.scrollLeft < max - 1) || (e.deltaY < 0 && srow.scrollLeft > 0);
-      if (!puede) return;                                            // en los extremos sigue la página
+      if (!puede) return;
       e.preventDefault();
       srow.scrollLeft += e.deltaY;
     }, { passive: false });
 
-    /* --- arrastrar con el mouse (touch usa el scroll nativo) --- */
+    /* --- arrastrar con el mouse --- */
     var abajo = false, movio = false, x0 = 0, scroll0 = 0, idPuntero = null;
 
     srow.addEventListener("pointerdown", function (e) {
@@ -451,7 +419,6 @@
     srow.addEventListener("pointercancel", soltar);
     srow.addEventListener("lostpointercapture", soltar);
 
-    // si hubo arrastre, el clic no abre el proyecto
     srow.addEventListener("click", function (e) {
       if (movio) { e.preventDefault(); e.stopPropagation(); movio = false; }
     }, true);
@@ -467,14 +434,14 @@
         botones.forEach(function (b) { b.setAttribute("aria-pressed", String(b === btn)); });
 
         var tarjetas = $$(".sx", srow);
-        tarjetas.forEach(function (t) {                 // 1) salen las que no corresponden
+        tarjetas.forEach(function (t) {
           var ok = filtro === "todos" || t.dataset.cats.split(" ").indexOf(filtro) !== -1;
           t.classList.toggle("fuera", !ok);
           t.dataset.ok = ok ? "1" : "0";
         });
 
         clearTimeout(timerFiltro);
-        timerFiltro = setTimeout(function () {         // 2) se ocultan y entran las que sí
+        timerFiltro = setTimeout(function () {
           tarjetas.forEach(function (t) {
             var ok = t.dataset.ok === "1";
             t.classList.toggle("oculta", !ok);
@@ -491,12 +458,7 @@
   }
 
 
-  /* =======================================================
-     6. Detalle de proyecto (ventana flotante .win--detalle)
-     Se abre con la dirección #proyecto/<id>, así funcionan
-     los botones atrás/adelante del navegador y los enlaces directos.
-     Cierra con ✕, Esc o clic fuera.
-     ======================================================= */
+  /* ===== 6. Detalle de proyecto ===== */
   function detalle() {
     var capa = $("#detalle");
     if (!capa) return;
@@ -517,10 +479,9 @@
       var etiquetas = ["01 — problema", "02 — proceso", "03 — resultado"];
 
       var hero = p.portada
-        ? '<img src="' + RUTA + esc(p.portada) + '" alt="' + esc(p.titulo) + '" data-d-hero>'
+        ? '<img src="' + RUTA + esc(p.portada) + '" alt="' + esc(p.titulo) + '" data-d-hero' + foco(p) + ">"
         : '<span class="mono">[imagen principal · por definir]</span>';
 
-      // proceso: fotos reales o 4 ventanas marcadoras (como en el Figma)
       var fotos = p.proceso && p.proceso.length ? p.proceso : [null, null, null, null];
       var proceso = fotos.map(function (f, i) {
         var n = dosDigitos(i + 1);
@@ -531,6 +492,24 @@
         return '<article class="win proceso__boceto">' + barraWin("boceto-" + n + ".jpg") +
                '<div class="proceso__visual">' + visual + "</div></article>";
       }).join("");
+
+      var creditos = "";
+      if (p.creditos && p.creditos.length) {
+        creditos =
+          '<section class="creditos">' +
+            '<p class="etiqueta">créditos — trabajo en colaboración</p>' +
+            '<ul class="creditos__lista">' +
+              p.creditos.map(function (c) {
+                var enlace = /^https?:\/\//.test(c.github || "")
+                  ? '<a class="creditos__link" href="' + esc(c.github) + '" target="_blank" rel="noopener">' + esc(c.github.replace(/^https?:\/\//, "")) + "</a>"
+                  : '<span class="creditos__link">' + esc(c.github || "") + "</span>";
+                return '<li class="creditos__fila"><span class="mono">créditos</span>' +
+                       '<span class="creditos__nombre">' + esc(c.nombre) + "</span>" +
+                       '<span class="creditos__sep" aria-hidden="true">—</span>' + enlace + "</li>";
+              }).join("") +
+            "</ul>" +
+          "</section>";
+      }
 
       archivo.textContent = p.id + ".proyecto";
       cuerpo.innerHTML =
@@ -550,6 +529,8 @@
             return '<div class="bloque"><p class="etiqueta">' + etiquetas[i] + '</p><p class="cuerpo-s">' + esc(b) + "</p></div>";
           }).join("") +
         "</div>" +
+
+        creditos +
 
         '<section class="proceso">' +
           '<p class="etiqueta">proceso — bocetos y croquis</p>' +
@@ -571,7 +552,7 @@
         focoPrevio = document.activeElement;
         capa.hidden = false;
         document.documentElement.classList.add("con-modal");
-        void capa.offsetWidth;               // fuerza reflow para que corra la transición
+        void capa.offsetWidth;
         capa.classList.add("abierto");
       }
       $("[data-cerrar].tb__cerrar", capa).focus({ preventScroll: true });
@@ -585,7 +566,6 @@
       if (focoPrevio && focoPrevio.focus) focoPrevio.focus({ preventScroll: true });
     }
 
-    // la dirección manda: #proyecto/<id> abre, cualquier otra cierra
     function segunDireccion() {
       var m = location.hash.match(/^#proyecto\/(.+)$/);
       var indice = m ? buscar(decodeURIComponent(m[1])) : -1;
@@ -593,7 +573,6 @@
     }
 
     function salir() {
-      // vuelve a #trabajos sin saltar de posición
       history.replaceState(null, "", "#trabajos");
       cerrar();
     }
@@ -604,7 +583,6 @@
       if (e.key === "Escape" && !capa.hidden) salir();
     });
 
-    // clic en una foto de proceso → pasa a la imagen principal
     cuerpo.addEventListener("click", function (e) {
       var img = e.target.closest("[data-d-foto]");
       if (!img) return;
@@ -614,18 +592,17 @@
       hero.classList.add("cambiando");
       setTimeout(function () {
         hero.src = RUTA + img.dataset.dFoto;
+        hero.style.objectPosition = "50% 50%";
         hero.onload = function () { hero.classList.remove("cambiando"); };
       }, 200);
       hero.scrollIntoView({ behavior: reducirMovimiento ? "auto" : "smooth", block: "center" });
     });
 
-    segunDireccion();       // por si se entra directo con #proyecto/<id>
+    segunDireccion();
   }
 
 
-  /* =======================================================
-     7. Pieza interactiva (portada) — "ver otra ↻"
-     ======================================================= */
+  /* ===== 7. Pieza interactiva ===== */
   function pieza() {
     var img = $("[data-pieza-img]");
     if (!img) return;
@@ -648,7 +625,7 @@
         var nueva = new Image();
         nueva.onload = function () {
           img.src = nueva.src;
-          img.style.objectFit = p.ajuste === "contain" ? "contain" : "cover";
+          img.style.objectPosition = p.foco || "50% 50%";
           img.alt = p.titulo;
           caja.classList.add("con-imagen");
           img.classList.add("lista");
@@ -672,9 +649,7 @@
   }
 
 
-  /* =======================================================
-     8. Copiar contacto (vuelve a "copiar" tras 1,5 s)
-     ======================================================= */
+  /* ===== 8. Contacto ===== */
   function copiarTexto(txt) {
     if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(txt);
     return new Promise(function (ok, mal) {
@@ -711,9 +686,7 @@
   }
 
 
-  /* =======================================================
-     9. Sección activa (dock + menú)
-     ======================================================= */
+  /* ===== 9. Sección activa ===== */
   function seccionActiva() {
     var secciones = ["contacto", "sobre-mi", "trabajos"]
       .map(function (id) { return document.getElementById(id); })
@@ -742,9 +715,7 @@
   }
 
 
-  /* =======================================================
-     10. Revelar al hacer scroll
-     ======================================================= */
+  /* ===== 10. Revelar ===== */
   function revelar() {
     var items = $$(".revelar");
     if (!items.length) return;
@@ -764,9 +735,7 @@
   }
 
 
-  /* =======================================================
-     11. Inicio
-     ======================================================= */
+  /* ===== 11. Inicio ===== */
   document.documentElement.classList.add("js");
   reloj();
   titular();
