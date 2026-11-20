@@ -1,9 +1,11 @@
 # Bitácora de Proceso Individual — Portafolio Personal
 
-# Abner Villegas
+## Abner Villegas
 
-# https://www.figma.com/design/ZJYsKjWZMWz0gF1hA8Y8Vw/Ex%C3%A1men-Portafolio?node-id=1-2&t=Z5lXoNSo9CkCJkET-1 
+## <https://www.figma.com/design/ZJYsKjWZMWz0gF1hA8Y8Vw/Ex%C3%A1men-Portafolio?node-id=1-2&t=Z5lXoNSo9CkCJkET-1>
+
 ---
+
 ## 9/11
 
 ---
@@ -12,6 +14,7 @@
 Para este proyecto trabajé desde la concepción visual hasta el desarrollo práctico del sitio web, pasando por una investigación de referentes, diseño de interfaz en Figma y la programación completa del portafolio mediante iteraciones con inteligencia artificial (**Claude**), integrando imágenes recortadas, animaciones, videos en *loop* y música *8-bit*.
 
 ### Definición de contenidos y referentes visuales
+
 - **Curaduría de proyectos:** Seleccioné los trabajos de mi formación centrándome en el área audiovisual (animación digital, animación manual, stop motion, teatro y video experimental) junto con proyectos de branding e identidad visual.
 - **Referente principal de diagramación (Joia Magazine):** Tomé como base la revista [Joia Magazine](https://joiamagazine.com/) por su forma de organizar información e imágenes mediante bloques marcados y estructurados, permitiéndome ordenar piezas diversas de forma limpia y legible.
 - **Análisis de otros referentes web:** Revisé sitios para rescatar ideas de composición, bloques visuales e interactividad:
@@ -25,24 +28,30 @@ Para este proyecto trabajé desde la concepción visual hasta el desarrollo prá
   - **Plataformas de inspiración:** [Awwwards](https://www.awwwards.com), [Godly Website](https://godly.website) y [Hover Stat.es](https://hoverstat.es).
 
 ### Diseño en Figma y creación inicial en Claude
+
 - **Diseño del recurso visual en Figma:** Maqueté la propuesta gráfica de mi portafolio en Figma con estética retro/arcade, exportando la imagen de referencia de pantalla completa (`1920 × 1080 px` / `1440 × 900 px`).
 - **Primer Prompt enviado a Claude (Creación de la base HTML):** Le entregué a Claude la imagen exportada desde Figma para que tradujera el diseño visual a código funcional:
   > *"Ayúdame a crear esta página según el recurso visual que te mandé desde Figma (la imagen)."*
 - **Pruebas e integración de animaciones iniciales:** A partir del código HTML que me entregó Claude, estuve probando la página en el navegador y agregué varias animaciones tanto para la pantalla previa antes del *Home* (*Press Start Button*) como dentro del mismo *Home* (movimiento de nubes y transiciones).
 
-# UI Kit 
-<img width="582" height="370" alt="image" src="https://github.com/user-attachments/assets/0743a51b-c74e-40d1-bb47-f5a4a9f80e3b" />
+## UI Kit
 
-# Desktop
-<img width="1004" height="638" alt="image" src="https://github.com/user-attachments/assets/4d8be49a-d570-4be5-9f68-c61a3aaf4574" />
+<img width="582" height="370" alt="image" src="https://github.com/user-attachments/assets/0743a51b-c74e-40d1-bb47-f5a4a9f80e3b"/>
 
-# Mobile
-<img width="477" height="693" alt="image" src="https://github.com/user-attachments/assets/af5fb089-3367-4668-94dc-7be64fe3a98b" />
+## Desktop
 
-# Utilización de claude
+<img width="1004" height="638" alt="image" src="https://github.com/user-attachments/assets/4d8be49a-d570-4be5-9f68-c61a3aaf4574"/>
+
+## Mobile
+
+<img width="477" height="693" alt="image" src="https://github.com/user-attachments/assets/af5fb089-3367-4668-94dc-7be64fe3a98b"/>
+
+## Utilización de claude
+
 https://github.com/user-attachments/assets/f810dd68-2e46-495f-85f2-ac0a0b5988a5
 
 ### Etapa 3: Preparación de carpeta comprimida y ajustes finales en Claude
+
 - **Recolección y limpieza de recursos:** Reuní todas las imágenes de mis trabajos, videos y audio en una **carpeta comprimida**, limpiando manualmente el fondo blanco de la mayoría de las imágenes de branding para respetar sus transparencias.
 - **Segundo Prompt enviado a Claude (Integración de carpeta, música, videos en loop y enlaces):** Le envié la carpeta comprimida con todos los archivos y le di las instrucciones específicas para cerrar todas las secciones del sitio:
   > *"Hola, sigamos trabajando sobre la base del código anterior y la carpeta comprimida con las nuevas imágenes y recursos que te adjunté. Necesito aplicar los siguientes ajustes finales para cerrar el sitio:*
@@ -73,14 +82,14 @@ https://github.com/user-attachments/assets/f810dd68-2e46-495f-85f2-ac0a0b5988a5
 2. **Traducción de Figma a código mediante prompts:** Aprendí a trabajar con inteligencia artificial (Claude) partiendo desde una imagen diseñada en Figma y escalando el proyecto mediante una carpeta comprimida de recursos reales (videos en *loop*, audio *8-bit* e imágenes sin fondo), redactando instrucciones claras y detalladas para controlar cada interacción.
 3. **Importancia de la prueba y ajuste manual en el navegador:** Comprendí que generar el código base es solo el primer paso; el verdadero acabado visual depende de probar directamente en el navegador, ajustar opacidades, corregir el posicionamiento de las imágenes y pulir el ritmo de las animaciones.
 
-Proyecto FINAL 
+## Proyecto FINAL
 
 https://github.com/user-attachments/assets/d14dc5b0-7ccc-47d9-8534-b31fd9c4d853
 
-### Dificultades para crear la página ###
-Hubo muchos problemas con el tamaño de imágenes al pasarlo en código, prácticamente las imágenes estaban todas pequeñas por lo que se le preguntó a al ia y con pequeños ajustes se llegó a un estándar de tamaño con las fotos. 
+### Dificultades para crear la página
+Hubo muchos problemas con el tamaño de imágenes al pasarlo en código, prácticamente las imágenes estaban todas pequeñas por lo que se le preguntó a la IA y con pequeños ajustes se llegó a un estándar de tamaño con las fotos.
 
-Le consulté " con el código base, al colocar el código en vscode las imágenes estaban todas pequeñas y se ven mal además de que no están posicionadas como las quiero" por lo que la ia me dio este código:
+Le consulté "con el código base, al colocar el código en VSCode las imágenes estaban todas pequeñas y se ven mal además de que no están posicionadas como las quiero" por lo que la IA me dio este código:
 
 ```html
 <article class="proy">
