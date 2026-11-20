@@ -63,7 +63,7 @@ https://github.com/user-attachments/assets/f810dd68-2e46-495f-85f2-ac0a0b5988a5
 - **Lograr que las animaciones quedaran bien:** Ajustar las animaciones tanto en la pantalla previa (*Press Start*) como en el *Home*, además de lograr que los videos de *Sobre mí*, *Teatro* y *Experimental* funcionaran en *loop* fluido sin interrumpir la navegación ni saturar el audio 8-bit, requirió varias pruebas sobre el código HTML.
 - **Colocar y encuadrar bien las imágenes en la página:** Tuve dificultades para posicionar correctamente las imágenes dentro del sitio y que respetaran sus proporciones y transparencias sin desalinearse. Tras varias iteraciones en el código, logré que en la página se vieran bien. *(Adjunto captura de pantalla del resultado en el navegador).*
 
-<img width="1119" height="782" alt="image" src="https://github.com/user-attachments/assets/1663f2d2-e426-48d6-82f3-70ebbc90d0cc" />
+<img width="1119" height="782" alt="image" src="https://github.com/user-attachments/assets/1663f2d2-e426-48d6-82f3-70ebbc90d0cc"/>
 
 ---
 
@@ -73,9 +73,7 @@ https://github.com/user-attachments/assets/f810dd68-2e46-495f-85f2-ac0a0b5988a5
 2. **Traducción de Figma a código mediante prompts:** Aprendí a trabajar con inteligencia artificial (Claude) partiendo desde una imagen diseñada en Figma y escalando el proyecto mediante una carpeta comprimida de recursos reales (videos en *loop*, audio *8-bit* e imágenes sin fondo), redactando instrucciones claras y detalladas para controlar cada interacción.
 3. **Importancia de la prueba y ajuste manual en el navegador:** Comprendí que generar el código base es solo el primer paso; el verdadero acabado visual depende de probar directamente en el navegador, ajustar opacidades, corregir el posicionamiento de las imágenes y pulir el ritmo de las animaciones.
 
-
 Proyecto FINAL 
-
 
 https://github.com/user-attachments/assets/d14dc5b0-7ccc-47d9-8534-b31fd9c4d853
 
@@ -83,6 +81,8 @@ https://github.com/user-attachments/assets/d14dc5b0-7ccc-47d9-8534-b31fd9c4d853
 Hubo muchos problemas con el tamaño de imágenes al pasarlo en código, prácticamente las imágenes estaban todas pequeñas por lo que se le preguntó a al ia y con pequeños ajustes se llegó a un estándar de tamaño con las fotos. 
 
 Le consulté " con el código base, al colocar el código en vscode las imágenes estaban todas pequeñas y se ven mal además de que no están posicionadas como las quiero" por lo que la ia me dio este código:
+
+```html
 <article class="proy">
         <div class="col">
           <!-- logo arriba -->
@@ -114,10 +114,8 @@ Le consulté " con el código base, al colocar el código en vscode las imágene
   .proy .lateral { width: 100%; }
 }
 </style>
+```
 
+## Link al sitio web
 
-
-
-
-
-
+<https://abnerv28.github.io/PortafolioAbnerVillegas-/>
