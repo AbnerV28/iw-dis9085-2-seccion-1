@@ -1,88 +1,67 @@
 LINK FIGMA FLORENCIA ALRRUIZ https://www.figma.com/design/fzRnlbloZgh5nw5rnRrtaB/Florencia-Alrruiz-%E2%80%93-Portafolio?node-id=0-1&t=H98PrAZ6iHvI7S9t-1
+# 2. Registro por avance: observaciones y mejoras implementadas
 
-CLASE 09/11/26
-Mi trabajo en este equipo fue diseñar y estructurar la página web en figma en wireframe de baja y adaptar el formato desktop a mobile 
-Una de las principales dificultades de este trabajo fue pasar el diseño de figma al codigo. me costo lograr que las imagenes y las columnas quedaran ordenadas como en el prototipo, sobre todo al usar flexbox, porque algunos elementos se desordenaban o cambiaban de tamaño sin que entendiera bien porque. 
-También fue difícil la parte de la colección: quería que las imágenes de la derecha se agrandaran al lado izquierdo al hacer scroll. Para esa parte, la de las imágenes con movimiento utilice inteligencia artificial, ya que no sabia como hacer la animación con mis conocimientos actuales. sin embargo, embargo el diseño que genere con esas imágenes no quedo tan estético visualmente como esperaba, por lo que mi compañera Jerliana opto por modificarlo.
+### 09 de noviembre de 2026 · Avance y correcciones con profesor Aarón
 
-Uso de IA: animación de las imágenes en La Colección
+Durante la revisión con el profesor Aarón, uno de los principales comentarios fue la importancia de comenzar el proceso mediante un prototipo de baja fidelidad, antes de avanzar directamente hacia una propuesta visual más desarrollada. Esto permitiría evaluar primero la distribución de los componentes, la jerarquía de los contenidos y la organización general de la página, sin concentrar los esfuerzos iniciales en los detalles gráficos.
 
-*Herramienta: Claude (IA de Anthropic)
+En mi caso, había comenzado trabajando directamente en una propuesta de alta fidelidad, por lo que fue necesario replantear parte del proceso y considerar una etapa previa de estructuración. Esta observación me permitió comprender la importancia de validar primero la composición y el funcionamiento del sitio antes de desarrollar sus detalles visuales e interacciones.
 
-Prompt usado:
+### 16 de noviembre de 2026 · Inasistencia
 
-Estoy desarrollando la versión para celular de una página web para un trabajo universitario sobre la colección de muebles de Schiaparelli. La versión de escritorio ya está terminada y necesito adaptar la sección "La Colección", que tiene los textos de las piezas en una columna y cuatro fotografías en otra.
-Según mi diseño de Figma, en celular la sección debe verse así:
-Las fotografías aparecen primero y los textos debajo.
- Cada fotografía se presenta como una tarjeta de color verde, con las esquinas redondeadas y el nombre de la pieza debajo, en color dorado.
- Los textos se adaptan al ancho de la pantalla.
-  
-Resultado:
-La IA hizo que, al bajar por la página, la imagen que pasaba por el centro se agrandara y se moviera a un visor grande a la izquierda.
+### 23 de noviembre de 2026 · Trabajo de examen
 
-Rechazado: el resultado no quedó tan estético visualmente y usaba código que no habíamos visto en clases (JavaScript), así que se descartó.
-  
-Qué se corrigió:
-Desarrolla la sección de imágenes interactivas empleando exclusivamente HTML y CSS. Se debe excluir el uso de JavaScript, dado que no corresponde a los contenidos abordados. Además, conserva sin alteraciones el diseño y el formato de las imágenes adjuntas.
+Desarrollo y finalización del portafolio web, incorporando las correcciones realizadas durante el proceso, los ajustes de diseño, las animaciones y la adaptación de los componentes a las versiones de escritorio y móvil.
 
-Vuelvo a recalcar, esta parte del diseño no se conservó y fue modificado por mi compañera Jerliana Martinez.
+**Figma**
 
-Por mi parte, logré comprender la mayoría de los contenidos revisados en clases, como la estructura de una página en HTML, la aplicación de estilos mediante CSS y el uso de flexbox para organizar los elementos. Sin embargo, reconozco que todavía tengo vacíos y dudas en algunos aspectos. Una de mis principales dificultades fue memorizar qué código o propiedad corresponde a cada función, lo que muchas veces me obligó a volver a revisar el material de clases y otros recursos de apoyo. También me costó organizar correctamente la estructura de la página, sobre todo al ordenar las secciones y lograr que los elementos se ubicaran según el diseño de Figma. Aun así, este trabajo me permitió reforzar lo aprendido y darme cuenta de los contenidos que debo seguir practicando para manejarlos con mayor seguridad.
+Se realizaron ajustes y se completó el prototipo interactivo, incorporando nuevos componentes y elementos necesarios para representar el funcionamiento final del sitio web.
 
+- **Actualización del boceto:** se agregaron los botones de categorías sobre el carrusel y el espacio destinado a la animación de Florialé.
+- **UI Kit:** se desarrollaron componentes con sus respectivos estados e interacciones: botón CONTACTO, botón de menú, botones de redes sociales, seis piezas gráficas (silueta y nombre en estado hover), botones de categoría (Default, Hover y Activo) y visor de proyecto (Foto 1 y Foto 2).
+- **Prototipo interactivo en desktop y mobile:**
+  - **Inicio:** se desarrollaron los prototipos «Prototipo · Home Desktop» y «Prototipo · Home Mobile».
+  - **Página de proyecto:** se crearon «Prototipo · Proyecto Desktop» y «Prototipo · Proyecto Mobile». Como todas las páginas de proyecto comparten la misma estructura y solo cambia su contenido, se diseñó una plantilla utilizando Miau Armchair como ejemplo.
+  - **Navegación entre pantallas:** las siluetas, las fotografías del carrusel, el botón «VER PROYECTO» y las imágenes de la galería permiten acceder a las páginas individuales de cada proyecto. Por otra parte, «Volver a proyectos» y el logo permiten regresar al inicio, mientras que CONTACTO dirige al footer.
+  - **Completar versión mobile:** el boceto inicial llegaba hasta Miau Armchair, por lo que se incorporaron las secciones de Florialé, la galería y el footer, manteniendo las mismas dimensiones y estructura de referencia de la versión de escritorio.
+- **Organización de prototipos:** debido al límite de tres páginas del plan gratuito de Figma, los prototipos interactivos se organizaron dentro de las páginas de wireframe, junto a los bocetos originales.
 
+**Sitio web**
 
-CLASE 16/11/2026
-1. Trabajo realizado en este avance
+Se desarrolló el sitio web completo, compuesto por 12 páginas: `index.html` y una página individual para cada proyecto. Todas se encuentran conectadas mediante el menú, el carrusel, las siluetas, la galería y los enlaces de navegación anterior y siguiente.
 
-UI Kit
-Para este avance desarrollé el UI Kit en Figma, tomando como referencia los elementos gráficos que había definido en el primer avance.
-Organicé los colores en una colección de variables, manteniendo la paleta original del boceto, que incluye tonos verdes, rosados, gris, negro y blanco. También definí una colección de espaciados y organicé los estilos tipográficos para desktop y mobile, utilizando Roboto y 42dot Sans.
-Además, preparé los íconos principales del sitio como componentes, incluyendo el menú, cerrar, flechas, redes sociales y correo.
-Por otra parte, trabajé en los componentes interactivos del sitio. Definí los estados Default y Hover para los botones de contacto, menú y redes sociales. También incorporé este comportamiento a las seis piezas del portfolio (T.P.U, Rámpora, Miau Armchair, Rokae, CNX-13 y Pionera), haciendo que sus nombres aparezcan dentro de los globos solamente cuando se pasa el cursor sobre ellas.
+- **Fidelidad al diseño de Figma:** se mantuvo la distribución visual definida en el boceto, respetando la posición, el tamaño, las proporciones y los colores de los elementos del inicio.
+- **Estructura y organización:** se utilizó Flexbox para organizar las secciones y sus contenidos, incluyendo los textos del inicio, Conóceme, los filtros, el carrusel, Florialé, el footer y las páginas individuales de proyecto.
+- **Interacciones y animaciones:**
+  - **Conóceme:** al seleccionar la pestaña rosada se despliega una tarjeta con mis datos personales y fotografía, siguiendo la referencia del Frame 8 de Figma.
+  - **Siluetas verdes:** al pasar el cursor sobre ellas cambian a un tono más claro y muestran el nombre del proyecto. Al hacer clic, dirigen a su página correspondiente.
+  - **Carrusel guiado por scroll:** la sección permanece fija mientras se desplaza la página. Las fotografías de la columna izquierda aumentan progresivamente de tamaño hasta ocupar el marco de esquinas rosadas, permitiendo recorrer las imágenes de cada proyecto sin necesidad de hacer clic.
+  - **Filtros:** las categorías Madera, Cerámica y tela, Exploración material y Digital permiten filtrar los proyectos del carrusel y la galería.
+  - **Cuadrícula animada:** los cuadrados rosados acompañan el recorrido por la página, mientras que las fotografías de la galería se desplazan entre los recuadros mediante transiciones con efecto de disolución.
+  - **Video de Florialé:** se reproduce en bucle mientras la sección permanece en pantalla.
+  - **Cursor personalizado:** se incorporó un cursor con forma de flor y una estela de pétalos que acompaña el movimiento del puntero.
+  - **Estados hover:** se agregaron cambios de color rosado claro al interactuar con CONTACTO, el menú, los filtros y los botones de redes sociales.
+- **Diseño responsive:** se adaptó el sitio a dos formatos de visualización: desktop, desde 701 px, y mobile, hasta 700 px, utilizando una media query para ajustar la distribución de los componentes a pantallas más pequeñas.
 
-Prototipo del Home
-Desarrollé el prototipo de alta fidelidad del Home para desktop y mobile, intentando mantener lo más fielmente posible la composición del boceto original.
-En esta etapa trabajé en incorporar Auto Layout a las distintas secciones del sitio, como el header, las columnas de imágenes y texto, las fotografías de Floriale, el footer y la galería. En el collage inicial mantuve la distribución libre de los elementos para no modificar su composición.
-También agregué algunas interacciones, como los cambios de color al pasar el cursor por los botones y la aparición de los nombres de las piezas. El botón CONTACTO permite desplazarse directamente hasta el footer.
-Los prototipos quedaron configurados para poder revisarlos desde el modo Presentación de Figma.
+---
 
-Ubicación de los archivos:
-Desktop: página "wireframe Desktop", frame "Prototipo · Home Desktop" (1512 × 3704 px).
-Mobile: página "wireframe mobile", frame "Prototipo · Home Mobile" (409 × 2009 px).
-Los bocetos originales se mantuvieron sin modificaciones. Debido al límite de tres páginas del plan gratuito de Figma, trabajé los prototipos dentro de las mismas páginas donde se encuentran los bocetos.
+# 3. Uso de inteligencia artificial
 
-Desarrollo del sitio
+**Herramienta:** Claude (Anthropic), utilizado desde la aplicación de escritorio, con acceso a mi archivo de Figma y a la carpeta del proyecto.
 
-Comencé a trasladar el diseño a código dentro de la carpeta sitio/. Para esto trabajé con HTML y CSS, utilizando las medidas y la distribución de los elementos que ya había definido en Figma.
-La carpeta contiene el archivo index.html, la hoja de estilos css/styles.css y las imágenes exportadas desde Figma en la carpeta img/.
-En el CSS se establecieron las versiones desktop y mobile, utilizando una variable para escalar los elementos según el ancho de pantalla y mantener la composición del diseño.
-Por ahora, la versión mobile contempla el inicio, Conóceme y Miau Armchair. Todavía falta adaptar Floriale, la galería y el footer.
+Utilicé la inteligencia artificial como herramienta de apoyo, principalmente para resolver aspectos técnicos de programación e implementar interacciones. El diseño, el contenido y las decisiones estéticas del portafolio son míos; la IA trabajó a partir de mi boceto de Figma y de las indicaciones que le fui entregando, y cada resultado fue revisado y corregido hasta que respondiera a lo que había diseñado.
 
-2. Uso de inteligencia artificial
+### Registro de uso
 
-Durante este avance utilicé Claude como apoyo para resolver algunas tareas en Figma y avanzar en el desarrollo del sitio. Principalmente recurrí a la herramienta cuando me encontraba con funciones que todavía no manejo del todo o que me cuesta configurar por mi cuenta.
-Tarea
-Cómo utilicé la IA
-Interacciones en Figma
+| Tarea                                  | Indicación entregada (síntesis)                                                                                                                                                         | Resultado y problemas detectados                                                                                                                                       | Ajustes y mi participación                                                                                                                                                                                                                  |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Maquetación del sitio (HTML y CSS)** | Implementar el inicio y las páginas de proyecto respetando el boceto de Figma: distribución, dimensiones, proporciones, tipografías y colores; adaptar el diseño a desktop y mobile.    | La primera implementación reinterpretaba la composición: cambiaba tamaños, orden de imágenes y distribución. Además, la tipografía 42dot Sans no mostraba tildes ni ñ. | Revisé el resultado contra el boceto y pedí reproducir exactamente la composición original. Elegí mantener la versión organizada con flexbox después de comprobar que se veía igual que la versión con posiciones absolutas.                |
+| **Animación de la cuadrícula**         | Programar el movimiento de los cuadrados rosados para que se desplacen por la página a medida que se navega, dentro de los límites de la cuadrícula.                                    | Al inicio el movimiento se limitaba a la primera sección.                                                                                                              | Pedí que los cuadrados recorrieran toda la página, con deslizamientos y disoluciones sutiles, sin deformarse ni salir de las celdas.                                                                                                        |
+| **Carrusel de proyectos**              | Desarrollar una interacción vinculada al scroll, en la que las fotografías de la columna izquierda se desplazan y amplían progresivamente dentro del marco de esquinas rosadas.         | Los filtros, al quedar fijos en pantalla, se ubicaban demasiado arriba y cerca del encabezado.                                                                         | Definí el comportamiento del recorrido y pedí bajar los filtros, alinearlos desde el borde de las fotografías hasta el final del texto y distribuirlos de forma proporcional.                                                               |
+| **Galería de imágenes**                | Programar la animación final, en la que las fotografías se trasladan entre los recuadros y aparecen y desaparecen mediante transiciones.                                                | Las imágenes debían ajustarse a cada recuadro sin cortes incorrectos ni superposiciones.                                                                               | Las fotografías de la galería provienen de mi diseño en Figma, y la clasificación de los proyectos por categoría la definí yo. Las tres imágenes cuyo proyecto no está confirmado quedaron sin enlace para evitar asociaciones incorrectas. |
+| **Cursor personalizado**               | Crear un cursor con forma de flor y una estela de pétalos que se desprenden al mover el cursor, de manera delicada y sin interferir con la navegación.                                  | La primera versión se construyó a partir de la flor del logotipo de Florialé, cuyo dibujo está cruzado por el trazo de la letra F.                                     | Decidí reemplazarla por una flor a partir de una imagen de referencia que entregué, y definí el tono rosado de la identidad visual y el carácter sutil de la estela.                                                                        |
+| **Integración audiovisual**            | Incorporar el video de Florialé en el espacio destinado a la animación y reproducirlo en bucle.                                                                                         | El archivo original (.mov en formato HEVC) no se reproduce en todos los navegadores.                                                                                   | Produje la animación de Florialé y definí su ubicación. La IA asistió en la conversión del video a un formato web compatible y en su reproducción automática.                                                                               |
+| **Prototipo en Figma**                 | Reconstruir el prototipo con auto layout sin alterar la apariencia, crear componentes con estados, diseñar la plantilla de página de proyecto y conectar la navegación entre pantallas. | La versión mobile del prototipo quedó incompleta en un primer momento.                                                                                                 | Revisé el prototipo y pedí completar la versión mobile con las mismas secciones del desktop.                                                                                                                                                |
+| **Organización y redacción**           | Ordenar la información del proceso y redactar el README de manera clara.                                                                                                                | —                                                                                                                                                                      | Usé la IA para estructurar mis ideas y mejorar la claridad de los textos. Revisé y ajusté la redacción final.                                                                                                                               |
 
-Me apoyó en la configuración de los estados Hover y Default, especialmente en los botones y en la aparición de los nombres de las piezas. Son funciones que todavía me cuestan recordar y configurar correctamente.
-
-Auto Layout
-La utilicé como apoyo para organizar las secciones del Home sin alterar la composición original del diseño.
-
-HTML y CSS
-Me ayudó a generar una primera estructura de código a partir del diseño realizado en Figma.
-
-Reflexión
-
-En este avance la inteligencia artificial me sirvió principalmente como una herramienta de apoyo para resolver dudas y avanzar en funciones que todavía no manejo con tanta facilidad. Por ejemplo, en Figma hay algunas interacciones, como los estados Hover y las animaciones, que todavía me cuesta configurar o recordar cómo realizar. En esos casos, Claude me ayudó a entender cómo implementarlas y a resolver algunos problemas que fueron apareciendo.
-
-
-3. Pendientes para el próximo avance
-
-Reemplazar los enlaces de Instagram, LinkedIn y GitHub por los perfiles reales.
-Subir la carpeta sitio/ al repositorio de GitHub, dejando index.html en la raíz.
-Completar el diseño mobile, incorporando Floriale, la galería y el footer.
-Desarrollar las demás páginas del portfolio: detalle de proyectos, Floriale y contacto.
-Revisar los tamaños de texto en mobile, especialmente aquellos que quedaron entre 6 y 8 px.
-Revisar el contraste de los textos claros sobre los fondos rosados.
+**Nota:** Dejé el registro de uso de IA en formato de tabla, tal como lo tenías, porque permite distinguir claramente qué solicitaste, qué dificultades aparecieron y qué decisiones tomaste tú.
