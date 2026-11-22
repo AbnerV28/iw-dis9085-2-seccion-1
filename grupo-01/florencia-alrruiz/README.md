@@ -1,4 +1,5 @@
 LINK FIGMA FLORENCIA ALRRUIZ https://www.figma.com/design/fzRnlbloZgh5nw5rnRrtaB/Florencia-Alrruiz-%E2%80%93-Portafolio?node-id=0-1&t=H98PrAZ6iHvI7S9t-1
+
 LINK PÁGINA WEB http://floalrruiz.cl/
 
 # Registro por avance: observaciones y mejoras implementadas
