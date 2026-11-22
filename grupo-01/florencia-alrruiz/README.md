@@ -45,7 +45,7 @@ Se desarrolló el sitio web completo, compuesto por 12 páginas: `index.html` y 
 
 ---
 
-# 3. Uso de inteligencia artificial
+# Uso de inteligencia artificial
 
 **Herramienta:** Claude (Anthropic), utilizado desde la aplicación de escritorio, con acceso a mi archivo de Figma y a la carpeta del proyecto.
 
@@ -64,3 +64,53 @@ Utilicé la inteligencia artificial como herramienta de apoyo, principalmente pa
 | **Prototipo en Figma**                 | Reconstruir el prototipo con auto layout sin alterar la apariencia, crear componentes con estados, diseñar la plantilla de página de proyecto y conectar la navegación entre pantallas. | La versión mobile del prototipo quedó incompleta en un primer momento.                                                                                                 | Revisé el prototipo y pedí completar la versión mobile con las mismas secciones del desktop.                                                                                                                                                |
 | **Organización y redacción**           | Ordenar la información del proceso y redactar el README de manera clara.                                                                                                                | —                                                                                                                                                                      | Usé la IA para estructurar mis ideas y mejorar la claridad de los textos. Revisé y ajusté la redacción final.                                                                                                                               |
 
+
+# Aprendizajes durante el proyecto
+
+El desarrollo del portafolio web me permitió acercarme a herramientas y recursos de programación que no habíamos trabajado en profundidad durante las clases. Debido a que mi propuesta incluía animaciones, interacciones y comportamientos específicos que buscaba replicar desde Figma, fue necesario explorar nuevas posibilidades de CSS y JavaScript, utilizando Claude como apoyo tanto para su implementación como para comprender, en la medida de lo posible, su funcionamiento.
+
+Uno de los principales aprendizajes fue entender que desarrollar una página web no consiste solamente en trasladar un diseño visual a código, sino también en comprender cómo se relacionan sus elementos, cómo se comportan frente a las acciones del usuario y cómo se adaptan a diferentes dispositivos.
+
+**1. Organización y composición mediante CSS**
+
+Durante el proyecto pude profundizar en distintas formas de organizar y posicionar elementos. Aprendí a reconocer las diferencias entre Flexbox y el posicionamiento absoluto, comprendiendo que cada uno responde a necesidades distintas. Mientras Flexbox permite organizar contenidos de manera flexible, el posicionamiento absoluto me permitió mantener composiciones específicas, como el collage de siluetas y la galería de imágenes.
+
+También conocí propiedades como `position: sticky`, utilizada para mantener fijo el carrusel durante el desplazamiento de la página, y otras como `object-fit` y `filter`, que permiten controlar la visualización de las fotografías y modificar el aspecto de ciertos elementos al interactuar con ellos.
+
+Además, incorporé variables CSS y unidades personalizadas para mantener las proporciones del diseño en distintos tamaños de pantalla.
+
+**2. Animaciones e interacciones mediante JavaScript**
+
+Uno de los aprendizajes más importantes fue conocer las posibilidades de JavaScript para desarrollar interacciones más complejas. Con ayuda de Claude pude implementar animaciones vinculadas al desplazamiento de la página, controlar el movimiento y tamaño de las fotografías del carrusel y desarrollar transiciones entre las imágenes de la galería.
+
+También conocí herramientas como `element.animate()`, `async/await` e `IntersectionObserver`, que permiten controlar animaciones, organizar acciones en secuencia y detectar cuándo un elemento se encuentra dentro del área visible de la pantalla.
+
+Sin embargo, aunque pude implementar estos recursos y comprender de manera general su propósito, todavía necesito profundizar en su funcionamiento interno. En varias ocasiones dependí de las explicaciones y del código generado por la IA para conseguir el resultado esperado, sin tener completamente claro cómo reproducirlo desde cero o modificarlo de manera independiente.
+
+**3. Organización de información y navegación**
+
+Durante el desarrollo también pude comprender mejor la importancia de organizar la información y mantener una estructura coherente entre las distintas páginas del sitio. Aprendí cómo utilizar archivos externos para separar los contenidos de los proyectos de su presentación visual y cómo conservar información mediante parámetros en las direcciones URL, permitiendo que los filtros seleccionados se mantuvieran al regresar desde una página individual.
+
+A pesar de haber conseguido implementar estas funciones, considero que todavía debo profundizar en la organización del código JavaScript y en la relación entre los distintos archivos, especialmente para poder comprender y mantener estructuras más complejas sin depender constantemente de la IA.
+
+**4. Accesibilidad y adaptación de las interacciones**
+
+Otro aspecto que pude conocer fue la importancia de considerar la accesibilidad durante el desarrollo web. Incorporé recursos para respetar la preferencia de reducir movimiento configurada en los dispositivos y permitir que ciertos elementos pudieran utilizarse mediante teclado.
+
+También comprendí que los componentes interactivos deben comunicar correctamente su estado, por ejemplo, indicando si un menú está abierto o qué filtro se encuentra seleccionado.
+
+Si bien pude implementar estas características con ayuda de Claude, es un área que me gustaría seguir estudiando, ya que inicialmente mi atención estuvo más concentrada en la apariencia visual y las animaciones que en la accesibilidad del sitio.
+
+**5. Preparación y optimización de recursos**
+
+También aprendí que el desarrollo web requiere preparar los recursos gráficos y audiovisuales para asegurar su correcta visualización en distintos navegadores. Durante el proyecto fue necesario adaptar la tipografía 42dot Sans para incorporar caracteres como las tildes y la ñ, además de convertir algunos archivos de video e imágenes a formatos compatibles con la web.
+
+En este punto, la IA también utilizó herramientas y procesos que no conocía previamente para automatizar algunas tareas, como la generación de las páginas individuales de los proyectos a partir de una estructura común. Si bien esto permitió agilizar el desarrollo y evitar la repetición de código, considero que fue uno de los aspectos que menos alcancé a comprender. Me faltó profundizar en cómo funcionaba ese proceso, qué herramientas utilizaba y cómo podría realizarlo o modificarlo por mi cuenta.
+
+**Reflexión final**
+
+En general, este proyecto me permitió ampliar mis conocimientos sobre desarrollo web y experimentar con recursos que inicialmente no sabía cómo implementar. Sin embargo, también pude reconocer que utilizar inteligencia artificial para resolver dificultades técnicas no significa necesariamente dominar las herramientas utilizadas.
+
+En algunos casos logré comprender el funcionamiento de los componentes gracias a las explicaciones de Claude y a las pruebas realizadas directamente en el navegador, mientras que en otros dependí más de las soluciones que me entregaba la herramienta. Esto me permitió identificar conocimientos que todavía necesito desarrollar, especialmente en JavaScript, la organización del código, la automatización de procesos y la implementación de animaciones más complejas.
+
+Considero que uno de los aprendizajes más importantes fue entender cómo utilizar la IA como apoyo sin dejar de participar activamente en las decisiones del proyecto. Aprendí a formular instrucciones más precisas, detectar errores, solicitar correcciones y evaluar los resultados según mis propios criterios de diseño. Al mismo tiempo, reconozco que necesito seguir profundizando en los aspectos técnicos para adquirir mayor autonomía y poder desarrollar futuras páginas web comprendiendo no solo el resultado, sino también el código que hay detrás de él.
