@@ -9,7 +9,7 @@ En mi caso, había comenzado trabajando directamente en una propuesta de alta fi
 
 ### 16 de noviembre de 2026 · Inasistencia
 
-### 23 de noviembre de 2026 · Trabajo de examen
+### 16/11/26- 23/11/2026 Trabajo de examen
 
 Desarrollo y finalización del portafolio web, incorporando las correcciones realizadas durante el proceso, los ajustes de diseño, las animaciones y la adaptación de los componentes a las versiones de escritorio y móvil.
 
