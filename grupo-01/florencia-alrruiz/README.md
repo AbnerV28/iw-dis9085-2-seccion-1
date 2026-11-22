@@ -1,4 +1,5 @@
 LINK FIGMA FLORENCIA ALRRUIZ https://www.figma.com/design/fzRnlbloZgh5nw5rnRrtaB/Florencia-Alrruiz-%E2%80%93-Portafolio?node-id=0-1&t=H98PrAZ6iHvI7S9t-1
+
 CLASE 09/11/26
 Mi trabajo en este equipo fue diseñar y estructurar la página web en figma en wireframe de baja y adaptar el formato desktop a mobile 
 Una de las principales dificultades de este trabajo fue pasar el diseño de figma al codigo. me costo lograr que las imagenes y las columnas quedaran ordenadas como en el prototipo, sobre todo al usar flexbox, porque algunos elementos se desordenaban o cambiaban de tamaño sin que entendiera bien porque. 
