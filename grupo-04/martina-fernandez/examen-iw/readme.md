@@ -95,4 +95,73 @@ Qué pasa si hacemos un tipo de juego como este que tiras una palanca y y se rue
 - patshiu.com
 - Actividad para soltar la mano: hacer wireframes de páginas que me hayan gustado.
 
-  
+------------------------------------------------------
+Para comenzar a diseñar la página busco las cosas que necesitaré para construirla, como las imágenes que quiero colocar y crear la tipografía que quiero hacer con mi letra. Busqué seleccioné y descargué las fotos que quería mostrar. 
+
+Para la tipografía, le pregunté a la IA cual era la mejor forma de hacer lo que quería hacer, me recomendó páginas para poder hacer mi propia tipografía [Calligraph.com](https://www.calligraphr.com/). En esta página, gratuitamente puedes descargar una plantilla que contenga 75 caracteres, los cuales escogí mayúsculas, minúsculas y las vocales con tilde. Con una tablet dibuje cada letra. La plantilla se sube a la plataforma y se generan los archivos .ttf u .otf descargables.
+
+![imagenes](./plantilla1.jpg)
+
+![imagenes](./plantilla2.jpg)
+
+
+> debo hacer una página web en html y css, es posible agregar mi propia tipografía? tipo hacer una tipografía escaneando mi letra para poder usarla en mi página?
+
+
+
+> ## Convertir tu letra en fuente
+>
+>La opción más fácil es Calligraphr (calligraphr.com). Hasta donde sé, tiene un plan gratis con un límite de caracteres que alcanza para lo básico.
+>
+>Descargas una plantilla, que es una hoja con cuadritos, uno por letra.
+>La imprimes y escribes cada letra en su cuadro con un plumón negro, ojalá de punta fina a media.
+>La escaneas, o le sacas una foto bien derecha y con buena luz, y la subes.
+>Te genera la fuente y la descargas en .ttf o .otf.
+
+> ** Ojo: agrega a la plantilla á é í ó ú ñ ¿ ¡ y los signos que vayas a usar. Si no, esos caracteres van a salir en otra fuente y se va a ver raro.
+
+
+También escogí una tipografía que me permitiera mostrar un lado más "ordenado" que representa un estado más "formal" se podría decir, para luego usar mi tipografía para mostrar un estado más personal.
+
+La tipografía "formal" que escogí fue la Gowun Batang.
+
+### Home
+
+Para el diseño del home y basándome en uno de mis referentes, quería colocar una imagen principal, al principio no sabía que colocar, tenía varías ideas para representar algún aspecto de mi personalidad pero me dí cuenta que tenía dos fotos mías con una calabaza, por lo que la utilicé como base para hacer este dibujo a línea de mi y usarlo en la parte principal del home. En un principio podemos verme oculta detrás de esta calabaza con cara, pero al pasar el cursor por encima me salgo de mi "escondite" y se borra la cara de la calabaza.
+
+Siguiendo hacía abajo quería colocar una especie de dinámica con una de las partes mas importantes que quiero mostrar en la página, la cual será una ruleta como la de las maquinas tragamonedas. Se me ocurrió la idea porque cuando chica acompañaba mucho a mi tía a jugar la frutillita y creí que sería una buena dinámica algo como "¿qué trío de fotos eres hoy?" también porque me gustan los post de Instagram que te dicen tu animal/insecto/comida/etc según tu mes de nacimiento o cosas así. 
+
+Partí creando el componente en el UI Kit. Coloque 9 cuadros por columna, de los cuales 1 era más grande que los demás para demostrar que era el "seleccionado". Luego, los agrupe dentro de un frame y estos los copie y pegué al lado para simular las 3 columnas de las máquinas. Cree un nuevo frame más pequeño que contuviera a estas 3 columnas y "recortara" el contenido para que no se viera que estaba todo dispuesto verticalmente. Cree 3 variantes para simular la interacción al apretar el botón.
+
+De mi selección oficial y certificada de fotos, seleccione algunas para usarlas en el prototipo de figma.
+
+Para los botones, Primero escribí lo que iban a decir, cree el componente, trazo para encerrarlo, lo edité para que no se viera tan recto redondeando los bordes, y cree una variante para hacer el efecto hover al pasar por encima de el.
+
+Varías veces tuve que rehacer los botones porqué no me funcionaba el efecto de cambio cuando pasara el cursor.
+
+Conecte las variantes, los botones y lo puse como si estuviera en un loop, por lo que cada vez que se apretara el botón de 
+"girar" se mostrarían las 3 variantes creadas.
+
+Agregué un botón que te llevará a otra página donde se encuentren todas las fotos que he sacado y he encontrado interesantes de compartir. Ya veremos si logro hacer este "depósito" de fotos o si no dejar solamente la ruleta .
+
+¿Qué quiero mostrar sobre mi?
+
+Me recomendaron buscar referentes sobre esto pero a la fecha aún no lo hago. 
+
+Pero si hay algo que si o si quiero mostrar en esta parte es a mi gato y mi gusto por ir a conciertos. Pienso, debería poner una opción donde al seleccionar la imagen del concierto al que fui se reproduzca una canción o que lo dirija a su perfil de Spotify??? quizás, ya veremos.
+
+En este lugar pensaba poner algunos videos, de mi y de mi gato tengo más videos que fotos de nosotros dos.
+
+Para el prototipo agregué un par de imágenes y vídeos que mostraran la mejor versión de estas gentes ajajaja
+
+Pensé en escribir los párrafos en forma de poemas, versos, para reflejar un espacio más personal.
+
+Para el Portafolio, escogí algunos trabajos que me resultan dignos de mostrar. 
+
+- Replica en madera de pino de la silla ARV Chair. Máquinas y procesos (2025-1)
+- Juuko, una lampara con alta inspiración en el mobiliario japonés junto a taller colectivo (2025-2)
+- Golondrina chilena para ParqueMET junto al Taller Colectivo (2025-2)
+- Mesita de centro. Acero carbono de 3mm plegado y pintado con negro. Fabricación Digital Avanzada (2026-1)
+
+*Nota del autor: los vídeos en figma suenan todo el rato al mirar el prototipo. Sacar el audio*
+

@@ -1,0 +1,107 @@
+/* Peso Light */
+@font-face {
+  font-family: "Satoshi";
+  src: url('fonts/Satoshi-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Peso Regular */
+@font-face {
+  font-family: "Satoshi";
+  src: url('fonts/Satoshi-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Peso Medium */
+@font-face {
+  font-family: "Satoshi";
+  src: url('fonts/Satoshi-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Peso Black */
+@font-face {
+  font-family: "Satoshi";
+  src: url('fonts/Satoshi-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400;
+  color: #1E1E1E;
+  text-decoration: none;
+  line-height: 1.6;
+  background-color: #DCDCFA;
+  padding-top: 4.5rem;
+  align-items: center;
+}
+
+.seccion {
+    width: fit-content;
+    padding: 0 4.5rem;
+    gap: 4rem;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 20rem;
+  letter-spacing: 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+    margin: none;
+    padding: 0 4.5rem;
+}
+
+.navegador {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.encabezado {
+    width: fit-content;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+footer {
+    display: flex;
+    width: max-content;
+    height: fit-content;
+    padding: 0 4.5rem;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #DCDCFA;
+    background-color: #1E1E1E;
+    border-radius: 4rem 4rem 0 0;
+}
