@@ -1445,6 +1445,24 @@ El archivo `design-qa.md` presenta el resultado de una revisión visual asistida
 * **Limitaciones y alcance:** La revisión no se considera completamente finalizada, ya que el propio registro indica `"final result: blocked"` y enumera tareas pendientes. Por lo tanto, la herramienta aportó observaciones valiosas y una lista de ajustes, pero fue necesario reconocer las limitaciones de la sesión y dejar constancia de lo que aún debía comprobarse manualmente.
 
 ---
+### 4. Vectorización de Logo (PNG a SVG)
+
+* **Prompt utilizado:**
+> *"¿Te puedo pasar la imagen y la cambias a SVG?"*
+
+* **Respuesta y proceso de la IA:**
+La IA me explicó el proceso de vectorización (trazar los contornos para convertir la imagen en formas escalables sin pérdida de calidad) y convirtió mi archivo `gorillaz-logo.png` (de 113 × 33 px) a formato **SVG**, conservando el color morado original (`#9A6F9E`) y el fondo transparente.
+
+* **Implementación en HTML:**
+Guardé el archivo generado en la carpeta `img/` y actualicé la ruta en `portadas.html` para evitar que el logo se viera borroso al escalarse:
+
+```html
+<img class="gorillaz-logo" src="./img/gorillaz-logo.svg" alt="Gorillaz">
+```
+
+* **Aprendizaje y limitaciones:**
+  * Aprendí que el formato **SVG** mantiene la nitidez a cualquier tamaño, pero si la imagen original en PNG es muy pequeña, el trazado puede suavizar o redondear ligeramente los bordes.
+  * Para obtener la máxima fidelidad en futuros proyectos, lo ideal es exportar los logos directamente en formato SVG desde **Figma** o **Illustrator**.
 
 ## Problemas y Aprendizaje
 
