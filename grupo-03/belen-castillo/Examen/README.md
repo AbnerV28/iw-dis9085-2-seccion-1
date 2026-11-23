@@ -158,7 +158,7 @@ También me di cuenta de que tenía archivos de más de 100MB, así que tuve que
 
 Con la página ya subida y todo funcionando, me di cuenta de que la sección "Sobre mí" en mobile se veía desordenada. 
 
-![Prueba del desorden 1](img-readme/mobile-desordenado.jpeg) ![Prueba del desorden 2](img-readme/mobile-desordenado-2.jpeg) 
+![Prueba del desorden 1](img-readme/mobile-desordenado.jpeg) ![Prueba del desorden 2](img-readme/mobile-desordenado-1.jpeg) 
 
 Así que tuve que agregar una sección especial para esta sección en mobile en el css y un nuevo archivo para el mapa, pero versión vertical.
 
