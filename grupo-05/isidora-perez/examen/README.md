@@ -9,6 +9,12 @@
 
 [Isidora-Pérez](https://www.figma.com/proto/KJDPJpzLs1xe5z5ICsl9tP/Examen?node-id=0-1&t=AzfJgzHKuymWBI34-1)
 
+## Github pages
+
+[Github pages](https://isipm08.github.io/examen-iw/)
+
+[Repositorio examen](https://github.com/isipm08/examen-iw)
+
 ## Descripción proyecto
 
 Realizaré la página web para mi portafolio, mostrando mis mejores proyectos a lo largo de la carrera. Quiero adoptar una estética tipo escritorio de computador, la cual quiero tomar una gama de colores vibrantes o pasteles y que esta página visualmente se vea atractiva y entretenida. 
@@ -194,4 +200,5 @@ Mi segundo problema durante este proceso fue la realización de un carrusel de i
 ### Aprendizajes
 
 Creo que uno de los mayores aprendizajes durante el proceso de la realización de mi portafolio fue la tolerancia a la frustración y encontrar mi identidad. Creo que aún es un proceso en desarrollo, ya que mientras realizaba el examen hubo varios momentos los cuales me comparaba con los demás y sentía que lo mío no era suficiente, pero al final la una competencia es conmigo misma y superarme siempre. Creo que aún mi portafolio es un proyecto en desarrollo, quizá no es mi identidad, pero por el momento estoy satisfecha con mi entrega y lo que pude dar con tan poco tiempo.
+
 
