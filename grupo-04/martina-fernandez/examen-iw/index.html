@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pumpkinguurl</title>
+        <!-- Agrega archivo de styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Agrega archivo de javascript -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <a class="logo" href="index.html">pumpkinguurl</a>
+        <nav aria-label="Navegación principal">
+            <ul class="nav-links">
+                <li><a href="#fotos">Fotos</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- BANNER: cuando pasas el cursor sobre el banner-1 se cambia al banner-2 -->
+        <section class="banner">
+            <h1><img class="banner-1" src="imagenes/banner-1.png" alt="pumpkinguurl"></h1>
+            <img class="banner-2" src="imagenes/banner-2.png" alt="pumpkinguurl">
+        </section>
+
+        <!-- RULETA DE FOTOS -->
+        <section class="fotos" id="fotos">
+            <h2>Descubre qué trío de fotos eres</h2>
+
+            <div class="ruleta">
+                <div class="columna">
+                    <img src="imgruleta/img1.jpg" alt="Café con arte latte">
+                    <img src="imgruleta/img4.jpg" alt="Estante de bebidas">
+                    <img src="imgruleta/img7.jpg" alt="Pala de arena para gatos con un grumo en forma de corazón">
+                    <img src="imgruleta/img10.jpg" alt="Flores rojas junto a una reja de madera">
+                    <img src="imgruleta/img13.jpg" alt="Escenario de un concierto de noche">
+                </div>
+                <div class="columna">
+                    <img src="imgruleta/img2.jpg" alt="Golosinas en la mano">
+                    <img src="imgruleta/img5.jpg" alt="Persona tapándose la cara con una calabaza en un supermercado">
+                    <img src="imgruleta/img8.jpg" alt="Flores blancas en el pasto">
+                    <img src="imgruleta/img11.jpg" alt="Dos personas tomadas de la mano">
+                    <img src="imgruleta/img14.jpg" alt="Luna llena sobre unos cactus">
+                </div>
+                <div class="columna">
+                    <img src="imgruleta/img3.jpg" alt="Estante de supermercado con snacks">
+                    <img src="imgruleta/img6.jpg" alt="Cámara digital mostrando una foto de comida">
+                    <img src="imgruleta/img9.jpg" alt="Cangrejo pequeño en la palma de una mano">
+                    <img src="imgruleta/img12.jpg" alt="Picnic en el pasto con completos y lightsticks">
+                    <img src="imgruleta/img15.jpg" alt="Cielo nublado sobre un letrero">
+                </div>
+            </div>
+
+            <button class="btn-girar" type="button">Girar</button>
+            <!-- lleva a la galería de fotos -->
+            <a class="btn-descubre" href="galeria.html">Descubre más</a>
+        </section>
+
+        <!-- Ilustración de pez 1 -->
+        <img class="pez-1" src="imagenes/pez.png" alt="">
+
+        <!-- SOBRE MÍ -->
+        <section class="sobre-mi" id="sobre-mi">
+            <h2>Sobre mí</h2>
+
+            <div class="presentacion">
+                <video class="yo-video" src="imagenes/yovideo.mp4" autoplay muted loop playsinline></video>
+
+                <div class="presentacion-texto">
+                    <p>Hola!! Me llamo Martina.<br>
+                        Tengo 24 años.<br>
+                        Estoy estudiando Diseño Industrial.<br>
+                        Antes de eso, estudiaba Ped. en Matemáticas.<br>
+                        Trabajo en una pastelería.</p>
+
+                    <div class="gustos">
+                        <div class="series">
+                            <p>Me gusta ver series y películas animadas.</p>
+                            <p>Mis favoritas son:</p>
+                            <ul>
+                                <li>Over the Garden Wall</li>
+                                <li>Coraline</li>
+                                <li>Fullmetal Alchemist: Brotherhood</li>
+                            </ul>
+                        </div>
+                        <img class="rana" src="imagenes/rana.png" alt="">
+                        <p class="animales">Me gustan mucho los animales, pero particularmente me gustan más los gatos, los peces, los insectos, las ranas y los patos.</p>
+                        <p class="comida">Me gusta el té amargo, el mote con huesillo, las cositas dulces y las cositas saladas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kaicito -->
+            <div class="kai">
+                <div class="kai-texto">
+                    <h3>Kai</h3>
+                    <p>Llegó el 2022<br>
+                        con 3 meses.<br>
+                        Dijeron que era ella,<br>
+                        pero le salieron bolas.</p>
+                    <h3>Kai</h3>
+                    <p>A Kai le gusta dormir<br>
+                        en las toallas,<br>
+                        entremedio de las cortinas,</p>
+                    <p>tirar por la ventana<br>
+                        el churu de pollito<br>
+                        y es muy regalón<br>
+                        —cuando le conviene—.</p>
+                </div>
+                <div class="kai-fotos">
+                    <img src="imagenes/yoykai.jpg" alt="Martina abrazando a Kai">
+                    <img src="imagenes/kai.jpg" alt="Kai acostado mirando hacia arriba">
+                </div>
+                <video class="kai-video" src="imagenes/kaivideo.mp4" autoplay muted loop playsinline></video>
+            </div>
+
+            <!-- Ilustración de pez 2 -->
+            <img class="pez-2" src="imagenes/pez.png" alt="">
+
+            <!-- Conciertos -->
+            <div class="conciertos">
+                <p>Disfruto mucho ir a conciertos.<br>
+                    Ir a cancha.<br>
+                    Saltar.<br>
+                    La vida se pausa por dos horas.</p>
+                <p class="conciertos-sub">Algunos de los conciertos a los que he podido ir desde que trabajo</p>
+
+                <!-- aquí va el carrusel de conciertos -->
+                <div class="carrusel">
+                    <div class="carrusel-fotos">
+                        <img src="imagenes/con1.jpg" alt="Concierto 1">
+                        <img src="imagenes/con2.jpg" alt="Concierto 2">
+                        <img src="imagenes/con3.jpg" alt="Concierto 3">
+                        <img src="imagenes/con4.jpg" alt="Concierto 4">
+                        <img src="imagenes/con5.jpeg" alt="Concierto 5">
+                        <img src="imagenes/con6.jpg" alt="Concierto 6">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Ilustración de escarabajo -->
+        <img class="escarabajo" src="imagenes/escarabajo-azul.png" alt="">
+
+        <!-- Portafolio -->
+        <section class="portafolio" id="portafolio">
+            <h2>Portafolio</h2>
+
+            <div class="proyectos">
+                <figure class="proyecto">
+                    <video src="imgportafolio/golondrina2.mp4" autoplay muted loop playsinline></video>
+                    <figcaption>
+                        <h3>Golondrina Chilena</h3>
+                        <p>Taller Colectivo</p>
+                        <p>2025-2</p>
+                    </figcaption>
+                </figure>
+                <figure class="proyecto">
+                    <img src="imgportafolio/lamp5.jpeg" alt="Luminaria Jüko">
+                    <figcaption>
+                        <h3>Jüko</h3>
+                        <p>Taller Colectivo</p>
+                        <p>2025-2</p>
+                    </figcaption>
+                </figure>
+                <figure class="proyecto">
+                    <img src="imgportafolio/mesa2.jpg" alt="Mesita de suelo">
+                    <figcaption>
+                        <h3>Mesita de suelo</h3>
+                        <p>Fabricación Digital Avanzada</p>
+                        <p>2026-1</p>
+                    </figcaption>
+                </figure>
+                <figure class="proyecto">
+                    <img src="imgportafolio/silla1.jpg" alt="Silla ARV">
+                    <figcaption>
+                        <h3>ARV Chair</h3>
+                        <p>Máquinas y procesos</p>
+                        <p>2025-1</p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <a class="btn-detalles" href="portafolio.html">Ver detalles</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-texto">
+            <p>Eso fue todo!</p>
+            <p>Si necesitas saber más sobre mis trabajos, te invito a contactarme a través de las siguientes plataformas:</p>
+            <ul>
+                <li><a href="https://www.instagram.com/pumpkinguurl/" target="_blank" rel="noopener noreferrer"><img src="imagenes/icono-instagram.png" alt="">pumpkinguurl</a></li>
+                <li><a href="mailto:martina.fernandez3@mail.udp.cl"><img src="imagenes/icono-correo.png" alt="">martina.fernandez3@mail.udp.cl</a></li>
+            </ul>
+        </div>
+        <img class="footer-img" src="imagenes/banner-blanco.png" alt="pumpkinguurl">
+    </footer>
+</body>
+</html>
