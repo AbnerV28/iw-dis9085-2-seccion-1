@@ -3,6 +3,10 @@ Este proyecto consiste en el diseño, desarrollo y publicación de mi portafolio
 
 La propuesta busca construir una identidad visual propia a través de una estética experimental y editorial, utilizando el scrolling como parte de la experiencia de navegación. El sitio combina tipografías expresivas, colores, composiciones gráficas, animaciones y transiciones para generar un recorrido visual por mis proyectos.
 
+## Portafolio
+Puedes visitar mi portafolio personal aquí: [**VISITAR PORTAFOLIO**](https://marcezm.github.io/portafolio/)  
+Revisa mi Figma: [**VISITAR FIGMA**]
+
 ## Referencias web
 Para desarrollar la propuesta visual y la experiencia de navegación de mi portafolio, revisé diferentes sitios web que me permitieron explorar distintas formas de presentar proyectos y construir una experiencia visual.
 
