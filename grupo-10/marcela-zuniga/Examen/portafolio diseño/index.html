@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portafolio · Estudiante de Diseño</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navegación fija -->
+<div class="progreso"></div>
+<header class="nav">
+  <a class="logo" href="#inicio" aria-label="Inicio">MZ</a>
+  <span id="indicador">Inicio</span>
+  <button id="btnMenu" aria-expanded="false" aria-controls="menu">Menú</button>
+</header>
+<nav class="menu" id="menu" aria-label="Menú principal">
+  <div class="grande">
+    <a href="#inicio">Inicio</a>
+    <a href="#indice">Proyectos</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+  <div class="lista">
+    <a href="#nanai">Nanai</a><a href="#bioglitch">BIO//GLITCH</a><a href="#sin-verguenza">Sin Vergüenza</a>
+    <a href="#igneo">Igneo</a><a href="#tool360">Tool 360</a><a href="#silla-infantil">Silla infantil</a>
+  </div>
+</nav>
+
+<main>
+<!-- 1. PORTADA -->
+<section class="hero" id="inicio" data-label="Inicio">
+  <div class="hero-fijo">
+    <svg class="sticker" viewBox="0 0 100 100" aria-hidden="true">
+      <defs><path id="circ" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs>
+      <text><textPath href="#circ">portafolio · diseño · portafolio · diseño · </textPath></text>
+    </svg>
+    <div class="forma circulo"></div>
+    <div class="forma semi"></div>
+    <div class="forma estrella"></div>
+    <h1 class="nombre"><span class="l1">Soy</span><span class="l2">Marcela</span><span class="l3">Zúñiga</span></h1>
+    <p class="sub">Estudiante de Diseño Industrial con enfoque en UX/UI e interacción.</p>
+    <p class="hint">Baja para empezar ↓</p>
+    <div class="forma cubre"></div>
+  </div>
+</section>
+
+<!-- 2. FRASE -->
+<section class="frase" id="frase" data-label="Presentación">
+  <div class="frase-fijo">
+    <p class="grande" id="textoFrase">
+      Diseño <span class="k rosa">objetos</span>, <span class="k pistacho">interfaces</span> y <span class="k celeste">experiencias</span> que se pueden tocar, usar y sentir.
+    </p>
+    <p class="formacion">Estudio Diseño y trabajo entre lo digital y lo físico. Estos son los proyectos de mi formación, del más reciente al más antiguo.</p>
+  </div>
+</section>
+
+<!-- 3. ÍNDICE -->
+<section class="indice" id="indice" data-label="Proyectos">
+  <h2>Seis proyectos</h2>
+  <a class="fila" href="#nanai" style="--c:var(--rosa)"><span class="n">01</span><span class="t">Nanai</span><span class="d">Diseño interactivo</span><span class="a">2026</span></a>
+  <a class="fila" href="#bioglitch" style="--c:var(--pistacho)"><span class="n">02</span><span class="t">BIO//GLITCH</span><span class="d">Interactivo / Web</span><span class="a">2026</span></a>
+  <a class="fila" href="#sin-verguenza" style="--c:var(--celeste)"><span class="n">03</span><span class="t">Sin Vergüenza</span><span class="d">Diseño UX/UI</span><span class="a">2026</span></a>
+  <a class="fila" href="#igneo" style="--c:var(--vino)"><span class="n">04</span><span class="t">Igneo</span><span class="d">Diseño industrial</span><span class="a">2025</span></a>
+  <a class="fila" href="#tool360" style="--c:var(--pistacho)"><span class="n">05</span><span class="t">Tool 360</span><span class="d">Diseño industrial</span><span class="a">2024</span></a>
+  <a class="fila" href="#silla-infantil" style="--c:var(--rosa)"><span class="n">06</span><span class="t">Silla infantil</span><span class="d">Diseño industrial</span><span class="a">2024</span></a>
+</section>
+
+<!-- ===== PROYECTO 01: Nanai ===== -->
+<article class="proyecto" id="nanai" data-label="Nanai" style="--bg:var(--rosa);--fg:var(--carbon);--ac:var(--vino)">
+  <header class="cab"><span class="num">01</span><h2>Nanai</h2></header>
+  <div class="cuerpo">
+    <div class="info">
+      <p class="desc">Una máquina de acompañamiento emocional inspirada en los computadores de juguete de los años 2000. Tiene tres modos en pantalla: mensajes motivacionales, emociones y un juego cuya dificultad cambia según la emoción elegida.</p>
+      <dl class="ficha">
+        <div><dt>Año</dt><dd>2026</dd></div>
+        <div><dt>Disciplina</dt><dd>Diseño interactivo</dd></div>
+        <div><dt>Rol</dt><dd>Trabajo en equipo (4 integrantes)</dd></div>
+        <div><dt>Herramientas</dt><dd>C++, Raspberry Pi Pico 2 W, Wokwi, impresión 3D</dd></div>
+      </dl>
+      <a class="btn" href="https://github.com/marcezm/dis8645-2026-2-procesos-2/tree/main/00-proyecto-2/grupo-03" target="_blank" rel="noopener">Ver proyecto →</a>
+    </div>
+    <div class="imgs">
+      <figure class="img"><img src="img/nanai-1.gif" alt="Nanai: pantalla de inicio de la máquina"></figure>
+      <figure class="img"><img src="img/nanai-2.png" alt="Nanai: interfaz de los tres modos de pantalla"></figure>
+      <figure class="img"><img src="img/nanai-3.gif" alt="Nanai: la máquina funcionando"></figure>
+    </div>
+  </div>
+</article>
+
+<!-- ===== PROYECTO 02: BIO//GLITCH ===== -->
+<article class="proyecto" id="bioglitch" data-label="BIO//GLITCH" style="--bg:var(--pistacho);--fg:var(--carbon);--ac:var(--vino)">
+  <header class="cab"><span class="num">02</span><h2>BIO//GLITCH</h2></header>
+  <div class="cuerpo">
+    <div class="info">
+      <p class="desc">Una plataforma audiovisual experimental sobre el conflicto entre naturaleza y tecnología. El movimiento de una flor se traduce en sonido, y la actividad sonora intensifica a su vez las interferencias digitales sobre la imagen.</p>
+      <dl class="ficha">
+        <div><dt>Año</dt><dd>2026</dd></div>
+        <div><dt>Disciplina</dt><dd>Interactivo / Web</dd></div>
+        <div><dt>Rol</dt><dd>Ideación y programación de la página</dd></div>
+        <div><dt>Herramientas</dt><dd>Visual Studio Code, HTML, CSS, JavaScript</dd></div>
+      </dl>
+      <a class="btn" href="https://github.com/marcezm/BIO-GLITCH" target="_blank" rel="noopener">Ver proyecto →</a>
+    </div>
+    <div class="imgs">
+      <figure class="img"><img src="img/bioglitch-1.gif" alt="BIO//GLITCH: interfaz principal con el video de la flor"></figure>
+      <figure class="img"><img src="img/bioglitch-2.gif" alt="BIO//GLITCH: estado de interferencia con glitch visual"></figure>
+    </div>
+  </div>
+</article>
+
+<!-- ===== PROYECTO 03: Sin Vergüenza ===== -->
+<article class="proyecto" id="sin-verguenza" data-label="Sin Vergüenza" style="--bg:var(--celeste);--fg:var(--carbon);--ac:var(--rosa)">
+  <header class="cab"><span class="num">03</span><h2>Sin Vergüenza</h2></header>
+  <div class="cuerpo">
+    <div class="info">
+      <p class="desc">Sitio web del proyecto de título de Camil Gonzales que abre la conversación sobre el trabajo sexual en Chile y las voces que quedan fuera de los relatos. Reúne entrevistas callejeras en visualizaciones interactivas, escritos de trabajadorxs sexuales y contralecturas de los medios. Sigue en desarrollo.</p>
+      <dl class="ficha">
+        <div><dt>Año</dt><dd>2026</dd></div>
+        <div><dt>Disciplina</dt><dd>Diseño UX/UI</dd></div>
+        <div><dt>Rol</dt><dd>Programación de la página (en proceso)</dd></div>
+        <div><dt>Herramientas</dt><dd>HTML, CSS, JavaScript</dd></div>
+      </dl>
+      <a class="btn" href="https://marcezm.github.io/sin-verguenza/" target="_blank" rel="noopener">Ver proyecto →</a>
+    </div>
+    <div class="imgs">
+      <figure class="img"><img src="img/sinverguenza-1.png" alt="Sin Vergüenza: portada del sitio con la advertencia +18"></figure>
+      <figure class="img"><img src="img/sinverguenza-2.png" alt="Sin Vergüenza: módulo de entrevistas y visualizaciones"></figure>
+      <figure class="img"><img src="img/sinverguenza-3.png" alt="Sin Vergüenza: sección de escritos y contralecturas"></figure>
+    </div>
+  </div>
+</article>
+
+<!-- ===== PROYECTO 04: Igneo ===== -->
+<article class="proyecto" id="igneo" data-label="Igneo" style="--bg:var(--vino);--fg:var(--marfil);--ac:var(--pistacho)">
+  <header class="cab"><span class="num">04</span><h2>Igneo</h2></header>
+  <div class="cuerpo">
+    <div class="info">
+      <p class="desc">Una luminaria liviana hecha con un bioplástico biodegradable que probamos como material. Las láminas se tensan sobre una estructura de alambre y sus texturas generan distintas opacidades, con las que se juega con la luz para lograr una iluminación suave y cálida.</p>
+      <dl class="ficha">
+        <div><dt>Año</dt><dd>2025</dd></div>
+        <div><dt>Disciplina</dt><dd>Diseño industrial</dd></div>
+        <div><dt>Rol</dt><dd>Trabajo en equipo</dd></div>
+        <div><dt>Herramientas</dt><dd>Bioplástico, alambre</dd></div>
+      </dl>
+    </div>
+    <div class="imgs">
+      <figure class="img"><img src="img/igneo-1.jpeg" alt="Igneo: describe la imagen 1"></figure>
+      <figure class="img"><img src="img/igneo-2.jpeg" alt="Igneo: describe la imagen 2"></figure>
+      <figure class="img"><img src="img/igneo-3.jpeg" alt="Igneo: describe la imagen 3"></figure>
+    </div>
+  </div>
+</article>
+
+<!-- ===== PROYECTO 05: Tool 360 ===== -->
+<article class="proyecto" id="tool360" data-label="Tool 360" style="--bg:var(--marfil);--fg:var(--carbon);--ac:var(--celeste)">
+  <header class="cab"><span class="num">05</span><h2>Tool 360</h2></header>
+  <div class="cuerpo">
+    <div class="info">
+      <p class="desc">Examen de Taller Industrial III, realizado junto a Alen Barrientos. Responde a la falta de personalización sensorial en las infancias autistas: un set de esferas con estímulos distintos (rugosa, suave, blanda, rígida, cálida, fría, vibrante) que permite identificar, sin palabras, el perfil sensorial de cada niño o niña según sus elecciones, rechazos y nivel de comodidad.</p>
+      <dl class="ficha">
+        <div><dt>Año</dt><dd>2024</dd></div>
+        <div><dt>Disciplina</dt><dd>Diseño industrial</dd></div>
+        <div><dt>Rol</dt><dd>Trabajo en pareja con Alen Barrientos</dd></div>
+        <div><dt>Herramientas</dt><dd>Shadowing, dibujo de observación</dd></div>
+      </dl>
+    </div>
+    <div class="imgs">
+      <figure class="img"><img src="img/tool360-1.jpeg" alt="Tool 360: set de esferas con distintas texturas"></figure>
+      <figure class="img"><img src="img/tool360-2.jpeg" alt="Tool 360: niño explorando las esferas"></figure>
+      <figure class="img"><img src="img/tool360-3.jpeg" alt="Tool 360: detalle de las esferas"></figure>
+    </div>
+  </div>
+</article>
+
+<!-- ===== PROYECTO 06: Silla infantil ===== -->
+<article class="proyecto" id="silla-infantil" data-label="Silla infantil" style="--bg:var(--marfil);--fg:var(--carbon);--ac:var(--rosa)">
+  <header class="cab"><span class="num">06</span><h2>Silla infantil</h2></header>
+  <div class="cuerpo">
+    <div class="info">
+      <p class="desc">Examen de Fabricación Digital: una silla infantil ensamblable hecha con solo media plancha de terciado y un sistema de encastres, sin tornillos ni adhesivos. Está diseñada para corte CNC, con medidas a escala infantil y un montaje intuitivo, sin herramientas. El resultado es un mueble firme, cómodo y fácil de transportar que explora la eficiencia del material y la fabricación digital.</p>
+      <dl class="ficha">
+        <div><dt>Año</dt><dd>2024</dd></div>
+        <div><dt>Disciplina</dt><dd>Diseño industrial</dd></div>
+        <div><dt>Rol</dt><dd>Diseño y fabricación (individual)</dd></div>
+        <div><dt>Herramientas</dt><dd>Corte CNC, terciado</dd></div>
+      </dl>
+    </div>
+    <div class="imgs">
+      <figure class="img"><img src="img/silla-1.png" alt="Silla infantil: silla ensamblada de terciado"></figure>
+      <figure class="img"><img src="img/silla-2.png" alt="Silla infantil: piezas cortadas en CNC sobre la plancha"></figure>
+      <figure class="img"><img src="img/silla-3.png" alt="Silla infantil: detalle del sistema de encastres"></figure>
+    </div>
+  </div>
+</article>
+
+<!-- ===== CONTACTO ===== -->
+<section class="contacto" id="contacto" data-label="Contacto">
+  <h2>Contáctame</h2>
+  <p class="intro">¿Quieres conversar, colaborar o saber más de algún proyecto? Escríbeme.</p>
+  <div class="enlaces">
+    <a href="mailto:marcela.zm.05@gmail.com"><span class="etq">Correo</span><span class="val">marcela.zm.05@gmail.com</span></a>
+    <a href="https://www.instagram.com/m.valenntinaa/" target="_blank" rel="noopener"><span class="etq">Instagram</span><span class="val">@m.valenntinaa</span></a>
+  </div>
+  <p class="pie">© 2026 Marcela Zúñiga</p>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
