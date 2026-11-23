@@ -1,6 +1,8 @@
 # BAZR
 ## Link de figma:
 https://www.figma.com/design/pzG5bZtHLw9pE1yLshPiK2/Horacio-Garc%C3%ADa-Jorge?node-id=1-3&t=i305Epk206d1zOoA-1
+## Link página
+https://horaciogarcia-cell.github.io/bzar/index.html
 
 ### Sobre el proyecto
 El proyecto Bazar surge a través de un video de internet donde un usuario de Google maps marca diferentes cafeterías dentro de su ciudad y genera una ruta para conocerla, a través de estos registros, el usuario además expresaba su deseo por expandir estas rutas a otras ciudades, por lo que surgió la idea de realizar una página web que funcionara de una forma similar a este ejercicio. 
