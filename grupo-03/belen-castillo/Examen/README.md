@@ -1,3 +1,6 @@
+## Link de Figma
+https://www.figma.com/design/o40EBU5M3OdI6YZ84nSSYk/Examen?node-id=0-1&t=6J2QyQ3Zd9v9rmg3-1
+
 ## 1 Proyecto
 Portafolio web personal enfocado en mostrar mi trabajo integral como diseñadora. El sitio se divide en dos áreas principales: los mejores proyectos desarrollados en la carrera y una sección dedicada a mis proyectos personales de ilustración y dibujo digital. 
 
@@ -21,10 +24,8 @@ He elegido 5 referentes para empezar con el diseño de mi página web
 
 5. **[Daniel Spatzek](https://www.danielspatzek.com/home/):
 - **Sección FAQ Interactiva con cambio de imagen en Hover:** Al pasar el cursor por cada pregunta de la lista, el cuadro de imagen/contenido adyacente se actualiza en tiempo real para complementar visualmente la respuesta con humor y dinamismo.
--  **Microinteracciones en filas/listas (Hover Feedback):** El cambio de color de fondo y de texto en las filas de la lista al pasar el cursor, dando una clara señal de interacción (feedback visual) al usuario. 
-
-## Link de Figma
-https://www.figma.com/design/o40EBU5M3OdI6YZ84nSSYk/Examen?node-id=0-1&t=6J2QyQ3Zd9v9rmg3-1
+-  **Microinteracciones en filas/listas (Hover Feedback):** El cambio de color de fondo y de texto en las filas de la lista al pasar el cursor, dando una clara señal de interacción (feedback visual) al usuario.
+  
 
 ## Clase 16-11-2026
 
