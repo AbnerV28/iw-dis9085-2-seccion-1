@@ -4,6 +4,9 @@
 ## Figma
 https://www.figma.com/design/Vqxsut1vHTxfBYX1vbEPcr/EXAMEN_Jerliana_Martinez?node-id=1-3&t=wM9AlohbrVs9jSLO-1 
 
+## Portafolio
+https://jerliml.github.io/jerli-martinez-portafolio/
+
 ## Descripción
 El proyecto trata de un portafolio personal para documentar los trabajos más relevantes hechos durante y post mi carrera de diseño, así comenzar a generar una identidad gráfica la cual mostrar a posibles futuros cliente. También incluyendo en un punto aparte mi hobbe como ilustradora.
 
@@ -16,11 +19,6 @@ El proyecto trata de un portafolio personal para documentar los trabajos más re
 - Tomé de referencia el menú desplegable en “transparencias” para agregar información personal a la tarjeta de presentación. 
 ### INSAIM DESIGN / https://www.insaim.design/ 
 - Tomé como referencia la forma en que se presentan los proyectos (el scroll). 
-- También tomé el dinamismo al pasar el cursor en cierta zona que descubre un dibujo oculto. 
-### Chad Miller / https://chdmlr.com/
-- Tomé como referencia como cambia el cursor dentro de la página. 
-### dreng.studio / https://dreng.studio/
-- Tomé como referencia la forma en que cambia la página (fade in and out). 
 ### Cosima Grand / https://cosimagrand.ch/ 
 - Tomé como referencia el scroll con el que se presentan los proyectos. 
 ### Janis Sepúlveda / https://janisepulveda.cl/index.html 
@@ -48,3 +46,171 @@ Mis errores fueron: trabajar la totalidad de los componentes dentro de UI kit, y
 para aprender eso, utilicé este tutorial
 Create a Functional HAMBURGER MENU NAVIGATION in Figma (Tutorial)
 https://www.youtube.com/watch?v=dr6C_LK1U_Y 
+
+# 23/11
+
+hubieron pocas observaciones en clase más allá de algunas por errores ortográficos, esto porque lo único avanzado era el figma.
+
+Comencé trabajando solo html y css, componiendo el orden de la página y como esta iba a funcionar en cuestión de cómo se ajustaba el menú, así que trabajé el menú en barra lateral utilizando dos tutoriales para apoyarme en la organización del mismo.
+
+https://www.youtube.com/watch?v=xMqTAtA1vI4
+este tutorial trabaja el cómo hacer una barra de navegación vertical con animaciones utilizando CSS y JavaScript, fue la base de cómo realizar la barra de navegación.
+
+https://www.youtube.com/watch?v=4G-an-QZNT4
+con este otro me apoyé para aprender cómo justificar el texto de forma vertical ya que el tutorial anterior solamente trabajaba  los textos de forma horizontal.
+
+Así mismo decidí solucionar también como funcionaria la barra de navegación en el media queries de mobile, a su vez, quería comenzar a aplicar javascript así que usé este tutorial para realizar el menú hamburguesa.
+https://www.youtube.com/watch?v=Xs3cC8-5QDI 
+
+Tras resolver tema de header y footer, seguí trabajando en el home, ahora con la parte de proyectos, donde aprendí el uso de las grid y la medida fr, apliqué para ordenar los proyectos de forma cómoda según establecí en el figma, para aprender cómo usar lo que mencioné, leí estos artículos
+
+https://developer.mozilla.org/es/docs/Web/CSS/Guides/Grid_layout/Basic_concepts#el_contenedor_de_grid 
+https://developer.mozilla.org/es/docs/Web/CSS/Guides/Grid_layout/Relationship_with_other_layout_methods#grid_y_flexbox 
+
+Mientras lo leía, analizaba el referente INSAIM con la herramienta de inspección que me permitió saber cómo se aplicaban las reglas, que pasaba si las cambiaba y que era lo que cada una podía lograr. Ademá, aplique lo explicado en el siguiente video para lograr ordenar las cosas en base a grillas y permitir que el bloque se quedará estático al hacer scroll, esto lo apliqué en el home y también en la sección de proyectos
+
+https://www.youtube.com/watch?v=_E7toGCt5OI 
+
+Todo lo anterior se aplicó también para la página de proyectos, con la que trabajé con grillas para ordenar las cosas y poder mantener una imagen estática como se plantea en los ejemplos ya dados, otra cosa que me sirvió para entender cómo funcionaba esto fue analizar el código del referente. También aprendí a dar un mejor tamaño de textos ya que los que tengo como predeterminados dentro de los establecidos en el css quedaban muy grandes para lo que buscaba lograr. 
+
+https://cosimagrand.ch/ 
+
+Por otro lado, para cambiar el comportamiento de la grilla en el media queries de celular, tuve que explorar por mi cuenta hasta lograr entender que colocarle la propiedad de auto hacia que desapareciera la grilla, a partir de eso, ordené el contenido de forma normal como si la grilla nunca hubiese estado. Además de seguir un tutorial para que las imágenes presentadas formen un carrusel y así utilizar menos espacio en pantalla a la hora de scrollear.
+
+https://www.youtube.com/watch?v=-ppe9zj41vE&t=226s 
+
+para trabajar en la lista desplegable primero comencé leyendo sobre las funciones de las etiquetas que se utilizan dentro del código para una lista, luego de eso, pasé a ver un tutorial en youtube que me pudiera indicar como se armaba la lista y otro que me enseñara a como darle estilo sin perder la funcionalidad
+
+guías
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label
+https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/select 
+https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/option 
+
+tutoriales
+https://www.youtube.com/watch?v=YQWyzw8wcWI 
+https://www.youtube.com/watch?v=op4YGYoD36o 
+
+para la página de contactos, utilicé este tutorial que me enseñó como hacer el formulario de contacto y cómo hacerlo funcional mediante formspree, con esto aprendí que las redirecciones de correo no se crean con solo un correo si no que requieren de un dominio separado que ayude a redirigir los mensajes sin exponer directamente el correo del destinatario
+
+https://www.youtube.com/watch?v=FGJNC4bSztM 
+
+**Aclaro no haber utilizado IA en ninguno de mis procesos hasta lo que se indica más adelante.**
+
+ya con la lista ya hecha, le pregunté a la IA como conectar los textos de resultado a la lista y así hubiese una variación de textos a la hora de seleccionar una opción, así también le pedí ayuda para conectar los textos con la lista ya que esta función requiere de javascript.Tras su respuesta, ordené por cuenta propia el código para adaptarlo al media queries.
+
+## apoyo de la IA: conectar lista desplegable con textos
+**Prompt usado:**
+> adjunto archivos html, css y js. Dentro del html hay una lista desplegable ya creada junto a un bloque que contiene texto en parte superior de la lista, necesito que el texto dentro del bloque que te acabo de mencionar cambie según la elección que se haga en la lista, puedes usar css y javascript si es necesario hacerlo. a continuación te adjunto las opciones que ya están indicadas en el html y los textos que deben aparecer con esa opción. Por favor, comenta la explicación de lo que hiciste, cómo funciona y porque, en lenguaje simple.
+
+>(opción) hola, soy una lista desplegable
+>(texto que se refleja) Estudiante de diseño de la universidad Diego Portales, enamorada de mi carrera y lo fascinante que el diseño en todas sus expresiones puede ser. La capacidad de crear algo nuevo en base a un lenguaje propio impulsa mi pasión y da forma a lo que soy.
+
+>Amo el arte en cualquiera de sus medios y a menudo se mezcla con mis proyectos personales de diseño, que la belleza y expresividad puedan ser funcionales es parte de mi visión del mundo.
+
+>(opción) creencias
+>(texto que se refleja) dieta: carnívora.
+>religión: agnóstica.
+>política: centro izquierda.
+
+>(opción) nacimiento
+>(texto que se refleja) día: 30.
+>mes: 06.
+>ciudad: la concepción.
+>estado: zulia.
+>país: venezuela.
+
+>(opción) educación
+>(texto que se refleja) enseñanza básica: dr. jesús enrique lossada.
+>enseñanza media: liceo bicentenario poeta vicente huidobro.
+>pregrado: licenciatura en diseño con mención gráfico, universidad diego portales. (sin finalizar aún)
+
+>(opción) identidad
+>(texto que se refleja) género: 
+>pronombres: ella/él/elle
+>sexo asignado al nacer: femenino
+>primer nombre: jerliana
+>segundo nombre: isabel
+>apellidos: martínez lópez
+>estado civil: soltera
+>nacionalidad: venezolana
+
+>(opción) en que me manejo
+>(texto que se refleja) photoshop
+>illustrator
+>after effects
+>figma
+>vsc (html, css, js)
+>clip studio paint
+
+ 
+### respuesta de la ia
+```html
+<section id="info-yo" class="columna-cinco">
+                <div class="foto-yo">
+                    <img class="foto-perfil" src="assets-index/soy-esa.jpg" alt="Foto de Jerliana M.">
+                </div>
+                <div class="textos-yo">
+                    <p class="body1-oscuro">¡Esta es Jerliana! (๑•ᴗ•๑)♡</p>
+                    <p id="texto-desplegable" class="body2-oscuro">Estudiante de diseño de la universidad Diego Portales, enamorada de mi carrera y lo fascinante que el diseño en todas sus expresiones puede ser. La capacidad de crear algo nuevo en base a un lenguaje propio impulsa mi pasión y da forma a lo que soy.<br /><br />Amo el arte en cualquiera de sus medios y a menudo se mezcla con mis proyectos personales de diseño, que la belleza y expresividad puedan ser funcionales es parte de mi visión del mundo.</p>
+                </div>
+            </section>
+
+            <select class="lista-desplegable">
+                <option value="hola">hola, soy una lista desplegable</option>
+                <option value="creencias">creencias</option>
+                <option value="nacimiento">nacimiento</option>
+                <option value="educacion">educación</option>
+                <option value="identidad">identidad</option>
+                <option value="aplicaciones">en que me manejo</option>
+            </select>
+```
+
+```javascript
+const textosPorOpcion = {
+    hola: 'Estudiante de diseño de la universidad Diego Portales, enamorada de mi carrera y lo fascinante que el diseño en todas sus expresiones puede ser. La capacidad de crear algo nuevo en base a un lenguaje propio impulsa mi pasión y da forma a lo que soy.<br /><br />Amo el arte en cualquiera de sus medios y a menudo se mezcla con mis proyectos personales de diseño, que la belleza y expresividad puedan ser funcionales es parte de mi visión del mundo.',
+    creencias: 'dieta: carnívora.<br>religión: agnóstica.<br>política: centro izquierda.',
+    nacimiento: 'día: 30.<br>mes: 06.<br>ciudad: la concepción.<br>estado: zulia.<br>país: venezuela.',
+    educacion: 'enseñanza básica: dr. jesús enrique lossada.<br>enseñanza media: liceo bicentenario poeta vicente huidobro.<br>pregrado: licenciatura en diseño con mención gráfico, universidad diego portales. (sin finalizar aún)',
+    identidad: 'género: <br>pronombres: ella/él/elle<br>sexo asignado al nacer: femenino<br>primer nombre: jerliana<br>segundo nombre: isabel<br>apellidos: martínez lópez<br>estado civil: soltera<br>nacionalidad: venezolana',
+    aplicaciones: 'photoshop<br>illustrator<br>after effects<br>figma<br>vsc (html, css, js)<br>clip studio paint'
+};
+
+if (listaDesplegable && textoDesplegable) {
+    listaDesplegable.addEventListener('change', (evento) => {
+        const seleccion = evento.target.value;
+        if (textosPorOpcion[seleccion]) {
+            textoDesplegable.innerHTML = textosPorOpcion[seleccion];
+        }
+    });
+}
+```
+
+```css
+.columna-cinco {
+    width: 61rem;
+    min-height: 37.5rem;
+    height: auto;
+    border-radius: 5cqmin;
+    background-color: #CCCCFF;
+    color: #020827;
+    gap: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista-desplegable {
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: #CCCCFF;
+    color: #020827;
+    font-family: "Comic Neue";
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+```
