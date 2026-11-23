@@ -1,36 +1,43 @@
-BITACORA
+# Bitácora de Proyecto: Portafolio Web
 
-La idea para mi portafolio es que sea una página web con más cosas visuales que para leer; quiero que se noten mis trabajos y que sea fácil de explorar. 
-
-Referentes
-Tomé como referencia estas 3 páginas:
-
-https://spencergabor.work/
-Esta es la página en la cual más me inspiré; me gustó que es muy dinámica pero simple a la vez. Tomo como referencia la estructura de la página de inicio,cómo está organizada y cómo interactúan las imágenes. 
-
-https://www.thinker.cl/
-De esta tomo como referencia cómo organizan las imágenes con los textos y algunas animaciones.
-
-https://www.calvinpausania.com/autonomous
-Tomé esta página como referencia para ver cómo se despliega el menú.
+## Enlace Figma 
+https://www.figma.com/design/lh6LE3qmr4NZFCFl5NB690/Anelis_Velasco?node-id=12-164&p=f&t=zjWYub2s9ykHx5xu-0
+## Enlace página 
 
 
-https://liamgillick.info/Film 
-La tomé como referencia para ver cómo muestra sus proyectos audiovisuales. 
+## Avance 1 (9 de noviembre)
 
-https://www.figma.com/design/lh6LE3qmr4NZFCFl5NB690/Sin-t%C3%ADtulo?node-id=0-1&m=dev&t=ZoU0xrvaq1nZQlHc-1 
+La idea para mi portafolio es que sea una página web con **más cosas visuales que para leer**; quiero que se noten mis trabajos y que sea fácil de explorar.
 
-PROCESO
+### Referentes
 
-Empecé diseñando mi portafolio en Figma, donde no tuve problemas hasta llegar a la parte del botón de hamburguesa desplegable, que no sabía cómo hacerlo, pero encontré una solución: 
-Dupliqué la página completa y le puse un rectángulo con baja opacidad y ahí desplacé el botón hasta esa página con la opción de "navegar a" 
+Tomé como referencia estas páginas:
+
+* **[Spencer Gabor](https://spencergabor.work/):** Esta es la página en la cual más me inspiré; me gustó que es muy dinámica pero simple a la vez. Tomo como referencia la estructura de la página de inicio, cómo está organizada y cómo interactúan las imágenes.
+* **[Agencia Thinker](https://www.thinker.cl/):** De esta tomo como referencia cómo organizan las imágenes con los textos y algunas animaciones.
+* **[Calvin Pausania](https://www.calvinpausania.com/autonomous):** Tomé esta página como referencia para ver cómo se despliega el menú.
+* **[Liam Gillick](https://liamgillick.info/Film):** La tomé como referencia para ver cómo muestra sus proyectos audiovisuales.
+
+> **Diseño en Figma:** [Ver prototipo en Figma](https://www.figma.com/design/lh6LE3qmr4NZFCFl5NB690/Sin-t%C3%ADtulo?node-id=0-1&m=dev&t=ZoU0xrvaq1nZQlHc-1)
+
+---
+
+## Avance 2 (16 de noviembre)
+
+Para el segundo avance presenté todo lo solicitado. Me dijeron que estaba avanzando bien y que mi idea estaba ordenada, pero que **no me complique** haciendo un apartado más de la parte de **"Contacto"**.
+
+### Proceso de Diseño (Figma)
+
+Empecé diseñando mi portafolio en Figma, donde no tuve problemas hasta llegar a la parte del **botón de hamburguesa desplegable**, que no sabía cómo hacerlo, pero encontré una solución:
+
+* Dupliqué la página completa, le puse un rectángulo con baja opacidad y desplacé el botón hasta esa página con la opción de **"Navegar a"**.
+* Hice esto con todas las páginas de mi sitio web.
 
 
 <img width="198" height="689" alt="Captura de pantalla 2026-11-16 a la(s) 12 15 47 p  m" src="https://github.com/user-attachments/assets/1bf23e3f-a75c-40d1-89ad-64441d7e1aae" />
 
-Hice eso con todas las paginas de mi sitio web. 
 
-VISUAL CODE 
+## Desarrollo en Visual Studio Code
 
 HTML 
 <!DOCTYPE html>
@@ -170,13 +177,24 @@ HTML
 </body>
 </html>
 
-Hice el html sin problema, separando todo en secciones, clases e ID para poder editarlo de manera más ordenada en los CSS. 
-También utilicé la etiqueta <span>, que sirve para agrupar una pequeña parte de un texto o contenido, sin crear un bloque nuevo.
-Utilicé la etiqueta target="_blank": abre el enlace en otra pestaña.
 
-Para la parte de los iconos utilicé IA este fue el pront: 
-Para la parte del footer son solo los iconos; que esos sean un enlace. Utilice iconos de figma que es Iconify 2 million Icons Library
+### Estructura HTML
 
+Hice el HTML sin problema, separando todo en secciones, clases e ID para poder editarlo de manera más ordenada en los CSS:
+
+* Utilicé la etiqueta `<span>`, que sirve para agrupar una pequeña parte de un texto o contenido sin crear un bloque nuevo.
+* Utilicé el atributo `target="_blank"`, que abre el enlace en otra pestaña.
+
+
+## Uso de IA
+
+### 1. Iconos en el Footer
+
+* **Prompt utilizado:** 
+> *"Para la parte del footer son solo los iconos; que esos sean un enlace. Utilicé iconos de Figma que es Iconify 2 million Icons Library."*
+
+* **Respuesta de la IA:**
+Me explicó que los iconos de Iconify se pueden utilizar mediante etiquetas `<iconify-icon>`, cargando su biblioteca en el `<head>`:
 RESPUESTA AI 
 
 Entonces utilizaste Iconify, que es una biblioteca de iconos que puedes integrar en tu HTML.
@@ -211,17 +229,20 @@ Por ejemplo, si elegiste los iconos de TikTok, Instagram, WhatsApp y correo:
 </footer>
 
 
-3. ¿Cómo funciona?
-- <iconify-icon>: muestra el icono.
-- icon: indica qué icono queremos mostrar.
-- <a>: convierte el icono en un enlace.
-- href: indica a dónde nos lleva al hacer clic.
+* **¿Cómo funciona?**
+  * `<iconify-icon>`: muestra el icono.
+  * `icon`: indica qué icono queremos mostrar.
+  * `<a>`: convierte el icono en un enlace.
+  * `href`: indica a dónde nos lleva al hacer clic.
+* **Aprendizaje:** Me di cuenta de que se pueden enlazar iconos directamente desde Figma.
 
-Aprendí y me di cuenta de que se pueden enlazar iconos directamente desde Figma. 
 
-Use AI para el boton de hamburguesa. 
+### 2. Botón de Menú Hamburguesa
 
-En mi código Html agregué la etiqueta de button. 
+* **Implementación en HTML:**
+Agregué la etiqueta `<button>` dentro del `<header>`, el contenedor desplegable `<div class="menu-overlay">` justo antes de `<main>`, y añadí los identificadores `id="inicio"` en `<main>` e `id="contacto"` en `<footer>`.
+
+* **Código CSS generado por la IA:**
 <header class="header">
     <p>La Paz-BOLIVIA</p>
 
@@ -393,13 +414,13 @@ y en los CSS la IA me dio este código:
     }
 }
 
-Para esta parte igual me sugirió utilizar Java Script para que la pagina se vea mejor y mas fluida, este es el código: 
+Para esta parte igual me sugirió utilizar JavaScript para que la página se vea mejor y más fluida este es el código: 
 
 
 const menuBtn = document.getElementById("menuBtn");
 const menuOverlay = document.getElementById("menuOverlay");
 
-// ABRIR Y CERRAR MENU
+// ABRIR Y CERRAR MENÚ
 
 menuBtn.addEventListener("click", () => {
 
@@ -1083,10 +1104,12 @@ a {
 
 }
 
-En esta parte utilicé AI para que sea responsive: 
-Prompt:Me puedes dar los códigos para que todo sea adaptable a móvil?
+### 3. En esta parte utilicé AI para que sea responsive: 
 
-AI 
+* **Prompt utilizado:**
+ *¿Me puedes dar los códigos para que todo sea adaptable a móvil?*
+
+* **Respuesta / Código obtenido:**
 
 CSS adaptable a móviles
 Ve al final de tu archivo style.css.
@@ -1166,6 +1189,7 @@ Busca el bloque anterior que comienza con @media (max-width: 37.5rem) y reemplá
         top: 2rem;
         transform: rotate(-35deg);
     }
+
 
     .collage img:nth-child(2) {
         left: 25%;
@@ -1350,3 +1374,111 @@ Busca el bloque anterior que comienza con @media (max-width: 37.5rem) y reemplá
     }
 
 }
+
+---
+
+## Correcciones
+
+Para esta etapa ya estaban listos el diseño en Figma y el inicio del código. Las principales observaciones y ajustes realizados fueron:
+
+* **Tamaño y proporción:** Me indicaron que el contenido estaba muy grande y las imágenes no se lograban ver bien, por lo que tuve que reducir todo para que se apreciaran mejor los trabajos.
+* **Ortografía:** Me corrigieron diversas faltas ortográficas en los textos del sitio.
+* **Interacción en Home:** Me recomendaron eliminar el carrusel de cartas de la sección de inicio y optar por una presentación más sutil.
+
+Tomé todas estas correcciones y las apliqué tanto a mi diseño en **Figma** como a mi **código final**, cambiando los tamaños de las imágenes y ajustando las tipografías.
+
+---
+
+## Entrega Final
+
+### Organización del contenido y navegación
+
+Organicé el portafolio para que la página de inicio funcionara como entrada al proyecto, permitiendo acceder desde allí a las distintas categorías de trabajos:
+
+* **Menú de navegación:** Contiene accesos a **Home**, **Proyectos**, **Sobre mí** y **Contacto** (en las páginas interiores se incluye un control para volver a la página principal).
+* **Estructura HTML:** Se utilizaron enlaces entre páginas y anclas internas (como `#proyectos` y `#contactame`) para dirigir a secciones específicas, además de etiquetas descriptivas en las imágenes mediante el atributo `alt`.
+* **Tipografía:** La página combina las fuentes **Cormorant Garamond** e **Inter**, cargadas desde Google Fonts.
+
+### Sección de Proyectos
+
+Quise presentar mis proyectos mediante imágenes y títulos que permitan reconocer fácilmente cada categoría:
+
+* En la página de **Carteles**, cada pieza aparece dentro de un bloque individual con su título y su imagen.
+* Implementé **fondos distintos** para acompañar y resaltar la presentación visual de cada cartel.
+
+---
+
+## Uso de IA (Etapa Final)
+
+En esta fase utilicé inteligencia artificial para resolver aspectos técnicos y visuales específicos:
+
+* Animaciones en **JavaScript**.
+* Ajuste y ordenamiento de imágenes.
+* Creación de **títulos de dos colores**.
+* Optimización del código **CSS**.
+* Incrustación de **videos**.
+
+### 1. Diseño Responsive (Flexbox y Media Queries)
+
+* **Prompt utilizado:**
+> *"Haz que la página use flexbox y media query."*
+
+* **Respuesta / Resultado:**
+El sitio ahora utiliza **Flexbox** para la distribución de elementos y una sola media query en CSS, `@media (max-width: 650px)`, para los ajustes en dispositivos móviles.
+
+### 2. Revisión de Ortografía
+
+* **Prompt utilizado:**
+> *"Revisa la ortografía de todo el sitio."*
+
+* **Respuesta / Resultado:**
+Se revisaron las cinco páginas y se corrigió la ortografía y la puntuación. Entre los cambios destacan:
+  * **«producciones»** (eliminación de tilde innecesaria).
+  * **«¡Contáctame!»** (incorporación del signo de apertura).
+  * Ajuste de coma en la frase: *«Cuando me gusta hacer algo, lo hago con pasión»*.
+  * Revisión de los títulos de página y textos alternativos (`alt`) de las imágenes.
+
+### 3. Uso de herramientas de IA en la revisión (`design-qa.md`)
+
+El archivo `design-qa.md` presenta el resultado de una revisión visual asistida por una herramienta. Por su formato y el tipo de observaciones registradas, lo incorporo a esta etapa como apoyo para detectar diferencias entre el sitio desarrollado y las referencias de Figma.
+
+* **Limitaciones y alcance:** La revisión no se considera completamente finalizada, ya que el propio registro indica `"final result: blocked"` y enumera tareas pendientes. Por lo tanto, la herramienta aportó observaciones valiosas y una lista de ajustes, pero fue necesario reconocer las limitaciones de la sesión y dejar constancia de lo que aún debía comprobarse manualmente.
+
+---
+### 4. Vectorización de Logo (PNG a SVG)
+
+* **Prompt utilizado:**
+> *"¿Te puedo pasar la imagen y la cambias a SVG?"*
+
+* **Respuesta y proceso de la IA:**
+La IA me explicó el proceso de vectorización (trazar los contornos para convertir la imagen en formas escalables sin pérdida de calidad) y convirtió mi archivo `gorillaz-logo.png` (de 113 × 33 px) a formato **SVG**, conservando el color morado original (`#9A6F9E`) y el fondo transparente.
+
+* **Implementación en HTML:**
+Guardé el archivo generado en la carpeta `img/` y actualicé la ruta en `portadas.html` para evitar que el logo se viera borroso al escalarse:
+
+```html
+<img class="gorillaz-logo" src="./img/gorillaz-logo.svg" alt="Gorillaz">
+```
+
+* **Aprendizaje y limitaciones:**
+  * Aprendí que el formato **SVG** mantiene la nitidez a cualquier tamaño, pero si la imagen original en PNG es muy pequeña, el trazado puede suavizar o redondear ligeramente los bordes.
+  * Para obtener la máxima fidelidad en futuros proyectos, lo ideal es exportar los logos directamente en formato SVG desde **Figma** o **Illustrator**.
+
+## Problemas y Aprendizaje
+
+### Dificultades encontradas
+
+Tuve problemas principalmente al momento de **ordenar las imágenes y darles los tamaños exactos** que quería en la maquetación, pero con el apoyo de la IA logré encontrar la estructura adecuada en CSS para resolverlo.
+
+### ¿Qué aprendí?
+
+La creación de este portafolio web fue una experiencia enriquecedora, porque me permitió reunir mis trabajos y darles un espacio donde puedan ser apreciados. Durante este proceso comprendí que diseñar una página web no consiste solamente en organizar imágenes y textos, sino también en **transmitir una identidad, comunicar ideas y crear una experiencia agradable** para quienes la visitan.
+
+Aprendí a relacionar mis conocimientos de **diseño gráfico con el desarrollo web**, a comprender mejor la estructura de HTML y la importancia de CSS para dar personalidad visual a una página. Conocí más sobre el uso de JavaScript para incorporar interacciones y hacer que el sitio sea más dinámico, prestando atención a detalles como la tipografía, los colores, la composición, la adaptación de las imágenes y la navegación.
+
+Otro aprendizaje clave fue descubrir cómo utilizar la **inteligencia artificial como una herramienta de apoyo** en el proceso creativo y técnico. Me permitió explorar soluciones, resolver dificultades y conocer nuevas posibilidades, comprendiendo siempre la importancia de revisar, modificar y adaptar sus resultados según mis propias necesidades y decisiones.
+
+Finalmente, este proyecto me enseñó que desarrollar algo propio requiere paciencia, creatividad y disposición para aprender de los errores. Me siento satisfecha de haber construido un espacio digital que representa parte de mi identidad y de mi trabajo, llevándome nuevos conocimientos y más confianza para seguir explorando el mundo del diseño y el desarrollo web.
+
+
+

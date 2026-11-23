@@ -1,0 +1,13 @@
+FUENTES DEL PORTAFOLIO
+======================
+Incluida:
+  Anton-Regular.woff      (Anton Regular · Display, Título, Subtítulo)
+
+Falta agregar (no pude descargarla desde este entorno):
+  RobotoMono-Regular.woff2   (Roboto Mono Regular · navegación, cuerpo, nota)
+  RobotoMono-Bold.woff2      (Roboto Mono Bold · etiquetas y botones)
+
+Descárgalas desde Google Fonts (fonts.google.com/specimen/Roboto+Mono) y, si
+solo obtienes .ttf, conviértelas a .woff2 (por ejemplo con transfonter.org).
+Guárdalas con esos nombres exactos dentro de esta carpeta: css/style.css ya
+las referencia. Mientras no estén, el sitio usa la monoespaciada del sistema.
