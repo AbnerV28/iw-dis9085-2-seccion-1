@@ -144,6 +144,16 @@ Intenté poner un botón que active el sonido de mis videos en la sección "???"
 
 A medida que iba editando el código me daba cuenta de que me faltaban imágenes o íconos, así que hay algunas cosas que se ven un poco desordenadas en la carpeta improvisada "bombobby-milo"
 
+**Son las 9:59 del día 23-11-2026**
+ya sé por qué no se escuchaban mis videos en la sección "???", es que mis videos no tenían audio y no me di cuenta, así que los cambié por unos que si tuvieran audio.
+
+Finalmente subí mi pagina a Github pages, pero tuve problemas haciéndolo desde la web, tenía carpetas con más de 100 archivos y eso provocó que no me dejara subirlos, así que terminé instalando Github Desktop y fue todo mucho más fácil.
+También me di cuenta de que tenía archivos de más de 100MB, así que tuve que comprimirlos.
+
+Con la página ya subida y todo funcionando, me di cuenta de que la sección "Sobre mí" en mobile se veía desordenada, así que tuve que agregar una sección especial para esta sección en mobile en el css y un nuevo archivo para el mapa, pero versión vertical.
+
+Ahora ya todo funciona.
+
 ## Uso de IA
 
 * **Herramientas utilizadas:** Gemini (apoyo en redacción/síntesis, ideas y dudas de diseño/prototipado) y Claude (apoyo en código).
