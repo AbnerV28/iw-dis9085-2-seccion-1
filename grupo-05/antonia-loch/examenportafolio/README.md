@@ -9,10 +9,14 @@
 | Repositorio | https://github.com/antoloch/mi-portafolio |
 
 
-
 ## 1. Descripción del proyecto
 
-Portafolio web de Diseño Industrial pensado para mostrar mis proyectos, presentar quién soy y ofrecer una vía de contacto. Busca tener identidad propia y no verse como una página genérica: estética editorial, fondo rosado con grano, color fucsia como acento, y tipografías Helvetica Neue (Bold, Medium y Regular) y Courier Prime (Bold y Regular). También incluye elementos interactivos para que recorrer la página sea parte de la experiencia.
+El proyecto consiste en el diseño y desarrollo de un portafolio web personal para presentar mis trabajos y proyectos de Diseño Industrial. La idea es crear un espacio digital que permita mostrar mi identidad como diseñadora y reunir proyectos relacionados con el diseño de objetos, la exploración de materiales, la fabricación digital, la cerámica y las experiencias interactivas.
+
+Busco que el sitio tenga una estética editorial, simple y visual, donde los proyectos sean los protagonistas, pero que al mismo tiempo la página tenga una identidad propia. Para esto, la propuesta utiliza principalmente los colores blanco, negro y rojo, junto con las tipografías Helvetica Neue y Courier Prime.
+
+La intención es que la navegación sea clara, pero que la experiencia de recorrer el portafolio también tenga elementos interactivos y una composición visual que se aleje de una página tradicional.
+
 
 ### Estructura del sitio
 
@@ -249,4 +253,6 @@ ACCESIBILIDAD
 - **Tipografías.** Courier Prime se descarga y se ve igual en todos los dispositivos; Helvetica Neue solo viene instalada en dispositivos Apple.
 - **Pedirle a la IA algo concreto funciona mejor.** Indicar qué archivo, qué parte y qué quería lograr dio respuestas más precisas, y pegar mi propio código ayudó a encontrar errores que yo no veía.
 - **Avanzar paso a paso.** El feedback de Aarón me ayudó a no apresurarme y a trabajar por etapas.
-- **Pendiente por mejorar:** dominar Auto Layout y la organización de frames en Figma.
+
+
+este proceso me permitió comprender mejor cómo se relacionan el diseño y el desarrollo web, y cómo cada detalle, desde la organización de los archivos hasta los pequeños comportamientos de la página, influye en el resultado final. Aprendí que trabajar con HTML, CSS y JavaScript requiere paciencia, atención y, sobre todo, avanzar paso a paso, probando y corrigiendo los errores que van apareciendo. También descubrí que la IA puede ser una herramienta de apoyo cuando se utiliza con instrucciones claras y código propio. Esta experiencia me permitió entender que gran parte del aprendizaje ocurre durante el proceso de prueba y error.
