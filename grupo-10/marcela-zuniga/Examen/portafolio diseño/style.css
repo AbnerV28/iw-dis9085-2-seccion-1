@@ -1,0 +1,152 @@
+/* ========== 1. SISTEMA: colores y tipografías ========== */
+:root{
+  --marfil:#F5F0E8; --carbon:#29272B; --vino:#722B45;
+  --pistacho:#B8D58A; --celeste:#8EC9DC; --rosa:#E7A6B5;
+  --titulo:"Archivo Black", Impact, sans-serif;
+  --texto:"DM Sans", system-ui, sans-serif;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--marfil);color:var(--carbon);font-family:var(--texto);line-height:1.5;overflow-x:clip}
+a{color:inherit}
+
+/* ========== 2. NAVEGACIÓN ========== */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;justify-content:space-between;align-items:center;
+  padding:calc(1rem + env(safe-area-inset-top,0px)) 1.5rem 1rem;color:var(--marfil);mix-blend-mode:difference;font-weight:500}
+.nav a,.nav button{color:inherit;text-decoration:none;font:inherit;background:none;border:0;cursor:pointer}
+.nav .logo{font-family:var(--titulo);font-size:1.4rem}
+.progreso{position:fixed;top:0;left:0;height:4px;width:100%;background:var(--vino);transform-origin:left;transform:scaleX(var(--scroll,0));z-index:60}
+.menu{position:fixed;inset:0;z-index:40;background:var(--vino);color:var(--marfil);display:flex;flex-direction:column;
+  justify-content:center;padding:6rem 1.5rem 2rem;clip-path:circle(0% at 100% 0);transition:clip-path .6s ease;visibility:hidden}
+.menu.abierto{clip-path:circle(150% at 100% 0);visibility:visible}
+.menu .grande a{display:block;font-family:var(--titulo);font-size:clamp(2.5rem,9vw,7rem);line-height:1.05;text-decoration:none;transition:color .2s}
+.menu .grande a:nth-child(1):hover{color:var(--rosa)}
+.menu .grande a:nth-child(2):hover{color:var(--pistacho)}
+.menu .grande a:nth-child(3):hover{color:var(--celeste)}
+.menu .grande a:nth-child(4):hover{color:var(--rosa)}
+.menu .lista{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;margin-top:2rem}
+.menu .lista a{text-decoration:none;opacity:.8}
+.menu .lista a:hover{opacity:1;text-decoration:underline}
+
+/* ========== 3. PORTADA (sticky + scroll) ========== */
+.hero{height:220vh;position:relative;background:var(--marfil)}
+.hero-fijo{position:sticky;top:0;height:100vh;overflow:hidden;
+  display:flex;flex-direction:column;justify-content:center;padding:0 1.5rem}
+.nombre{position:relative;z-index:3;margin:0;font-family:var(--titulo);font-weight:400;font-size:clamp(3.2rem,14vw,15rem);
+  line-height:.9;text-transform:uppercase;opacity:calc(1 - var(--crece,0) * 1.6)}
+.nombre span{display:block;will-change:transform}
+.nombre .l1{transform:translateX(calc(var(--p,0) * -14vw))}
+.nombre .l2{text-align:right;transform:translateX(calc(var(--p,0) * 14vw))}
+.nombre .l3{transform:translateX(calc(var(--p,0) * -8vw))}
+.sub{position:absolute;z-index:3;left:1.5rem;bottom:2rem;margin:0;max-width:26ch;font-weight:500;opacity:calc(1 - var(--crece,0) * 2)}
+.hint{position:absolute;z-index:3;right:1.5rem;bottom:2rem;margin:0;font-size:.9rem;opacity:calc(1 - var(--p,0) * 6)}
+
+/* formas */
+.forma{position:absolute;z-index:1;will-change:transform}
+.circulo{width:22vmin;height:22vmin;border-radius:50%;background:var(--rosa);top:12%;right:12%;
+  transform:translateY(calc(var(--p,0) * 30vh)) scale(calc(1 + var(--p,0)))}
+.semi{width:30vmin;height:15vmin;border-radius:30vmin 30vmin 0 0;background:var(--celeste);bottom:20%;left:8%;
+  transform:rotate(calc(var(--p,0) * 120deg))}
+.estrella{width:20vmin;height:20vmin;background:var(--pistacho);top:48%;right:30%;
+  clip-path:polygon(100% 50%,77.7% 61.5%,85.4% 85.4%,61.5% 77.7%,50% 100%,38.5% 77.7%,14.6% 85.4%,22.3% 61.5%,0 50%,22.3% 38.5%,14.6% 14.6%,38.5% 22.3%,50% 0,61.5% 22.3%,85.4% 14.6%,77.7% 38.5%);
+  transform:rotate(calc(var(--p,0) * -180deg))}
+/* círculo vino que cubre todo: conecta con la sección siguiente */
+.cubre{z-index:2;width:10vmin;height:10vmin;border-radius:50%;background:var(--vino);top:calc(50% - 5vmin);left:calc(50% - 5vmin);
+  transform:scale(calc(1 + var(--crece,0) * 60))}
+.sticker{position:absolute;z-index:3;width:min(16vmin,120px);bottom:1rem;left:50%;margin-left:calc(min(16vmin,120px) / -2);
+  animation:gira 18s linear infinite;opacity:calc(1 - var(--crece,0) * 2)}
+.sticker text{font-family:var(--texto);font-weight:700;font-size:11px;fill:var(--carbon);letter-spacing:.12em}
+@keyframes gira{to{transform:rotate(360deg)}}
+
+/* ========== 4. FRASE (sticky, palabras que se encienden) ========== */
+.frase{height:300vh;background:var(--vino);color:var(--marfil)}
+.frase-fijo{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;justify-content:center;padding:0 1.5rem;gap:2rem}
+.frase p.grande{margin:0;max-width:20ch;font-size:clamp(2rem,6.2vw,6rem);font-weight:500;line-height:1.1;letter-spacing:-.02em}
+.frase .w{opacity:.2;transition:opacity .2s}
+.frase .k{font-family:var(--titulo);font-weight:400}
+.frase .k.rosa{color:var(--rosa)} .frase .k.pistacho{color:var(--pistacho)} .frase .k.celeste{color:var(--celeste)}
+.frase .formacion{margin:0;max-width:46ch;opacity:.85}
+
+/* ========== 5. ÍNDICE ========== */
+.indice{padding:6rem 0 4rem;background:var(--marfil);clip-path:ellipse(120% 100% at 50% 100%);margin-top:-2rem;overflow:hidden}
+.indice h2{margin:0 1.5rem 2rem;font-family:var(--titulo);font-weight:400;font-size:clamp(1rem,2vw,1.4rem)}
+.fila{display:grid;grid-template-columns:3rem 1fr auto auto;gap:1rem 2rem;align-items:baseline;padding:1.2rem 1.5rem;
+  border-top:2px solid var(--carbon);text-decoration:none;
+  transition:background .25s,padding .25s,transform .7s ease,opacity .7s ease;
+  transform:translateX(var(--x,0));opacity:0}
+.fila:nth-child(odd){--x:-6vw} .fila:nth-child(even){--x:6vw}
+.fila.in{transform:none;opacity:1}
+.fila:last-child{border-bottom:2px solid var(--carbon)}
+.fila .n{font-weight:500}
+.fila .t{font-family:var(--titulo);font-size:clamp(2rem,7vw,6.5rem);line-height:1}
+.fila .d{font-weight:500}
+.fila:hover,.fila:focus-visible{background:var(--c);padding-left:3rem;outline:none}
+
+/* ========== 6. CONTACTO ========== */
+.contacto{min-height:90vh;display:flex;flex-direction:column;justify-content:center;gap:2rem;padding:6rem 1.5rem 2rem;background:var(--vino);color:var(--marfil)}
+.contacto h2{margin:0;font-family:var(--titulo);font-weight:400;font-size:clamp(3rem,13vw,13rem);line-height:.9;letter-spacing:-.02em;text-transform:uppercase}
+.contacto .intro{margin:0;max-width:40ch;font-size:1.15rem}
+.contacto .enlaces{display:grid}
+.contacto .enlaces a{display:grid;grid-template-columns:8rem 1fr;gap:1rem;align-items:baseline;padding:1.2rem 0;border-top:2px solid var(--marfil);text-decoration:none;transition:padding .25s,color .25s}
+.contacto .enlaces a:last-child{border-bottom:2px solid var(--marfil)}
+.contacto .etq{font-weight:700}
+.contacto .val{font-family:var(--titulo);font-size:clamp(1.3rem,4.6vw,3.6rem);line-height:1.1;overflow-wrap:anywhere}
+.contacto .enlaces a:nth-child(1):hover,.contacto .enlaces a:nth-child(1):focus-visible{color:var(--rosa);padding-left:1.5rem;outline:none}
+.contacto .enlaces a:nth-child(2):hover,.contacto .enlaces a:nth-child(2):focus-visible{color:var(--celeste);padding-left:1.5rem;outline:none}
+.contacto .pie{margin:2rem 0 0;font-size:.9rem;opacity:.7}
+@media (max-width:700px){.contacto .enlaces a{grid-template-columns:1fr;gap:.2rem}}
+
+/* ========== 7. RESPONSIVE y movimiento reducido ========== */
+@media (max-width:700px){
+  .fila{grid-template-columns:2rem 1fr;}
+  .fila .d,.fila .a{grid-column:2}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero,.frase{height:auto}
+  .hero-fijo,.frase-fijo{position:static;min-height:100vh}
+  .cubre,.sticker{display:none;animation:none}
+  .frase .w{opacity:1}
+  .fila{opacity:1;transform:none}
+}
+
+/* ========== PROYECTOS (tarjetas editables) ========== */
+/* Cada proyecto define sus colores en el HTML: --bg fondo, --fg texto, --ac acento */
+.proyecto{background:var(--bg);color:var(--fg);padding:6rem 1.5rem 5rem}
+.cab{display:flex;align-items:flex-start;gap:1rem}
+.cab .num{font-weight:700;padding-top:1rem;color:var(--ac)}
+.cab h2{margin:0;font-family:var(--titulo);font-weight:400;font-size:clamp(2.6rem,10vw,10.5rem);line-height:.9;letter-spacing:-.02em;overflow-wrap:anywhere}
+.cuerpo{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:3rem;margin-top:3rem;align-items:start}
+.info{position:sticky;top:6rem}
+.desc{font-size:1.15rem;max-width:42ch;margin:0 0 2rem}
+.ficha{margin:0 0 2rem;display:grid;gap:.6rem}
+.ficha div{display:grid;grid-template-columns:7.5rem 1fr;border-top:1px solid currentColor;padding-top:.6rem}
+.ficha dt{font-weight:700}
+.ficha dd{margin:0}
+.btn{display:inline-block;padding:.8rem 1.4rem;border-radius:999px;background:var(--fg);color:var(--bg);font-weight:700;text-decoration:none;transition:transform .25s}
+.btn:hover,.btn:focus-visible{transform:translateY(-3px) rotate(-2deg)}
+.imgs{display:grid;gap:2rem}
+.img{margin:0;position:relative;display:grid;place-items:center;aspect-ratio:4/5;background:var(--ac);border-radius:1.2rem;overflow:hidden;
+  clip-path:inset(12% 0 0 0);opacity:0;transition:clip-path .8s ease,opacity .8s ease,transform .4s ease}
+.img.in{clip-path:inset(0);opacity:1}
+.img::before{content:"Tu imagen aquí";font-weight:700;opacity:.6}
+.img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.img.vacia img{display:none}
+.img:hover{transform:rotate(-1.5deg)}
+.imgs .img:nth-child(2){width:78%;margin-left:auto;aspect-ratio:1}
+.imgs .img:nth-child(3){width:88%;aspect-ratio:16/11}
+/* los proyectos pares invierten el lado de las imágenes */
+.proyecto:nth-of-type(even) .cuerpo{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+.proyecto:nth-of-type(even) .imgs{order:-1}
+@media (max-width:800px){
+  .cuerpo,.proyecto:nth-of-type(even) .cuerpo{grid-template-columns:1fr}
+  .proyecto:nth-of-type(even) .imgs{order:0}
+  .info{position:static}
+  .imgs .img:nth-child(n){width:100%}
+  .sticker{top:5rem;bottom:auto;left:auto;right:1rem;margin-left:0;width:80px}
+}
+@media (prefers-reduced-motion:reduce){.img{clip-path:none;opacity:1;transition:none}}
