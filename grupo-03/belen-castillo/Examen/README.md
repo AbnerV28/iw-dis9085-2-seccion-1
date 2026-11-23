@@ -45,6 +45,82 @@ Habrá un botón que al presionarlo te redirigirá a mis mejores proyectos (seg�
 
 Algo más que cambió fue la pestaña "Sobre mí", originalmente estaba muy aburrida y mientras lo hacía me di cuenta de que tenía demasiado texto y estaba pareciendo un curriculum capaz de pasar esas tecnologías que ocupan las empresas par filtrarlos.
 
+## 22-11-2026
+
+Todos los días he estado trabajando un poco en el prototipo de figma.
+Completé la diagramación, pero sin haberle agregado los nombres ni las descripciones a los proyectos aún porque no recordaba todo y habían proyectos a los que directamente no les había puesto nombre.
+Terminé de elegir las categorías que pondría finalmente en el filtro del dropdown menu siendo las siguientes: 
+
+**Proyectos de diseño**
+- Materiales y fabricación
+- Dibujo geométrico
+- Prototipado
+- Fabricación digital
+
+**Proyectos de ilustración**
+- Digital
+- Tradicional
+
+La diagramación de la página "Todos los proyectos" me estaba dando demasiados problemas y provocando dolores de cabeza brutales así que decidí abandonarla y simplemente generarla en el código.
+
+Le puse los nombres a cada proyecto y aproveché de crear carpetas para tener todo más ordenados, ahora en mi pc tengo estas carpetas:
+
+**PROYECTOS DE ILUSTRACIÓN**
+**-Subcarpetas:**
+- Tradicional
+- Digital
+
+Y dentro de tradicional y digital están otras subcarpetas por cada proyecto, lo mismo para diseño
+
+**PROYECTOS DE DISEÑO**
+**-Subcarpetas**
+- Código
+- Dibujo geométrico
+- Fabricación digital
+- Materiales y fabricación
+- Prototipado
+
+Para no explotar la página con texto le pedí a la IA que me ayudara a compactar las descripciones que le iba enviando, por ejemplo:
+
+**yo:** Compacta la siguiente descripción que te enviaré, debe ser lo suficientemente corta para entrar en un cuadro de texto pequeño de unas 3 o 4 lineas máximo "dibujo hecho a mano con tiralineas, plumones y lapices de palo. Representa la locura a la que estaba adentrandome al no saber que hacer con mi vida ni saber que hacer para este dibujo que iba a ser presentado en el museo de Artes Visuales Surazo de Osorno (si fue expuesto en el museo)"
+
+**Gemini:** Opción 1 (Técnica y narrativa expositiva):
+Ilustración expresionista a mano con tiralíneas, plumones y lápices de colores, expuesta en el Museo de Artes Visuales Surazo de Osorno; plasma un entorno surrealista y asfixiante como metáfora de la crisis existencial, la desorientación vital y el colapso ante el proceso creativo.
+
+Opción 2 (Enfoque en el caos psicológico y la materialidad):
+Obra expositiva para el Museo Surazo realizada en técnica mixta (tiralíneas, plumones y lápices de colores), que retrata la transición de la cordura a la desesperación; el desorden de una habitación distorsionada y la mirada fragmentada del personaje reflejan un estado de incertidumbre absoluta sobre el futuro.
+
+Opción 3 (Ultra compacta):
+Dibujo expresivo en técnica mixta, expuesto en el Museo Surazo de Osorno, que exterioriza la angustia de la desorientación existencial y la presión creativa mediante un entorno de perspectivas rotas y miradas intrusivas.
+
+Luego de haber hecho eso con cada uno de mis proyectos, trabajé en el carrusel de mi sección secreta
+Agregué 2 flechas que ayudarían a cambiar al video anterior o al siguiente, solo hice 2 animaciones, porque no tenía tiempo suficiente para animar el carrusel entero.
+
+Edité las tipografías una última vez, pues consideré que los títulos de los proyectos no se veían tanto como títulos.
+
+Edité los nombres de los componentes, arreglé faltas de ortografía. Arreglé el autolayout ya que me dí cuenta de que, entre tanta edición, había borrado algunas cosas que antes si tenían autolayout.
+El mobile tenía muchos errores en el prototipo de navegación, así que borré todos los flujos y los hice nuevamente.
+
+Ahora me faltaba el banner, que lo aplacé eternamente hasta el final... pero ya tenía una idea. 
+Hice un dibujo en píxelart que me representa a mi, volví a ocupar el fabuloso software Krita al cual le debo mis ganas de vivir e hice una ilustración que me representa a mi.
+
+Ya era hora de empezar con el código... ya había avanzado anteriormente con el .html del inicio, creé otro 3 .html **proyectos.html, secreto.html y sobre-mi.html**
+El html es easy peasy, así que prácticamente seguí el orden de los primeros html que hicimos en este ramo.
+Cuando llegué a la parte de **Contacto** me di cuenta de que no sabía como conseguir los mismos íconos que usé en el figma. Volví a Gemini
+
+**yo:** Ya empecé a hacer el código, he hecho los html correspondientes, pero dejé incompletos la sección de los iconos de las redes sociales, porque quiero usar exactamente los mismo que ocupé en figma y no sé como hacerlo.
+
+**Gemini:** 1. Exportar los iconos desde Figma (mi recomendación)
+1. Abre tu proyecto en Figma.
+2. Selecciona el icono de Instagram, TikTok, Facebook, etc.
+3. En el panel derecho, busca la sección Export.
+4. Selecciona formato PNG.
+5. Exporta cada icono.
+
+wau
+
+El css me parece especialmente complicado, así que le pedí ayuda a Claude
+
 
 
 
