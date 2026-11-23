@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUI.BEL — Guillermo Ibáñez | Diseñador Industrial</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- BARRA DE NAVEGACIÓN MINIMALISTA -->
+  <nav class="floating-nav">
+    <a href="#sobre-mi">sobre mí</a>
+    <a href="#proyectos">proyectos</a>
+    <a href="#contacto">contacto</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- HEADER PRINCIPAL -->
+    <header class="site-header reveal">
+      <a href="index.html" class="brand-logo">GUI.BEL</a>
+      <div class="header-meta">
+        <span class="status-badge"><span class="status-dot"></span>disponible para proyectos</span>
+        <span class="brand-role">Diseñador Industrial</span>
+      </div>
+    </header>
+
+    <!-- SECCIÓN SOBRE MÍ -->
+    <section class="about-section" id="sobre-mi">
+      
+      <!-- FILA 1: Centrada verticalmente con la foto -->
+      <div class="about-row align-center">
+        <div class="about-col-left">
+          <div class="profile-frame reveal">
+            <img src="img/perfil.jpg" onerror="if(this.src.endsWith('.jpg')) this.src='img/perfil.png'; else if(this.src.endsWith('.png')) this.src='img/perfil.jpeg';" alt="Guillermo Ibáñez" class="profile-pic">
+          </div>
+        </div>
+
+        <div class="about-col-right">
+          <div class="reveal">
+            <h1 class="hero-title">Hola, soy <span>Guillermo</span></h1>
+            <div class="text-block">
+              <p>
+                Me muevo entre el entorno digital y el análogo. Utilizando distintos programas para diseñar y maquetar, y luego llevar esos archivos a la realidad mediante pruebas, errores y distintas exploraciones materiales.
+              </p>
+            </div>
+            <div class="tags-container">
+              <span class="tag">Rhino</span>
+              <span class="tag">Inventor</span>
+              <span class="tag">AutoCad</span>
+              <span class="tag">Fusion360</span>
+              <span class="tag">Corte Láser</span>
+              <span class="tag">Impresión 3D</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FILA 2: "Sobre mí" alineado arriba con la biografía larga -->
+      <div class="about-row">
+        <div class="about-col-left">
+          <h2 class="section-label-left reveal">Sobre mí</h2>
+        </div>
+
+        <div class="about-col-right">
+          <div class="text-block bio-secondary reveal">
+            <p>
+              Soy estudiante de Diseño Industrial en la Universidad Diego Portales. Me interesa profundamente el proceso de llevar una idea desde lo digital hasta un resultado físico, usar herramientas digitales para luego experimentar con las distintas materialidades, desarrollar matrices y realizar moldes y pruebas y poder conseguir un resultado físico.
+            </p>
+            <p>
+              Puse este enfoque en práctica trabajando en Dulox como diseñador técnico y operador de corte láser, experiencia que reforzó mi gusto por el detalle y la producción real.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="projects-section" id="proyectos">
+      <div class="projects-header">
+        <div class="projects-header-left reveal">
+          <h2 class="projects-title">Proyectos</h2>
+        </div>
+        <div class="projects-header-right reveal">
+          <p class="projects-subtitle">
+            Combinando procesos digitales con el mundo más análogo, y diseño de objetos funcionales.
+          </p>
+        </div>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Columna Izquierda -->
+        <div class="bento-col-left">
+          <a href="autolab.html" class="project-card card-autolab tilt-card reveal">
+            <div class="card-top-meta">
+              <span class="meta-pill">2023-02</span>
+              <span class="meta-pill">objeto lúdico</span>
+            </div>
+            <img src="img/autolab/autolab1.jpg" alt="Proyecto AutoLab">
+            <span class="card-label label-left">AutoLab</span>
+          </a>
+
+          <a href="nodos.html" class="project-card card-nodos tilt-card reveal">
+            <div class="card-top-meta">
+              <span class="meta-pill">2025-01</span>
+              <span class="meta-pill">mobiliario</span>
+            </div>
+            <img src="img/nodos/nodos1.png" alt="Proyecto Nodos de Energía">
+            <span class="card-label label-left">Nodos de Energía</span>
+          </a>
+        </div>
+
+        <!-- Columna Derecha -->
+        <div class="bento-col-right">
+          <a href="luminica.html" class="project-card card-luminica tilt-card reveal">
+            <div class="card-top-meta">
+              <span class="meta-pill dark">2025-02</span>
+              <span class="meta-pill dark">espacial</span>
+            </div>
+            <img src="img/luminica/luminica1.jpg" alt="Proyecto Experiencia Lumínica">
+            <span class="card-label label-left label-dark-bg">Experiencia Lumínica</span>
+          </a>
+
+          <a href="museo.html" class="project-card card-museo tilt-card reveal">
+            <div class="card-top-meta">
+              <span class="meta-pill">2024-01</span>
+              <span class="meta-pill">intervención</span>
+            </div>
+            <img src="img/museo/museo1.jpg" alt="Proyecto Entre Juegos">
+            <span class="card-label label-right">Entre Juegos</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer reveal" id="contacto">
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h4>Redes</h4>
+          <a href="https://instagram.com" target="_blank" rel="noopener">Instagram ↗</a>
+          <a href="https://x.com" target="_blank" rel="noopener">X ↗</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <a href="mailto:Guillermo.ibanez@mail.udp.cl">Guillermo.ibanez@mail.udp.cl</a>
+          <a href="mailto:Guille.ibanez2903@gmail.com">Guille.ibanez2903@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-logo">GUI.BEL</div>
+        <span class="footer-copy">santiago, chile — 2026</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
