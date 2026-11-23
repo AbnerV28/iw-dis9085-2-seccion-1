@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre mí · Bombobby</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pag-sobre-mi">
+<header class="header-sobre-mi">
+  <nav class="menu" aria-label="Principal">
+    <a href="index.html">Inicio</a>
+    <a href="#contacto">Contacto</a>
+    <a href="sobre-mi.html" aria-current="page">Sobre mí</a>
+    <a href="secreto.html">???</a>
+  </nav>
+  <h1 class="nombre">BELÉN<br>CASTILLO</h1>
+</header>
+<main>
+  <section class="fila intro-sobre-mi">
+    <img class="flecha-nombre" src="imagenes/bombobby-milo/bombobby/flecha-punteada.png" alt="">
+    <div class="texto-bombobby">
+      <p>Ese es el nombre que mis padres decidieron ponerme y el nombre artístico que yo elegí es</p>
+      <img class="firma-bombobby" src="imagenes/bombobby-milo/bombobby-escrito.png" alt="Bombobby">
+    </div>
+    <div class="foto-bombobby">
+      <img class="elipse" src="imagenes/bombobby-milo/bombobby/elipse-1.png" alt="Belén Castillo sentada en el pasto">
+      <img class="arco arco-7" src="imagenes/bombobby-milo/bombobby/vector-7.png" alt="">
+      <img class="arco arco-8" src="imagenes/bombobby-milo/bombobby/vector-8.png" alt="">
+      <img class="arco arco-9" src="imagenes/bombobby-milo/bombobby/vector-9.png" alt="">
+      <img class="arco arco-10" src="imagenes/bombobby-milo/bombobby/vector-10.png" alt="">
+    </div>
+  </section>
+  <section class="seccion-mapa" aria-label="Lugares donde he vivido">
+    <div class="mapa-contenedor">
+      <picture>
+        <source media="(max-width:700px)" srcset="imagenes/bombobby-milo/mapa_chile_vertical.png">
+        <img class="mapa-img" src="imagenes/bombobby-milo/mapa_chile.png" alt="Mapa de Chile mostrando Osorno y Santiago">
+      </picture>
+
+      <!-- Osorno -->
+      <div class="hito-mapa hito-osorno">
+        <div class="tarjeta-ciudad">
+          <h3>El reino del frío y la lluvia</h3>
+          <p>Nací y me crié aquí</p>
+        </div>
+        <svg class="flecha-ciudad" viewBox="0 0 60 70" fill="none" aria-hidden="true">
+          <path d="M52 66V14H4M4 14L11 8M4 14L11 20" stroke="#ececec" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <button type="button" class="pin-ciudad" aria-pressed="false" aria-label="Mostrar nombre de ciudad: Osorno">
+          <img src="imagenes/bombobby-milo/ubicacion-osorno.png" alt="">
+          <span class="etiqueta-ciudad">Osorno</span>
+        </button>
+      </div>
+
+      <!-- Santiago -->
+      <div class="hito-mapa hito-santiago">
+        <div class="tarjeta-ciudad">
+          <h3>La gran Capital</h3>
+          <p>Me independicé a los 19 y empecé a vivir aquí</p>
+        </div>
+        <svg class="flecha-ciudad" viewBox="0 0 60 70" fill="none" aria-hidden="true">
+          <path d="M8 66V14H56M56 14L49 8M56 14L49 20" stroke="#ececec" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <button type="button" class="pin-ciudad" aria-pressed="false" aria-label="Mostrar nombre de ciudad: Santiago">
+          <img src="imagenes/bombobby-milo/ubicacion-santiago.png" alt="">
+          <span class="etiqueta-ciudad">Santiago</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="fila seccion-ilustradora">
+    <img class="img-ilustradora" src="imagenes/bombobby-milo/bombobby-ilustradora.png" alt="Belén con lentes de sol y el texto: Orgullosamente y autoproclamada Ilustradora digital">
+    <p>Cuando aún estaba en el colegio empecé con un proyecto de comic que me emocionó tanto que compré una tableta gráfica sin pensarlo. Conocí el software <a class="krita" href="https://krita.org" target="_blank" rel="noopener">Krita</a>, que al día de hoy sigo ocupando, y empecé a diseñar mis propios personajes.</p>
+  </section>
+
+  <section class="estudios-diseno" aria-labelledby="titulo-carrera">
+    <h2 id="titulo-carrera" class="sr-only">Diseño Industrial</h2>
+
+    <div class="bloque-familia">
+      <img class="img-familia" src="imagenes/bombobby-milo/familia.png" alt="Belén junto a su familia. Texto: Me fui lejos de mi familia para poder estudiar, ya que lamentablemente en Osorno no existía la carrera que yo tanto anhelaba seguir... Diseño Industrial">
+      <img class="flecha-carrera flecha-izq" src="imagenes/bombobby-milo/flecha-blanca.png" alt="" aria-hidden="true">
+      <img class="flecha-carrera flecha-der" src="imagenes/bombobby-milo/flecha-blanca-2.png" alt="" aria-hidden="true">
+    </div>
+
+    <div class="franja-aprendido">
+      <h3>Todo lo que he aprendido</h3>
+    </div>
+
+    <ul class="grilla-aprendido">
+      <li><span class="estrella" aria-hidden="true">★</span>Dibujo geométrico</li>
+      <li><span class="estrella" aria-hidden="true">★</span>Dibujo técnico</li>
+      <li><span class="estrella" aria-hidden="true">★</span>Prototipado</li>
+      <li><span class="estrella" aria-hidden="true">★</span>Carpintería</li>
+      <li><span class="estrella" aria-hidden="true">★</span>Modelado 3D</li>
+      <li><span class="estrella" aria-hidden="true">★</span>Fabricación digital</li>
+      <li><span class="estrella" aria-hidden="true">★</span>Programación</li>
+      <li><span class="estrella" aria-hidden="true">★</span>Interfaces web</li>
+      <li><span class="estrella" aria-hidden="true">★</span>Retail y VM</li>
+    </ul>
+
+    <a class="btn-ver-proyectos" href="proyectos.html#diseno">VER PROYECTOS</a>
+  </section>
+
+ <section class="fila seccion-milo" aria-labelledby="titulo-milo">
+    <div class="texto-milo">
+      <h2 id="titulo-milo">Milo Fetuccini ♡</h2>
+      <p>Esta es una sección especial para quien me daba la motivación para seguir y seguir, dedicado a quien me consideró su madre y se convirtió en mi bebé.</p>
+      <p>Cuando la vida decidió que 4 años con mi pequeño eran suficientes y se lo llevó, pensé en abandonar todo lo que aprendí y escapar.</p>
+      <p class="parrafo-corazon">
+        Pero sigo aquí, porque tengo la esperanza de que nos volveremos a encontrar. Cada cosa nueva que invento o cualquier logro nuevo, siento que están conectados contigo.
+        <img class="corazon-outline corazon-1" src="dibujos/corazon.png" alt="" aria-hidden="true">
+      </p>
+      <p>Te sigo extrañando, nunca dejaré de hacerlo y nunca dejaré de esperarte.</p>
+      <p>Nos volveremos a abrazar durante todas las horas que desees, ya que tú eras un gato extraño, podías estar 2 horas en mis brazos y aún así no querrías que te baje.</p>
+      <p class="parrafo-final-milo">
+        Todo lo que hago, lo hago por mí y por ti Milo precioso
+        <img class="corazon-outline corazon-2" src="dibujos/corazon.png" alt="" aria-hidden="true">
+      </p>
+      <img class="corazon-outline corazon-3" src="dibujos/corazon.png" alt="" aria-hidden="true">
+    </div>
+
+    <div class="media-milo">
+      <video src="imagenes/bombobby-milo/video-milo.mp4" autoplay muted loop playsinline aria-label="Video de Belén sosteniendo a su gato Milo en brazos"></video>
+      <img class="corazon-outline corazon-video" src="dibujos/corazon.png" alt="" aria-hidden="true">
+    </div>
+  </section>
+  
+  <footer class="contacto" id="contacto">
+  <img class="deco-contacto estrellita" src="dibujos/estrellita.png" alt="">
+  <img class="deco-contacto estrella" src="dibujos/estrella.png" alt="">
+  <h2>¡¡¡CONTÁCTAME!!!</h2>
+  <p>Sin miedo, mis redes son totalmente seguras y pacíficas. Solo cosas impresionantes pueden salir de allí.<br><br>Escoge el medio que más te acomode :3</p>
+  <div class="redes">
+    <a href="https://www.instagram.com/bommbobby/" target="_blank" rel="noopener"><img src="iconos-redes/icono-ins.png" alt="">Mi asombroso Instagram</a>
+    <a href="https://www.facebook.com/share/1CFUgrcxzS/" target="_blank" rel="noopener"><img src="iconos-redes/icono-fb.png" alt="">Mi elegante Facebook</a>
+    <a href="https://wa.me/qr/4ONEVQ5XBFOSF1" target="_blank" rel="noopener"><img src="iconos-redes/icono-ws.png" alt="">Mi tierno Whatsapp</a>
+    <a href="mailto:belenmassiel21@gmail.com" target="_blank" rel="noopener"><img src="iconos-redes/icono-mail.png" alt="">Mi sofisticado correo</a>
+  </div>
+</footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
