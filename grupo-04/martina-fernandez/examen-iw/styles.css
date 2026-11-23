@@ -1,0 +1,1559 @@
+/* =====================================================================
+   style.css — pumpkinguurl
+   Sirve para las tres páginas: index.html, portafolio.html y galeria.html
+   ===================================================================== */
+
+
+/* =====================================================================
+   1. FUENTES (se cargan desde la carpeta "fuentes/")
+   ===================================================================== */
+
+/* @font-face le "presenta" una fuente al navegador: le da un nombre y le dice dónde está el archivo */
+@font-face {
+    font-family: "PumpkinFont";                                      /* nombre con el que la usaremos en el CSS */
+       src: url("fuentes/Pumpkin-Regular.otf") format("opentype"),  /* primero intenta con el .otf */
+         url("fuentes/Pumpkin-Regular.ttf") format("truetype");  /* si no puede, usa el .ttf */
+    font-weight: normal;                                             /* es la versión normal (no negrita) */
+    font-display: swap;                                              /* muestra texto mientras la fuente carga, para que no quede en blanco */
+}
+
+@font-face {
+    font-family: "Gowun Batang";                                     /* nombre de la fuente serif */
+    src: url("fuentes/GowunBatang-Regular.ttf") format("truetype");  /* archivo de la versión normal */
+    font-weight: normal;                                             /* se usa cuando el texto NO es negrita */
+    font-display: swap;                                              /* texto visible mientras carga */
+}
+
+@font-face {
+    font-family: "Gowun Batang";                                     /* mismo nombre que la anterior... */
+    src: url("fuentes/GowunBatang-Bold.ttf") format("truetype");     /* ...pero este es el archivo en negrita */
+    font-weight: bold;                                               /* se usa automáticamente cuando el texto va en negrita */
+    font-display: swap;                                              /* texto visible mientras carga */
+}
+
+
+/* =====================================================================
+   2. VARIABLES (colores y fuentes que se repiten)
+   ===================================================================== */
+
+/* :root es "la raíz" de la página; lo que se guarda aquí se puede usar en todo el CSS */
+:root {
+    --fuente-mano: "PumpkinFont", cursive;         /* tu letra a mano (si no carga, usa una cursiva) */
+    --fuente-serif: "Gowun Batang", Georgia, serif; /* letra serif (si no carga, usa Georgia) */
+
+    --azul: #618bc7;          /* azul: "Sobre mí", presentación, Golondrina, footer del inicio */
+    --naranjo: #ea9653;       /* naranjo: logo, textos de Kai, Jüko */
+    --verde: #b8d64e;         /* verde: "Fotos", título de la ruleta, ARV Chair */
+    --morado: #5e418a;        /* morado: conciertos, Mesita, footer del portafolio */
+    --negro: #000000;         /* negro: textos y bordes */
+    --blanco: #ffffff;        /* blanco: fondos y textos sobre color */
+    --fondo-oscuro: #221f1f;  /* fondo de la página de portafolio */
+}
+
+
+/* =====================================================================
+   3. BASE (cosas generales para todo el sitio)
+   ===================================================================== */
+
+/* El * selecciona TODOS los elementos */
+* {
+    box-sizing: border-box; /* el ancho incluye el relleno y el borde, así las medidas no se "inflan" */
+}
+
+html {
+    font-size: 100%;         /* 1rem = 16 px (tamaño base). En las secciones 14 y 15 este valor cambia según la pantalla */
+    scroll-behavior: smooth; /* al hacer clic en un link interno (#sobre-mi) baja suave y no de golpe */
+}
+
+body {
+    margin: 0;                         /* quita el espacio blanco que el navegador pone alrededor */
+    font-family: var(--fuente-mano);   /* toda la página usa la letra a mano por defecto */
+    color: var(--negro);                /* color de texto por defecto */
+    background-color: var(--blanco);         /* fondo blanco */
+    overflow-x: hidden;                /* esconde lo que se sale por los lados (los peces cortados) sin crear barra horizontal */
+}
+
+/* Imágenes y videos */
+img,
+video {
+    display: block;   /* se comportan como bloques: sin espacio raro debajo */
+    max-width: 100%;  /* nunca más anchos que su contenedor */
+}
+
+/* Títulos, párrafos, listas y figuras */
+h1, h2, h3, p, ul, figure {
+    margin: 0; /* quita los márgenes automáticos del navegador; los ponemos nosotros donde hagan falta */
+}
+
+
+/* =====================================================================
+   4. NAVBAR (barra de arriba, igual en las dos páginas)
+   ===================================================================== */
+
+.navbar {
+    display: flex;                   /* pone el logo y el menú en una fila */
+    justify-content: space-between;  /* logo a la izquierda, menú a la derecha */
+    align-items: center;             /* los centra en vertical */
+    padding: 1rem 1.5rem;            /* espacio por dentro: 1rem arriba/abajo, 1.5rem a los lados */
+}
+
+.logo {
+    color: var(--naranjo);       /* logo naranjo */
+    font-size: 2.5rem;           /* tamaño de letra */
+    text-transform: uppercase;   /* lo muestra en MAYÚSCULAS */
+    text-decoration: none;       /* quita el subrayado del link */
+    letter-spacing: 0.05rem;     /* separa un poquito las letras */
+}
+
+.nav-links {
+    display: flex;     /* los links del menú quedan en una fila */
+    gap: 9rem;         /* espacio grande entre cada link */
+    list-style: none;  /* quita los puntitos de la lista */
+    padding: 0;        /* quita el espacio izquierdo que traen las listas */
+}
+
+.nav-links a {
+    font-size: 2.5rem;      /* tamaño de letra del menú */
+    text-decoration: none;  /* sin subrayado */
+}
+
+/* Cada link tiene su color según a dónde lleva (funciona en las dos páginas aunque cambie el orden) */
+.nav-links a[href*="fotos"] {
+    color: var(--verde); /* el link que contiene "fotos" es verde */
+}
+
+.nav-links a[href*="sobre-mi"] {
+    color: var(--azul); /* el link que contiene "sobre-mi" es azul */
+}
+
+.nav-links a[href*="portafolio"] {
+    color: var(--negro);               /* "Portafolio" en negro */
+    font-family: var(--fuente-serif);  /* y con letra serif */
+    font-size: 2rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* al pasar el mouse aparece un subrayado */
+}
+
+
+/* =====================================================================
+   5. INICIO — contenedor principal
+   ===================================================================== */
+
+main {
+    display: flex;           /* todo lo de adentro se ordena con flexbox */
+    flex-direction: column;  /* una cosa debajo de la otra (secciones y peces) */
+    overflow-x: clip;        /* recorta lo que se sale por los lados (peces), así en el celular la página no se mueve hacia el costado */
+}
+
+
+/* =====================================================================
+   6. BANNER (calabaza que cambia al pasar el mouse)
+   ===================================================================== */
+
+.banner {
+    display: flex;            /* para centrar la ilustración */
+    justify-content: center;  /* la centra en horizontal */
+    padding: 0.5rem 0 3rem;   /* espacio arriba y abajo */
+}
+
+.banner h1 {
+    display: flex;            /* para centrar la imagen que está dentro del h1 */
+    justify-content: center;  /* centrada */
+    width: 36%;               /* ancho de la ilustración (como en Figma) */
+}
+
+.banner .banner-1 {
+    width: 100%; /* la imagen ocupa todo el ancho del h1 */
+}
+
+.banner .banner-2 {
+    display: none; /* la segunda imagen parte escondida */
+    width: 36%;    /* mismo tamaño que la primera */
+}
+
+.banner:hover h1 {
+    display: none; /* al pasar el mouse por el banner se esconde la imagen 1 */
+}
+
+.banner:hover .banner-2 {
+    display: block; /* y aparece la imagen 2 en su lugar */
+}
+
+
+/* =====================================================================
+   7. RULETA DE FOTOS
+   ===================================================================== */
+
+.fotos {
+    display: flex;           /* ordena título, ruleta y botones */
+    flex-direction: column;  /* uno debajo del otro */
+    align-items: center;     /* todo centrado en horizontal */
+    padding: 2rem 0 3rem;    /* espacio arriba y abajo de la sección */
+}
+
+.fotos h2 {
+    align-self: stretch;        /* el título ocupa todo el ancho (no se centra) */
+    padding: 0 5%;              /* margen a los lados para que no toque el borde */
+    margin-bottom: 2.5rem;      /* espacio entre el título y la ruleta */
+    color: var(--verde);        /* verde limón */
+    font-size: 2rem;          /* tamaño */
+    font-weight: normal;        /* sin negrita */
+    text-transform: uppercase;  /* en mayúsculas */
+}
+
+.ruleta {
+    display: flex; /* las 3 columnas quedan una al lado de la otra */
+    width: 100%;   /* la ruleta ocupa todo el ancho de la página */
+}
+
+/* Cada columna es como la "ventanita" de una tragamonedas */
+.columna {
+    display: flex;           /* ordena las fotos */
+    flex-direction: column;  /* una debajo de la otra */
+    align-items: center;     /* centradas */
+    gap: 3.25rem;            /* espacio entre fotos (por si el JS no carga) */
+    width: 33.33%;           /* cada columna es un tercio del ancho */
+    height: 57.5rem;         /* alto fijo: muestra exactamente 5 fotos */
+    overflow: hidden;        /* lo que se sale de la ventanita no se ve (clave para el efecto de giro) */
+}
+
+/* La "tira" la crea el JavaScript: es la cinta de fotos que se mueve hacia arriba */
+.tira {
+    display: flex;            /* ordena las fotos de la cinta */
+    flex-direction: column;   /* en vertical */
+    align-items: center;      /* centradas */
+    flex-shrink: 0;           /* la cinta no se aplasta aunque sea más alta que la ventana */
+    gap: 3.25rem;             /* espacio entre fotos */
+    width: 100%;              /* ancho completo de la columna */
+    will-change: transform;   /* le avisa al navegador que se va a mover, para que la animación sea fluida */
+}
+
+.columna img {
+    flex-shrink: 0;                /* las fotos no se achican solas */
+    width: 60%;                    /* ancho de las fotos normales */
+    height: 8.5rem;                /* alto de las fotos medianas */
+    object-fit: cover;             /* la foto llena su caja recortándose, sin deformarse */
+    background-color: rgba(97, 139, 199, 0.15); /* azul muy clarito mientras la foto carga */
+    transition: height 0.5s ease, width 0.5s ease; /* cuando cambian de tamaño lo hacen suave */
+}
+
+/* Fotos 1 y 5 (las de los extremos) más bajitas: da efecto de rodillo curvo */
+.columna img:nth-child(1),
+.columna img:nth-child(5) {
+    height: 6.5rem; /* más bajas */
+}
+
+/* Foto 3 (la del medio): es la que "te toca" */
+.columna img:nth-child(3) {
+    width: 80%;      /* más ancha */
+    height: 14.5rem; /* y más alta */
+}
+
+/* Mientras gira, las fotos se ven un poquito borrosas, como una tragamonedas de verdad */
+.ruleta.girando img {
+    filter: blur(0.06rem); /* desenfoque suave */
+}
+
+/* Botón Girar */
+.btn-girar {
+    margin-top: 1.5rem;                    /* separación con la ruleta */
+    padding: 0.1rem 1.5rem;                /* espacio dentro del botón */
+    font-family: var(--fuente-mano);       /* los botones no heredan la fuente solos, por eso se la damos */
+    font-size: 3rem;                       /* texto grande */
+    color: var(--negro);                    /* color del texto */
+    background-color: var(--blanco);             /* fondo blanco */
+    border: 0.08rem solid var(--negro);     /* borde fino gris */
+    border-radius: 1rem;                   /* esquinas redondeadas */
+    cursor: pointer;                       /* aparece la manito al pasar el mouse */
+    transition: background-color 0.2s, color 0.2s; /* el cambio de color en hover es suave */
+}
+
+.btn-girar:hover:not(:disabled) {
+    background-color: var(--verde); /* al pasar el mouse se pinta verde (solo si se puede apretar) */
+    border-color: var(--verde);     /* el borde también se pinta verde */
+}
+
+.btn-girar:disabled {
+    opacity: 0.5;    /* mientras gira, el botón se ve apagado */
+    cursor: wait;    /* y el cursor muestra "espera" */
+}
+
+/* Botón Descubre más */
+.btn-descubre {
+    margin-top: 1.25rem;                /* separación con Girar */
+    padding: 0.1rem 6rem;               /* botón ancho */
+    font-size: 3.5rem;                  /* texto grande */
+    color: var(--negro);                 /* color del texto */
+    text-decoration: none;              /* sin subrayado */
+    border: 0.08rem solid var(--negro);  /* borde fino */
+    border-radius: 1rem;                /* esquinas redondeadas */
+    transition: background-color 0.2s, color 0.2s; /* cambio suave al pasar el mouse */
+}
+
+.btn-descubre:hover {
+    background-color: var(--azul); /* al pasar el mouse se pinta azul */
+    color: var(--blanco);                /* letra blanca */
+}
+
+
+/* =====================================================================
+   8. ILUSTRACIONES DE FONDO (peces y escarabajo)
+   Como no usamos position, las movemos con márgenes negativos:
+   un margen negativo "tira" la imagen hacia arriba o hacia afuera.
+   ===================================================================== */
+
+.pez-1 {
+    align-self: flex-end;       /* se pega al lado derecho */
+    width: 38%;                 /* tamaño del pez */
+    margin-top: -13.5rem;       /* sube para quedar al lado de "Descubre más" */
+    margin-right: -20%;         /* se sale por la derecha (queda cortado, como en Figma) */
+}
+
+.pez-2 {
+    align-self: flex-start;     /* se pega al lado izquierdo */
+    width: 45%;                 /* tamaño del pez */
+    margin-top: -8.5rem;        /* sube y se monta sobre la parte de abajo de Kai */
+    margin-bottom: -4rem;       /* el texto de conciertos sube y queda a su lado */
+    margin-left: -21%;           /* la cola se sale por la izquierda */
+}
+
+.escarabajo {
+    align-self: flex-end;       /* a la derecha */
+    width: 27%;                 /* tamaño */
+    margin-top: -10rem;        /* sube hasta tocar el carrusel */
+    margin-right: 1%;           /* un poquito separado del borde */
+    margin-bottom: -10rem;       /* el título PORTAFOLIO sube y queda a su lado */
+}
+
+
+/* =====================================================================
+   9. SOBRE MÍ
+   ===================================================================== */
+
+.sobre-mi {
+    display: flex;           /* ordena las partes de la sección */
+    flex-direction: column;  /* una debajo de otra */
+    padding: 1.5rem 0 2rem;  /* espacio arriba y abajo */
+}
+
+.sobre-mi > h2 {
+    padding: 0 5%;              /* separado del borde izquierdo */
+    margin-bottom: 1.5rem;      /* espacio bajo el título */
+    color: var(--azul);         /* azul */
+    font-size: 1.6rem;          /* tamaño */
+    font-weight: normal;        /* sin negrita */
+    text-transform: uppercase;  /* en mayúsculas */
+}
+
+/* --- Presentación: video a la izquierda, texto a la derecha --- */
+.presentacion {
+    display: flex;            /* video y texto en una fila */
+    align-items: flex-start;  /* los dos parten desde arriba */
+    gap: 3%;                  /* espacio entre video y texto */
+    padding: 0 3%;            /* margen a los lados */
+    margin-bottom: 2.5rem;    /* espacio antes de la parte de Kai */
+}
+
+.yo-video {
+    width: 30%;           /* el video ocupa casi un tercio */
+    aspect-ratio: 9 / 16; /* formato vertical, como el de un celular */
+    object-fit: cover;    /* llena su caja sin deformarse */
+}
+
+.presentacion-texto {
+    flex: 1;                  /* ocupa todo el espacio que sobra al lado del video */
+    display: flex;            /* ordena el párrafo y los gustos */
+    flex-direction: column;   /* uno debajo del otro */
+    align-items: center;      /* centrados */
+    gap: 1.5rem;              /* espacio entre el saludo y los gustos */
+    color: var(--azul);       /* todo el texto en azul */
+    font-size: 1.4rem;        /* tamaño de letra */
+    line-height: 1.45;        /* espacio entre líneas */
+}
+
+.presentacion-texto > p {
+    text-align: center; /* el saludo va centrado */
+}
+
+.gustos {
+    display: flex;                   /* series, rana y animales en una fila */
+    flex-wrap: wrap;                 /* si no cabe algo, pasa a la fila de abajo (la comida) */
+    justify-content: space-between;  /* reparte los elementos de borde a borde */
+    align-items: flex-start;         /* todos parten desde arriba */
+    width: 100%;                     /* ocupa todo el ancho del texto */
+}
+
+.series {
+    width: 30%; /* columna izquierda */
+}
+
+.series p + p {
+    margin-top: 1rem; /* separa "Mis favoritas son:" del párrafo anterior */
+}
+
+.series ul {
+    padding-left: 1.5rem; /* deja espacio para los puntitos de la lista */
+}
+
+.rana {
+    width: 25%; /* la rana al centro */
+}
+
+.animales {
+    align-self: center;  /* este texto queda centrado en vertical respecto a la rana */
+    width: 32%;          /* columna derecha */
+    text-align: center;  /* texto centrado */
+}
+
+.comida {
+    width: 30%;         /* ancho del texto */
+    margin-left: 33%;   /* lo empuja hacia la derecha para que quede bajo la rana */
+    margin-top: 0.5rem; /* pequeño espacio con la rana */
+}
+
+/* --- Kai: texto, dos fotos apiladas y un video --- */
+.kai {
+    display: flex;       /* las tres partes en una fila */
+    padding-right: 2%;   /* espacio con el borde derecho */
+}
+
+.kai-texto {
+    width: 30%;               /* columna del texto */
+    display: flex;            /* ordena títulos y párrafos */
+    flex-direction: column;   /* uno debajo del otro */
+    align-items: center;      /* centrados */
+    gap: 1.5rem;              /* espacio entre cada bloque */
+    padding-top: 1.5rem;      /* espacio arriba */
+    color: var(--naranjo);    /* texto naranjo */
+    font-size: 1.3rem;        /* tamaño */
+    line-height: 1.4;         /* espacio entre líneas */
+    text-align: center;       /* texto centrado */
+}
+
+.kai-texto h3 {
+    font-size: 1.3rem;    /* mismo tamaño que el texto */
+    font-weight: normal;  /* sin negrita */
+}
+
+.kai-fotos {
+    width: 33.5%;            /* columna de las fotos */
+    display: flex;           /* ordena las dos fotos */
+    flex-direction: column;  /* una arriba de la otra */
+}
+
+.kai-fotos img {
+    width: 100%;        /* cada foto ocupa todo el ancho de su columna */
+    object-fit: cover;  /* se recorta sin deformarse */
+}
+
+.kai-fotos img:first-child {
+    aspect-ratio: 4 / 3; /* la foto de arriba es más apaisada */
+}
+
+.kai-fotos img:last-child {
+    aspect-ratio: 15 / 16; /* la de abajo es casi cuadrada */
+}
+
+.kai-video {
+    width: 33.5%;         /* columna del video */
+    margin-left: 1%;      /* pequeño espacio con las fotos */
+    align-self: stretch;  /* se estira hasta el alto de las dos fotos juntas */
+    object-fit: cover;    /* llena ese espacio sin deformarse */
+}
+
+/* --- Conciertos --- */
+.conciertos {
+    display: flex;           /* ordena texto y carrusel */
+    flex-direction: column;  /* uno debajo del otro */
+    align-items: center;     /* todo centrado */
+    color: var(--morado);    /* texto morado */
+}
+
+.conciertos > p:first-child {
+    font-size: 1.4rem;   /* tamaño del texto principal */
+    line-height: 1.4;    /* espacio entre líneas */
+    text-align: center;  /* centrado */
+}
+
+.conciertos-sub {
+    margin: 1.5rem 0 3rem;      /* espacio arriba y abajo */
+    color: var(--morado);       /* morado... */
+    opacity: 0.6;               /* ...más transparente, así se ve lila suave */
+    font-size: 1.1rem;          /* más chico */
+    letter-spacing: 0.12rem;    /* letras más separadas */
+    text-align: center;         /* centrado */
+}
+
+
+/* =====================================================================
+   10. CARRUSEL DE CONCIERTOS (solo CSS: se desliza con scroll-snap)
+   ===================================================================== */
+
+.carrusel {
+    display: flex;        /* flecha, fotos y flecha en una fila */
+    align-items: center;  /* centrados en vertical */
+    width: 87%;           /* ancho total del carrusel */
+}
+
+/* La franja de fotos que se desliza */
+.carrusel-fotos {
+    display: flex;                  /* fotos una al lado de la otra */
+    align-items: center;            /* centradas en vertical */
+    flex-shrink: 0;                 /* no se achica */
+    gap: 2%;                        /* espacio entre fotos */
+    width: 100%;                    /* ocupa todo el carrusel */
+    overflow-x: auto;               /* permite deslizar hacia los lados */
+    scroll-snap-type: x mandatory;  /* al soltar, siempre "imanta" a una foto */
+    scroll-behavior: smooth;        /* el movimiento es suave */
+    scrollbar-width: none;          /* esconde la barra de scroll (Firefox) */
+}
+
+.carrusel-fotos::-webkit-scrollbar {
+    display: none; /* esconde la barra de scroll (Chrome y Safari) */
+}
+
+/* Espacios vacíos al inicio y al final para que la primera y la última foto puedan quedar al centro */
+.carrusel-fotos::before,
+.carrusel-fotos::after {
+    content: "";      /* necesario para que el espacio exista */
+    flex: 0 0 31%;    /* un "relleno" invisible de 31% de ancho */
+}
+
+.carrusel-fotos img {
+    flex: 0 0 34%;              /* cada foto mide 34% del ancho: se ven 3 */
+    min-width: 0;               /* evita que la foto se quede en su tamaño original (si no, ignora el 34%) */
+    aspect-ratio: 9 / 16;       /* fotos verticales */
+    object-fit: cover;          /* recortadas sin deformarse */
+    scroll-snap-align: center;  /* el "imán" deja la foto justo al centro */
+}
+
+/* EXTRA solo con CSS: la foto del centro se ve más grande y las de los lados más chicas.
+   Funciona en Chrome, Edge y Safari nuevos. En navegadores que no lo entienden,
+   simplemente se ven las 3 del mismo tamaño (no se rompe nada). */
+@supports (animation-timeline: view()) {
+    .carrusel-fotos img {
+        animation: foto-al-centro linear both; /* usa la animación de abajo */
+        animation-timeline: view(inline);      /* la animación avanza según la posición de la foto al deslizar, no según el tiempo */
+    }
+}
+
+/* Cuando la foto entra (0%) y sale (100%) está chica; al centro (50%) está en tamaño normal */
+@keyframes foto-al-centro {
+    0%, 100% { transform: scale(0.6); } /* chica en los bordes */
+    50%      { transform: scale(1); }   /* tamaño real en el centro */
+}
+
+.proyecto {
+    font-family: var(--fuente-serif);  /* letra a mano */
+}
+
+/* =====================================================================
+   11. PORTAFOLIO EN EL INICIO (4 proyectos con hover)
+   ===================================================================== */
+
+.portafolio {
+    display: flex;           /* ordena título, proyectos y botón */
+    flex-direction: column;  /* uno debajo del otro */
+    align-items: center;     /* centrados */
+    padding: 1.5rem 0 3rem;  /* espacio arriba y abajo */
+}
+
+.portafolio > h2 {
+    align-self: stretch;               /* el título ocupa todo el ancho */
+    padding: 0 5%;                     /* separado del borde */
+    margin-bottom: 1.5rem;             /* espacio con las fotos */
+    color: var(--negro);               /* negro */
+    font-family: var(--fuente-serif);  /* letra serif */
+    font-size: 2rem;                   /* tamaño */
+    font-weight: normal;               /* sin negrita */
+    text-transform: uppercase;         /* mayúsculas */
+}
+
+/* Truco flexbox: en dirección "column" + wrap, los elementos llenan una columna
+   y cuando no caben saltan a la siguiente. Así quedan 3 columnas:
+   [Golondrina] [Jüko + Mesita] [Silla] */
+.proyectos {
+    display: flex;                    /* activa flexbox */
+    flex-direction: column;           /* los elementos se apilan hacia abajo */
+    flex-wrap: wrap;                  /* cuando se llena una columna, pasan a la siguiente */
+    justify-content: space-between;   /* dentro de cada columna, separa Jüko y Mesita */
+    align-content: space-between;     /* reparte las 3 columnas a lo ancho */
+    width: 93%;                       /* ancho del bloque */
+    height: 53rem;                    /* alto fijo (necesario para que el wrap en columnas funcione) */
+}
+
+.proyecto {
+    display: flex;      /* foto y texto en una fila: así podemos montar el texto encima */
+    width: 30.5%;       /* ancho de cada columna */
+    height: 100%;       /* ocupa todo el alto */
+    overflow: hidden;   /* nada se sale de la caja */
+}
+
+.proyecto:nth-child(2),
+.proyecto:nth-child(3) {
+    height: 48.5%; /* Jüko y Mesita miden la mitad para quedar apiladas */
+}
+
+.proyecto img,
+.proyecto video {
+    flex-shrink: 0;     /* no se achica */
+    width: 100%;        /* ocupa todo el ancho */
+    height: 100%;       /* y todo el alto */
+    object-fit: cover;  /* recortada sin deformarse */
+}
+
+/* El texto del hover: con margin-left -100% se monta exactamente encima de la foto */
+.proyecto figcaption {
+    flex-shrink: 0;                             /* no se achica */
+    width: 100%;                                /* mismo ancho que la foto */
+    margin-left: -100%;                         /* retrocede todo su ancho y queda encima de la foto */
+    display: flex;                              /* ordena nombre, ramo y año */
+    flex-direction: column;                     /* uno debajo del otro */
+    justify-content: center;                    /* centrados en vertical */
+    align-items: center;                        /* centrados en horizontal */
+    gap: 0.5rem;                                /* espacio entre líneas */
+    padding: 1rem;                              /* aire por dentro */
+    color: var(--blanco);                             /* texto blanco */
+    background-color: rgba(34, 31, 31, 0.8);    /* fondo oscuro (#221F1F) semitransparente */
+    text-align: center;                         /* texto centrado */
+    opacity: 0;                                 /* parte invisible */
+    transition: opacity 0.3s ease;              /* aparece suave */
+}
+
+.proyecto:hover figcaption {
+    opacity: 1; /* al pasar el mouse por el proyecto, aparece el texto */
+}
+
+.proyecto figcaption h3 {
+    font-family: var(--fuente-serif);  /* nombre del proyecto en serif */
+    font-size: 1.75rem;                /* tamaño */
+    font-weight: normal;               /* sin negrita */
+}
+
+.btn-detalles {
+    margin-top: 2rem;                   /* espacio con los proyectos */
+    padding: 0.25rem 6rem;              /* botón ancho */
+    color: var(--negro);                /* texto negro */
+    font-family: var(--fuente-serif);   /* letra serif */
+    font-size: 2.5rem;                  /* tamaño */
+    text-decoration: none;              /* sin subrayado */
+    border: 0.08rem solid var(--negro);  /* borde fino */
+    border-radius: 1rem;                /* esquinas redondeadas */
+    transition: background-color 0.2s, color 0.2s; /* cambio suave */
+}
+
+.btn-detalles:hover {
+    background-color: var(--negro); /* al pasar el mouse se pinta negro */
+    color: var(--blanco);                 /* letra blanca */
+}
+
+
+/* =====================================================================
+   12. FOOTER (igual en las dos páginas, cambia el color)
+   ===================================================================== */
+
+footer {
+    display: flex;                   /* texto e ilustración en una fila */
+    justify-content: space-between;  /* texto a la izquierda, ilustración a la derecha */
+    align-items: flex-start;         /* el texto parte desde arriba */
+    padding: 2.5rem 0 0 4%;          /* espacio arriba y a la izquierda */
+    color: var(--blanco);                  /* texto blanco */
+    background-color: var(--azul); /* fondo azul */
+}
+
+.footer-texto {
+    width: 42%;               /* ancho del texto */
+    display: flex;            /* ordena los párrafos y la lista */
+    flex-direction: column;   /* uno debajo del otro */
+    gap: 1.5rem;              /* espacio entre cada bloque */
+    padding-bottom: 3rem;     /* espacio abajo */
+    font-size: 1.35rem;       /* tamaño de letra */
+    line-height: 1.45;        /* espacio entre líneas */
+}
+
+.footer-texto ul {
+    display: flex;           /* ordena los contactos */
+    flex-direction: column;  /* uno debajo del otro */
+    gap: 1.25rem;            /* espacio entre ellos */
+    padding: 0;              /* sin espacio a la izquierda */
+    list-style: none;        /* sin puntitos */
+}
+
+.footer-texto a {
+    display: flex;        /* ícono y texto en una fila */
+    align-items: center;  /* centrados en vertical */
+    gap: 0.75rem;         /* espacio entre ícono y texto */
+    color: var(--blanco);       /* texto blanco */
+}
+
+.footer-texto a img {
+    width: 1.75rem; /* tamaño de los íconos */
+}
+
+.footer-texto a[href*="instagram"] {
+    font-size: 1rem;  /* el usuario de Instagram va más chico */
+    color: var(--blanco); /* blanco */
+}
+
+.footer-texto a[href^="mailto"] {
+    font-family: var(--fuente-serif); /* el correo va en serif */
+    font-size: 1.5rem;                /* un poco más grande */
+}
+
+.footer-img {
+    align-self: flex-end;  /* la ilustración se pega abajo */
+    width: 39%;            /* tamaño */
+    margin-right: 1%;      /* pequeño espacio con el borde */
+}
+
+
+/* =====================================================================
+   13. PÁGINA PORTAFOLIO (fondo oscuro y collages)
+   ===================================================================== */
+
+.pag-portafolio {
+    color: var(--blanco);                          /* texto blanco */
+    background-color: var(--fondo-oscuro);   /* fondo oscuro */
+}
+
+.pag-portafolio .nav-links a[href*="portafolio"] {
+    color: var(--blanco); /* en fondo oscuro, "Portafolio" va en blanco */
+}
+
+.pag-portafolio footer {
+    background-color: var(--morado); /* en esta página el footer es morado */
+}
+
+/* --- Título PROYECTOS --- */
+.titulo-proyectos {
+    display: flex;                     /* ordena título y subtítulo */
+    flex-direction: column;            /* uno debajo del otro */
+    align-items: center;               /* centrados */
+    gap: 0.75rem;                      /* espacio entre ellos */
+    padding: 1rem 0 2.5rem;            /* espacio arriba y abajo */
+    color: var(--azul);                /* azul */
+    font-family: var(--fuente-serif);  /* letra serif */
+    text-align: center;                /* texto centrado */
+}
+
+.titulo-proyectos h1 {
+    font-size: 5.5rem;          /* muy grande */
+    font-weight: normal;        /* sin negrita */
+    text-transform: uppercase;  /* mayúsculas */
+    letter-spacing: 0.1rem;     /* letras un poco separadas */
+}
+
+.titulo-proyectos p {
+    font-size: 1.1rem;  /* subtítulo chico */
+    line-height: 1.5;   /* espacio entre líneas */
+}
+
+/* --- Estructura común de los 4 proyectos ---
+   Cada sección es un flexbox en fila que hace wrap. Con "display: contents"
+   la caja .galeria "desaparece" y sus fotos pasan a ser hijas directas de la
+   sección; así podemos mezclar fotos, título y descripción con "order". */
+.golondrina,
+.juko,
+.silla,
+.mesa {
+    display: flex;                     /* activa flexbox */
+    flex-wrap: wrap;                   /* lo que no cabe pasa a la fila de abajo */
+    align-items: flex-start;           /* todo parte desde arriba de su fila */
+    padding: 0 3%;                     /* margen a los lados */
+    margin-bottom: 0.5rem;             /* pequeño espacio entre proyectos */
+    font-family: var(--fuente-serif);  /* letra serif en todo el proyecto */
+}
+
+.galeria {
+    display: contents; /* la caja no se dibuja: sus fotos se ordenan directo dentro de la sección */
+}
+
+.galeria img {
+    flex-shrink: 0;     /* las fotos mantienen su ancho */
+    object-fit: cover;  /* se recortan sin deformarse */
+}
+
+.golondrina h2,
+.juko h2,
+.silla h2,
+.mesa h2 {
+    font-size: 3.75rem;   /* títulos grandes */
+    font-weight: normal;  /* sin negrita */
+    line-height: 1.1;     /* líneas apretaditas */
+}
+
+.golondrina > p,
+.juko > p,
+.silla > p,
+.mesa > p {
+    font-size: 1.75rem;  /* descripción mediana */
+    line-height: 1.35;   /* espacio entre líneas */
+}
+
+/* NOTA sobre los márgenes en %: aunque sea margin-top, el % se calcula
+   sobre el ANCHO de la sección. Por eso los collages se mantienen
+   proporcionados aunque cambie el tamaño de la ventana. */
+
+/* --- Golondrina Chilena (azul) --- */
+.golondrina {
+    color: var(--azul); /* textos azules */
+}
+
+.golondrina h2 {
+    order: 0;            /* va primero */
+    width: 100%;         /* ocupa toda una fila */
+    padding-left: 47%;   /* el texto parte encima de la foto del medio */
+}
+
+.golondrina4 {
+    order: 1;             /* primera foto de la fila */
+    width: 47%;           /* ancho del dibujo */
+    margin-right: -9.5%;  /* la foto siguiente se monta un poco sobre el dibujo */
+    z-index: 1;           /* el dibujo queda por encima de la foto */
+    object-fit: contain;  /* el dibujo se ve completo, sin recortar */
+}
+
+.golondrina3 {
+    order: 2;             /* segunda */
+    width: 32.5%;         /* ancho */
+    aspect-ratio: 0.81;   /* proporción vertical */
+}
+
+.golondrina > p {
+    order: 3;             /* el texto va a la derecha de la foto */
+    width: 12%;           /* angosto, así queda en varias líneas */
+    margin-left: 1%;      /* pequeño espacio con la foto */
+}
+
+.golondrina5 {
+    order: 4;               /* empieza la segunda fila */
+    width: 52.5%;           /* ancho */
+    margin-top: -2.5%;      /* sube un poquito y se monta sobre la fila de arriba */
+    margin-left: 7.5%;      /* corrida hacia la derecha */
+    aspect-ratio: 1.1;      /* casi cuadrada */
+}
+
+.golondrina1 {
+    order: 5;             /* al lado de la anterior */
+    width: 39%;           /* ancho */
+    aspect-ratio: 0.88;   /* un poco vertical */
+}
+
+/* --- Jüko (naranjo) --- */
+.juko {
+    color: var(--naranjo); /* textos naranjos */
+}
+
+.juko4 {
+    order: 1;             /* foto alta de la izquierda */
+    width: 34%;           /* ancho */
+    aspect-ratio: 0.59;   /* bien vertical */
+}
+
+.juko3 {
+    order: 2;             /* foto del medio arriba */
+    width: 31%;           /* ancho */
+    aspect-ratio: 0.73;   /* vertical */
+}
+
+.juko > p {
+    order: 3;             /* descripción a la derecha */
+    width: 16%;           /* ancho */
+    margin-top: 22.5%;    /* baja hasta la mitad de la fila */
+    margin-left: 0.5%;    /* pequeño espacio con la foto */
+}
+
+.juko h2 {
+    order: 4;               /* el título va en la segunda fila, bajo la foto alta */
+    width: 34%;             /* mismo ancho que la foto de arriba */
+    padding-right: 1%;      /* pequeño espacio a la derecha */
+    text-align: right;      /* alineado a la derecha */
+    text-transform: uppercase; /* JÜKO en mayúsculas */
+}
+
+.juko1 {
+    order: 5;             /* foto bajo la del medio */
+    width: 24%;           /* ancho */
+    margin-top: -15%;     /* sube hasta pegarse a la foto de arriba */
+    aspect-ratio: 0.565;  /* vertical */
+}
+
+.juko5 {
+    order: 6;             /* foto grande de la derecha */
+    width: 41%;           /* ancho */
+    margin-top: -29%;     /* sube harto para quedar bajo la descripción */
+    aspect-ratio: 0.73;   /* vertical */
+}
+
+/* --- ARV Chair (verde) --- */
+.silla {
+    color: var(--verde); /* textos verdes */
+}
+
+.silla h2 {
+    order: 0;             /* va primero */
+    width: 63%;           /* ocupa el lado izquierdo de la primera fila */
+    padding-right: 0.5%;  /* pequeño espacio */
+    text-align: right;    /* el texto se pega a la derecha */
+}
+
+.silla5 {
+    order: 1;            /* foto apaisada arriba a la derecha */
+    width: 36%;          /* ancho */
+    aspect-ratio: 1.8;   /* bien horizontal */
+}
+
+.silla1 {
+    order: 2;               /* foto grande de la izquierda */
+    width: 36%;             /* ancho */
+    margin-top: -7.2%;      /* sube un poco */
+    margin-right: -2.5%;    /* la siguiente foto se monta encima */
+    aspect-ratio: 0.57;     /* vertical */
+}
+
+.silla3 {
+    order: 3;             /* foto del medio arriba */
+    width: 30%;           /* ancho */
+    margin-top: -14.4%;   /* sube hasta quedar bajo el título */
+    aspect-ratio: 0.76;   /* vertical */
+}
+
+.silla2 {
+    order: 4;             /* Kai en la silla, a la derecha */
+    width: 27%;           /* ancho */
+    aspect-ratio: 0.58;   /* vertical */
+}
+
+.silla4 {
+    order: 5;               /* foto del medio abajo */
+    width: 30%;             /* ancho */
+    margin-top: -30.5%;     /* sube hasta pegarse a la foto del medio de arriba */
+    margin-left: 33.5%;     /* se corre hasta la columna del medio */
+    aspect-ratio: 0.75;     /* vertical */
+}
+
+.silla > p {
+    order: 6;             /* descripción bajo la foto de Kai */
+    width: 11%;           /* angosto */
+    margin-top: -7%;      /* sube un poco */
+    margin-left: 1.5%;    /* espacio con la foto */
+}
+
+/* --- Mesita de suelo (morado) --- */
+.mesa {
+    color: var(--morado); /* textos morados */
+}
+
+.mesa h2 {
+    order: 0;             /* primero */
+    width: 53.5%;         /* lado izquierdo de la primera fila */
+    margin-top: 7%;       /* baja un poco */
+    padding-right: 2%;    /* espacio a la derecha */
+    text-align: right;    /* pegado a la derecha */
+}
+
+.mesa4 {
+    order: 1;            /* foto grande de arriba a la derecha */
+    width: 46%;          /* ancho */
+    aspect-ratio: 1.06;  /* casi cuadrada */
+}
+
+.mesa2 {
+    order: 2;             /* foto principal a la izquierda */
+    width: 44.5%;         /* ancho */
+    margin-top: -31.7%;   /* sube hasta quedar justo bajo el título */
+    margin-left: 9.5%;    /* corrida a la derecha */
+    aspect-ratio: 1;      /* cuadrada */
+}
+
+.mesa3 {
+    order: 3;             /* vista superior, montada sobre las otras */
+    width: 34.7%;         /* ancho */
+    margin-top: -4%;      /* sube un poquito */
+    margin-left: -8%;     /* se monta sobre la foto anterior */
+    aspect-ratio: 1.06;   /* casi cuadrada */
+}
+
+.mesa > p {
+    order: 4;             /* descripción a la derecha */
+    width: 13%;           /* angosto */
+    margin-top: 1.8%;     /* baja un poquito */
+    margin-left: 2.3%;    /* espacio con la foto */
+}
+
+.mesa1 {
+    order: 5;             /* foto de la entrega, abajo a la izquierda */
+    width: 46%;           /* ancho */
+    margin-top: -21%;     /* sube y se monta sobre la foto principal */
+    aspect-ratio: 1.34;   /* horizontal */
+}
+
+    .footer-texto {
+        width: 95%;            /* texto casi a lo ancho */
+        padding-bottom: 1rem;  /* menos espacio abajo */
+        font-size: 2rem;    /* letra un poco más chica */
+    }
+
+        .footer-texto a[href^="https://www.instagram.com/pumpkinguurl/"] {
+        font-size: 2rem; /* el correo más chico para que quepa en una línea */
+    }
+
+    .footer-texto a[href^="mailto"] {
+        font-size: 1.5rem; /* el correo más chico para que quepa en una línea */
+    }
+
+
+/* =====================================================================
+   14. ADAPTAR AL TAMAÑO DE LA PANTALLA (computadores)
+   Truco: como casi todo el sitio está en rem, si cambiamos el tamaño
+   base (el font-size del html) TODO se agranda o achica en proporción,
+   igual que tu diseño de 1440 px.
+   Ojo: dentro de un media query, 1rem siempre vale 16 px
+   (por ejemplo, 90rem = 1440 px), no depende del cambio de abajo.
+   ===================================================================== */
+
+/* Pantallas grandes (más de 1600 px) */
+@media (min-width: 100rem) {
+    html {
+        font-size: 111%; /* todo un 11% más grande */
+    }
+}
+
+/* Pantallas muy grandes (más de 1760 px) */
+@media (min-width: 110rem) {
+    html {
+        font-size: 122%; /* todo un 22% más grande */
+    }
+}
+
+/* Pantallas gigantes (1920 px o más) */
+@media (min-width: 120rem) {
+    html {
+        font-size: 133%; /* todo un 33% más grande */
+    }
+}
+
+/* Notebooks (menos de 1440 px) */
+@media (max-width: 89.99rem) {
+    html {
+        font-size: 90%; /* todo un 10% más chico */
+    }
+}
+
+/* Notebooks chicos (menos de 1296 px) */
+@media (max-width: 80.99rem) {
+    html {
+        font-size: 81%; /* todo un 19% más chico */
+    }
+}
+
+/* Pantallas medianas (menos de 1152 px) */
+@media (max-width: 71.99rem) {
+    html {
+        font-size: 72%; /* todo un 28% más chico */
+    }
+}
+
+
+/* =====================================================================
+   15. VERSIÓN MOBILE (celulares y tablets: menos de 960 px)
+   Aquí ya no achicamos el diseño de escritorio: cambiamos el orden
+   para que todo quede en una sola columna.
+   ===================================================================== */
+
+@media (max-width: 60rem) {
+
+    /* --- Base --- */
+    html {
+        font-size: 100%; /* vuelve al tamaño normal para que el texto se lea bien */
+    }
+
+    /* --- Navbar --- */
+    .navbar {
+        flex-direction: column; /* logo arriba y menú abajo */
+        gap: 0.75rem;           /* espacio entre ellos */
+        padding: 1rem;          /* relleno parejo */
+    }
+
+    .nav-links {
+        flex-wrap: wrap;          /* si no caben, los links bajan a otra línea */
+        justify-content: center;  /* links centrados */
+        gap: 1.5rem;              /* links más juntos */
+    }
+
+    .nav-links a[href*="portafolio"] {
+    color: var(--negro);               /* "Portafolio" en negro */
+    font-family: var(--fuente-serif);  /* y con letra serif */
+    font-size: 0.7rem;
+}
+
+    .logo,
+    .nav-links a {
+        font-size: 1.1rem; /* letra del menú un poco más chica */
+    }
+
+    /* --- Banner --- */
+    .banner {
+        padding-bottom: 1.5rem; /* menos espacio abajo */
+    }
+
+    .banner h1,
+    .banner .banner-2 {
+        width: 75%; /* la calabaza ocupa más ancho en proporción */
+    }
+
+    /* --- Ruleta (sigue siendo de 3 columnas, pero más bajita) --- */
+    .fotos {
+        padding: 1rem 0 2rem; /* menos espacio arriba y abajo */
+    }
+
+    .fotos h2,
+    .sobre-mi > h2,
+    .portafolio > h2 {
+        font-size: 1.25rem;    /* títulos de sección más chicos */
+        margin-bottom: 1.25rem; /* menos espacio debajo */
+    }
+
+    .columna {
+        height: 25.5rem; /* ventanita más baja */
+        gap: 1.25rem;    /* menos espacio entre fotos (si no hay JS) */
+    }
+
+    .tira {
+        gap: 1.25rem; /* menos espacio entre fotos */
+    }
+
+    .columna img {
+        width: 85%;      /* fotos casi del ancho de la columna */
+        height: 3.75rem; /* fotos medianas */
+    }
+
+    .columna img:nth-child(1),
+    .columna img:nth-child(5) {
+        height: 3rem; /* extremos más bajitos */
+    }
+
+    .columna img:nth-child(3) {
+        width: 95%;     /* la del medio casi todo el ancho */
+        height: 7rem;   /* y más alta */
+    }
+
+    .btn-girar {
+        font-size: 2rem;        /* botón más chico */
+        padding: 0 1.25rem;     /* menos relleno */
+    }
+
+    .btn-descubre {
+        padding: 0 2rem;    /* menos relleno a los lados */
+        font-size: 2.25rem; /* texto más chico */
+    }
+
+    /* --- Ilustraciones de fondo: más chicas y sin montarse sobre los botones --- */
+    .pez-1 {
+        width: 45%;          /* pez más chico */
+        margin-top: -1rem;   /* casi pegado a los botones */
+        margin-right: -12%;  /* cortado por la derecha */
+    }
+
+    .pez-2 {
+        width: 60%;            /* pez más chico */
+        margin-top: -2rem;     /* sube un poco sobre el video de Kai */
+        margin-bottom: 0;      /* el texto de conciertos queda abajo, no al lado */
+        margin-left: -12%;     /* cortado por la izquierda */
+    }
+
+    .escarabajo {
+        width: 40%;            /* escarabajo más chico */
+        margin-top: 0;         /* sin subir */
+        margin-bottom: -2rem;  /* el título PORTAFOLIO sube un poco */
+    }
+
+    /* --- Sobre mí: todo en una columna --- */
+    .presentacion,
+    .kai {
+        flex-direction: column; /* una parte debajo de la otra */
+        align-items: center;    /* centradas */
+        gap: 1.5rem;            /* espacio entre partes */
+        padding: 0 5%;          /* margen a los lados */
+    }
+
+    .yo-video {
+        width: 75%; /* video más ancho en proporción */
+    }
+
+    .presentacion-texto {
+        width: 100%;      /* texto a todo el ancho */
+        font-size: 1.2rem; /* letra un poco más chica */
+    }
+
+    .gustos {
+        flex-direction: column; /* gustos uno debajo del otro */
+        align-items: center;    /* centrados */
+        gap: 1.25rem;           /* espacio entre ellos */
+    }
+
+    .series,
+    .animales,
+    .comida {
+        width: 100%;        /* textos a lo ancho */
+        margin: 0;          /* sin márgenes extra */
+        text-align: center; /* centrados */
+    }
+
+    .series ul {
+        padding-left: 0;     /* sin sangría... */
+        list-style: none;    /* ...y sin puntitos, para que se vea centrado */
+    }
+
+    .rana {
+        width: 40%; /* rana más chica */
+    }
+
+    .kai-texto,
+    .kai-fotos {
+        width: 100%; /* texto y fotos a todo el ancho */
+    }
+
+    .kai-texto {
+        padding-top: 0; /* sin espacio extra arriba */
+    }
+
+    .kai-video {
+        width: 75%;            /* video un poco más angosto, como el de presentación */
+        margin-left: 0;        /* sin margen extra */
+        aspect-ratio: 9 / 16;  /* mantiene su forma vertical */
+    }
+
+    .conciertos {
+        padding: 0 5%; /* margen a los lados */
+    }
+
+    .conciertos > p:first-child {
+        font-size: 1.2rem; /* letra un poco más chica */
+    }
+
+    /* --- Carrusel: una foto al centro y un pedacito de las de los lados --- */
+    .carrusel {
+        width: 100%; /* todo el ancho */
+    }
+
+    .carrusel-fotos img {
+        flex-basis: 60%; /* fotos más grandes */
+    }
+
+    .carrusel-fotos::before,
+    .carrusel-fotos::after {
+        flex-basis: 18%; /* rellenos más chicos para que la primera y la última queden centradas */
+    }
+
+
+    /* --- Portafolio del inicio: proyectos uno debajo del otro, con el texto siempre visible --- */
+    .proyectos {
+        flex-wrap: nowrap;  /* sin columnas: uno debajo del otro */
+        gap: 1.5rem;        /* espacio entre proyectos */
+        width: 90%;         /* margen a los lados */
+        height: auto;       /* el alto lo decide el contenido */
+    }
+
+    .proyecto,
+    .proyecto:nth-child(2),
+    .proyecto:nth-child(3) {
+        flex-direction: column; /* foto arriba y texto abajo */
+        width: 100%;            /* a lo ancho */
+        height: auto;           /* el alto lo decide el contenido */
+    }
+
+    .proyecto img,
+    .proyecto video {
+        height: 20rem; /* alto fijo para la foto */
+    }
+
+    /* En el celular no existe "pasar el mouse", así que el texto se muestra siempre debajo */
+    .proyecto figcaption {
+        margin-left: 0;                       /* ya no se monta sobre la foto */
+        opacity: 1;                           /* siempre visible */
+        background-color: var(--naranjo);       /* franja negra */
+    }
+
+    .btn-detalles {
+        padding: 0.25rem 2rem; /* botón más angosto */
+        font-size: 2rem;       /* texto más chico */
+    }
+
+    /* --- Footer --- */
+    footer {
+        flex-direction: column; /* texto arriba e ilustración abajo */
+        padding: 2rem 0 0 5%;   /* espacio arriba y a la izquierda */
+    }
+
+    .footer-texto {
+        width: 95%;            /* texto casi a lo ancho */
+        padding-bottom: 1rem;  /* menos espacio abajo */
+        font-size: 1.15rem;    /* letra un poco más chica */
+    }
+
+        .footer-texto a[href^="https://www.instagram.com/pumpkinguurl/"] {
+        font-size: 1.5rem; /* el correo más chico para que quepa en una línea */
+    }
+
+    .footer-texto a[href^="mailto"] {
+        font-size: 1.1rem; /* el correo más chico para que quepa en una línea */
+    }
+
+    .footer-img {
+        width: 75%; /* ilustración más grande en proporción */
+    }
+
+    /* --- Página portafolio --- */
+    .titulo-proyectos h1 {
+        font-size: 3rem; /* título más chico */
+    }
+
+    .golondrina,
+    .juko,
+    .silla,
+    .mesa {
+        justify-content: space-between; /* las fotos de a dos se reparten de borde a borde */
+        padding: 0 5%;                  /* margen a los lados */
+        margin-bottom: 3rem;            /* más espacio entre proyectos */
+    }
+
+    /* Título y descripción arriba, a lo ancho, sin las posiciones del collage */
+    .pag-portafolio section:not(.titulo-proyectos) > h2,
+    .pag-portafolio section:not(.titulo-proyectos) > p {
+        order: 0;            /* respetan el orden del HTML (antes que las fotos) */
+        width: 100%;         /* a lo ancho */
+        margin: 0 0 0.75rem; /* solo espacio abajo */
+        padding: 0;          /* sin relleno */
+        text-align: left;    /* alineados a la izquierda */
+    }
+
+    .pag-portafolio section:not(.titulo-proyectos) > h2 {
+        font-size: 2.5rem; /* títulos más chicos */
+    }
+
+    .pag-portafolio section:not(.titulo-proyectos) > p {
+        font-size: 1.25rem; /* descripción más chica */
+    }
+
+    /* Fotos de a dos por fila */
+    .pag-portafolio .galeria img {
+        order: 0;             /* respetan el orden del HTML */
+        width: 48.5%;         /* dos por fila */
+        margin: 0 0 3%;       /* solo espacio abajo */
+        aspect-ratio: 3 / 4;  /* todas verticales y del mismo tamaño */
+    }
+
+    /* La primera foto, y la última si quedaría sola, van a todo el ancho */
+    .pag-portafolio .galeria img:first-child,
+    .pag-portafolio .galeria img:last-child:nth-child(even) {
+        width: 100%;          /* a todo el ancho */
+        aspect-ratio: 4 / 3;  /* horizontal */
+    }
+}
+
+/* =====================================================================
+   16. PÁGINA GALERÍA (galeria.html: fotos que se recorren arrastrando)
+   ===================================================================== */
+
+/* El alto de la página debe ser igual al de la pantalla. Esto no afecta a las otras
+   páginas: su body sigue creciendo con el contenido */
+html {
+    height: 100%; /* el html mide lo mismo que la ventana */
+}
+
+.pag-galeria {
+    display: flex;                          /* ordena barra de arriba, lienzo y barra de abajo */
+    flex-direction: column;                 /* una debajo de la otra */
+    height: 100%;                           /* la página mide exactamente lo que la ventana */
+    overflow: hidden;                       /* sin barras de scroll: aquí se recorre arrastrando */
+    color: var(--blanco);                   /* texto blanco */
+    background-color: var(--verde);         /* fondo verde de la paleta (solo en la galería) */
+}
+
+/* "Portafolio" en el menú: blancos sobre el fondo verde */
+.pag-galeria .nav-links a[href*="portafolio"] {
+    color: var(--blanco); /* blanco */
+}
+
+/* "Fotos" es verde en las otras páginas; aquí iría verde sobre verde, así que va en blanco */
+.pag-galeria .nav-links a[href*="fotos"] {
+    color: var(--blanco); /* blanco, solo en la galería */
+}
+
+
+.nav-links a[aria-current="page"] {
+    text-decoration: underline; /* la página en la que estás aparece subrayada */
+}
+
+/* --- El lienzo: la "ventana" por donde se ven las fotos --- */
+.lienzo {
+    flex: 1;                      /* ocupa todo el alto que sobra entre las dos barras */
+    min-height: 0;                /* permite que se achique (si no, crecería con las fotos) */
+    display: flex;                /* para ubicar el mundo y el texto de carga */
+    align-items: flex-start;      /* el mundo parte arriba */
+    overflow: hidden;             /* lo que queda fuera de la ventana no se ve */
+    cursor: grab;                 /* cursor de "mano abierta": se puede arrastrar */
+    touch-action: none;           /* en el celular, arrastrar mueve las fotos y no la página */
+    user-select: none;            /* no se selecciona texto ni imágenes al arrastrar */
+    outline: none;                /* sin el borde azul al hacer clic */
+    /* Viñeta: las fotos se desvanecen hacia los bordes, como en la página de referencia */
+    mask-image: radial-gradient(ellipse at center, black 55%, transparent 100%);
+}
+
+.lienzo:focus-visible {
+    outline: 0.15rem solid var(--naranjo); /* si llegas con la tecla Tab, se marca el borde */
+    outline-offset: -0.15rem;              /* el borde queda por dentro */
+}
+
+.lienzo.arrastrando {
+    cursor: grabbing; /* "mano cerrada" mientras arrastras */
+}
+
+/* Mientras cargan las fotos, el porcentaje va al centro */
+.lienzo.cargando-fotos {
+    justify-content: center; /* centrado en horizontal */
+    align-items: center;     /* centrado en vertical */
+}
+
+.cargando {
+    font-family: var(--fuente-serif); /* letra serif */
+    font-size: 1.25rem;               /* tamaño */
+    letter-spacing: 0.3rem;           /* números separados */
+    color: var(--blanco);             /* blanco */
+}
+
+/* --- El mundo: contiene 4 copias de la baldosa y es lo que se mueve --- */
+.mundo {
+    --col: 15rem;                            /* ancho de cada columna (el número más importante) */
+    --separacion: calc(var(--col) * 0.4);    /* espacio entre fotos (si lo cambias, cambia SEPARACION en galeria.js) */
+    --entre-col: calc(var(--col) * 0.87);    /* espacio entre columnas */
+    display: flex;                           /* ordena las 2 filas */
+    flex-direction: column;                  /* una arriba de la otra */
+    flex-shrink: 0;                          /* no se achica para caber en la ventana */
+    will-change: transform;                  /* avisa al navegador que se moverá (más fluido) */
+}
+
+.fila-mundo {
+    display: flex; /* 2 baldosas una al lado de la otra */
+}
+
+.baldosa {
+    display: flex;            /* las 8 columnas en una fila */
+    align-items: stretch;     /* todas las columnas se estiran al alto de la más larga */
+    flex-shrink: 0;           /* no se achica */
+}
+
+.columna-galeria {
+    display: flex;                       /* ordena las fotos */
+    flex-direction: column;              /* una debajo de la otra */
+    justify-content: space-between;      /* si la columna quedó más corta, reparte el espacio que sobra entre sus fotos (así no quedan huecos grandes) */
+    align-items: center;                 /* centradas (las horizontales sobresalen igual por ambos lados) */
+    gap: var(--separacion);              /* espacio mínimo entre fotos */
+    flex-shrink: 0;                      /* no se achica */
+    width: var(--col);                   /* ancho de la columna */
+    margin: 0 calc(var(--entre-col) / 2); /* mitad del espacio a cada lado, así entre columnas queda completo */
+    padding-bottom: var(--separacion);   /* espacio al final, para que la baldosa de abajo no quede pegada */
+}
+
+.columna-galeria img {
+    max-width: none;               /* permite que las fotos horizontales sean más anchas que su columna */
+    flex-shrink: 0;                /* no se achican */
+    object-fit: cover;             /* llenan su caja sin deformarse */
+    background-color: rgba(255, 255, 255, 0.05); /* gris muy suave mientras se dibujan */
+    animation: aparecer 0.8s ease both;          /* aparecen suavemente al cargar */
+    transition: transform 0.4s ease, opacity 0.4s ease; /* el hover es suave */
+}
+
+.columna-galeria img:hover {
+    transform: scale(1.03); /* al pasar el mouse, la foto crece un poquito */
+}
+
+/* Mientras arrastras, el efecto hover se apaga para que no parpadee */
+.lienzo.arrastrando img:hover {
+    transform: none; /* sin crecer */
+}
+
+@keyframes aparecer {
+    from { opacity: 0; } /* parte invisible */
+    to   { opacity: 1; } /* termina visible */
+}
+
+/* --- Barra de abajo --- */
+.pie-galeria {
+    display: flex;                    /* textos en una fila */
+    justify-content: space-between;   /* uno a cada lado */
+    padding: 0.75rem 1.5rem 1rem;     /* espacio por dentro */
+    font-family: var(--fuente-serif); /* letra serif */
+    font-size: 0.85rem;               /* chiquita */
+    letter-spacing: 0.15rem;          /* letras separadas */
+    text-transform: uppercase;        /* mayúsculas */
+    color: var(--blanco);             /* blanco... */
+    opacity: 0.6;                     /* ...un poco apagado */
+}
+
+/* --- Visor (foto en grande) --- */
+.visor {
+    width: 90%;               /* casi todo el ancho de la pantalla */
+    height: 90%;              /* casi todo el alto */
+    max-width: none;          /* sin el límite que trae el navegador */
+    max-height: none;         /* sin el límite que trae el navegador */
+    padding: 0;               /* sin relleno */
+    border: none;             /* sin borde */
+    background: transparent;  /* fondo transparente: se ve el fondo oscuro de atrás */
+}
+
+.visor[open] {
+    display: flex;            /* cuando está abierto, ordena botón y foto */
+    flex-direction: column;   /* uno debajo del otro */
+    align-items: center;      /* centrados */
+    gap: 1rem;                /* espacio entre botón y foto */
+}
+
+.visor::backdrop {
+    background-color: rgba(34, 31, 31, 0.92); /* el resto de la página se oscurece (#221F1F) */
+}
+
+.visor-foto {
+    flex: 1;            /* ocupa todo el alto disponible */
+    min-height: 0;      /* puede achicarse para caber */
+    width: 100%;        /* todo el ancho */
+    object-fit: contain; /* la foto se ve completa, sin recortarse */
+}
+
+.visor-cerrar {
+    align-self: flex-end;              /* botón a la derecha */
+    padding: 0.25rem 1rem;             /* relleno */
+    font-family: var(--fuente-serif);  /* letra serif */
+    font-size: 0.9rem;                 /* tamaño */
+    letter-spacing: 0.15rem;           /* letras separadas */
+    text-transform: uppercase;         /* mayúsculas */
+    color: var(--blanco);              /* blanco */
+    background: transparent;           /* sin fondo */
+    border: 0.06rem solid var(--blanco); /* borde fino blanco */
+    border-radius: 1rem;               /* esquinas redondeadas */
+    cursor: pointer;                   /* manito */
+}
+
+.visor-cerrar:hover {
+    color: var(--negro);                 /* letra negra... */
+    background-color: var(--blanco);     /* ...sobre fondo blanco */
+}
+
+/* --- Galería en el celular --- */
+@media (max-width: 60rem) {
+    .mundo {
+        --col: 9rem; /* columnas más angostas: todo lo demás se ajusta solo */
+    }
+
+    .pie-galeria {
+        font-size: 0.7rem;  /* texto más chico */
+        padding: 0.5rem 1rem 0.75rem; /* menos relleno */
+    }
+
+    .visor {
+        width: 95%; /* el visor casi a todo el ancho */
+    }
+}
