@@ -2,6 +2,8 @@ LINK FIGMA FLORENCIA ALRRUIZ https://www.figma.com/design/fzRnlbloZgh5nw5rnRrtaB
 
 LINK PÁGINA WEB http://floalrruiz.cl/
 
+LINK REPOSITORIO https://github.com/florenciaalrruiz/portfolio-flo-alrruiz
+
 # Registro por avance: observaciones y mejoras implementadas
 
 ### 09 de noviembre de 2026 · Avance y correcciones con profesor Aarón
