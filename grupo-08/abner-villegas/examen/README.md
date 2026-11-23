@@ -2,7 +2,7 @@
 
 ## Abner Villegas
 
-## Link al sitio web
+## Link al sitio wev
 <https://abnerv28.github.io/PortafolioAbnerVillegas-/>
 ## Link al Figma 
  <https://www.figma.com/design/ZJYsKjWZMWz0gF1hA8Y8Vw/Ex%C3%A1men-Portafolio?node-id=1-2&t=Z5lXoNSo9CkCJkET-1>
