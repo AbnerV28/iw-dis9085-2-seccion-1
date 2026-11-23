@@ -47,6 +47,8 @@ Se volvía un poco complicado generar un overlay en ella, así que las correccio
 
 Habrá un botón que al presionarlo te redirigirá a mis mejores proyectos (según yo y/ o considerando la nota que recibí en ese tiempo). Ya en esa página habrá un dropdown menu para “Todos los proyectos” donde aparecerá “Diseño” e “Ilustración” y de esas opciones nacerán otros dropdown menus con categorías más amplias de cada opción.
 
+![Dropdown menú](img-readme/dropdown-menu.png)
+
 Algo más que cambió fue la pestaña "Sobre mí", originalmente estaba muy aburrida y mientras lo hacía me di cuenta de que tenía demasiado texto y estaba pareciendo un curriculum capaz de pasar esas tecnologías que ocupan las empresas par filtrarlos.
 
 ## 22-11-2026
@@ -110,6 +112,8 @@ El mobile tenía muchos errores en el prototipo de navegación, así que borré 
 Ahora me faltaba el banner, que lo aplacé eternamente hasta el final... pero ya tenía una idea. 
 Hice un dibujo en píxelart que me representa a mi, volví a ocupar el fabuloso software Krita al cual le debo mis ganas de vivir e hice una ilustración que me representa a mi.
 
+![Banner original](img-readme/banner-figma.png)
+
 Ya era hora de empezar con el código... ya había avanzado anteriormente con el .html del inicio, creé otro 3 .html **proyectos.html, secreto.html y sobre-mi.html**
 El html es easy peasy, así que prácticamente seguí el orden de los primeros html que hicimos en este ramo.
 Cuando llegué a la parte de **Contacto** me di cuenta de que no sabía como conseguir los mismos íconos que usé en el figma. Volví a Gemini
@@ -134,7 +138,9 @@ Mis carpetas con los proyectos quedaron en un orden distinto al del figma y eso 
 
 Haber hecho tantas carpetas ayudó muchísimo en la creación del filtro en el dropdown menu.
 
-Se me ocurrió que el banner podría ser más épico y quise que los ojos de mi personaje siguieran el cursor a donde sea que este se dirija.
+Se me ocurrió que el banner podría ser más épico y quise que los ojos de mi personaje siguieran el cursor a donde sea que este se dirija. Así que tuve que separar mi dibujo por capas: una base y la otra únicamente de las pupilas
+
+![Banner base](img-readme/banner-1.png)  ![Banner ojos](img-readme/banner-2.png)
 
 Otra cosa que se me ocurrió fue que el cursor se convierta en un ojito cuando pasa sobre un proyecto y que al hacer esto se vayan mostrando otras imágenes del trabajo o que se empiece a reproducir un video.
 
@@ -150,7 +156,11 @@ ya sé por qué no se escuchaban mis videos en la sección "???", es que mis vid
 Finalmente subí mi pagina a Github pages, pero tuve problemas haciéndolo desde la web, tenía carpetas con más de 100 archivos y eso provocó que no me dejara subirlos, así que terminé instalando Github Desktop y fue todo mucho más fácil.
 También me di cuenta de que tenía archivos de más de 100MB, así que tuve que comprimirlos.
 
-Con la página ya subida y todo funcionando, me di cuenta de que la sección "Sobre mí" en mobile se veía desordenada, así que tuve que agregar una sección especial para esta sección en mobile en el css y un nuevo archivo para el mapa, pero versión vertical.
+Con la página ya subida y todo funcionando, me di cuenta de que la sección "Sobre mí" en mobile se veía desordenada. 
+
+![Prueba del desorden 1](img-readme/mobile-desordenado.jpeg) ![Prueba del desorden 2](img-readme/mobile-desordenado-2.jpeg) 
+
+Así que tuve que agregar una sección especial para esta sección en mobile en el css y un nuevo archivo para el mapa, pero versión vertical.
 
 Ahora ya todo funciona.
 
